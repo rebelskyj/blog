@@ -70,12 +70,14 @@ $endif$
 <h5><a href="index.html">Home</a></h5>
 </center>
 $body$
+<div class = "nav-links">
 $if(prev)$
-<a class="Previous" href="$prevurl$">$prev$</a>
+<a class="nav-previous" href="$prevurl$">$prev$</a>
 $endif$
 $if(next)$
-<a class="Next" href="$nexturl$">$next$</a>
+<a class="nav-next" href="$nexturl$">$next$</a>
 $endif$
+</div>
 $for(include-after)$
 $include-after$
 $endfor$

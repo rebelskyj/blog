@@ -327,3 +327,19 @@ table td {
     page-break-after: avoid;
   }
 }
+.nav-links {
+  border-top: solid 1px #aaa;
+  border-bottom: solid 1px #aaa;
+}
+.nav-previous {
+  float: left;
+}
+.nav-previous::before {
+  content: "< ";
+}
+.nav-next {
+  float: right;
+}
+.nav-next::after {
+  content: " >";
+}
