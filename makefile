@@ -9,4 +9,4 @@ sources/base/%.html : sources/%.tex
 	pandoc -o $@ $<
 
 %.html : sources/%.tex sources/template.html sources/order.txt
-	 python3 sources/compile.py $@ | bash
+	 python sources/compile.py $@ | bash

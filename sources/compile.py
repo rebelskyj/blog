@@ -18,8 +18,8 @@ def get_index(lines, index):
   except:
     return ['', '']
 
-source = f"sources/{filename}.tex"
-dest = f"{filename}.html"
+source = "sources/{}.tex".format(filename)
+dest = "{}.html".format(filename)
 name = lines[index].split(":")[1]
 prevurl, prev = get_index(lines, index-1)
 nexturl, next = get_index(lines, index+1)
@@ -31,4 +31,4 @@ options_string = filter(lambda x: options[x] != "", options.keys())
 options_string = map(lambda x: '-M "{}={}"'.format(x.strip(), options[x].strip()), options_string)
 options_string = " ".join(list(options_string))
 
-print(f'pandoc -s -o {dest} {source} --template=sources/template.html {options_string} --css pandoc.css')
+print('pandoc -s -o {} {} --template=sources/template.html {} --css pandoc.css'.format(dest, source, options_string))
