@@ -7,3 +7,4 @@ my-wonderful-brothers.tex:My Wonderful Brothers
 feeling-safe.tex:Feeling Safe
 disclaimer.tex:Disclaimer
 musing_on_music.tex:Musing on Music
+riverwalk.tex:Riverwalk
