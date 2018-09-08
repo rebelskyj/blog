@@ -1,3 +1,4 @@
+<?xml version="1.0"?>
 <rss version="2.0">
   <channel>
     <title>j.rebelsky.com</title>
@@ -9,6 +10,54 @@
       <link>http://j.rebelsky.com/</link>
       <description>This is my description</description>
       <pubDate>Fri, 07 Sep 2018 04:00:00 -0000</pubDate>
+    </item>
+    <item>
+      <title>Musing on Music</title>
+      <link>https://j.rebelsky.com/musing-on-music.html/</link>
+      <pubDate>Thu, 06 Sep 2018 21:27:57 +0000</pubDate>
+      <description>I&#x2019;m almost always listening to music, even if only inside my head. There&#x2019;s something sublime about music&#x2019;s ability to transport me from wherever I am and whatever I&#x2019;m doing into a different place. Although every song doesn&#x2019;t send me to the same place, or even the same place for each song, they always...</description>
+    </item>
+    <item>
+      <title>Disclaimer</title>
+      <link>https://j.rebelsky.com/disclaimer.html/</link>
+      <pubDate>Wed, 05 Sep 2018 20:18:52 +0000</pubDate>
+      <description>Pre-reading note: I&#x2019;m writing this post as I tend to write my papers. That is, a very rough sketch, a more polished draft, and so on until I have the quality I want in my writing. Since I&#x2019;m not too embarrassed of my (lack of) writing ability, I thought I&#x2019;d post my drafts here as... </description>
+    </item>
+    <item>
+      <title>Feeling Safe</title>
+      <link>https://j.rebelsky.com/feeling-safe.html/</link>
+      <pubDate>Tue, 04 Sep 2018 22:21:15 +0000</pubDate>
+      <description>As many of you know, I am a large white man. There are many aspects of these two identities that are incredibly beneficial. What I didn't really realize today, though, was how important that first identity is. While getting ready to leave for a theatre show that we were both seeing, I mentioned that... </description>
+    </item>
+    <item>
+      <title>My Wonderful Brothers</title>
+      <link>https://j.rebelsky.com/my-wonderful-brothers.html/</link>
+      <pubDate>Mon, 03 Sep 2018 20:17:01 +0000</pubDate>
+      <description>Those of you who know me likely also know my brothers. This post seems like a great way to talk about how amazing they are, since I sometimes forget to do that enough. My older brother is everything an older brother should be. He's smarter, kinder, and more generous than me. He follows the... </description>
+    </item>
+    <item>
+      <title>Analog Vs. Digital</title>
+      <link>https://j.rebelsky.com/analog-vs-digital.html/</link>
+      <pubDate>Sun, 02 Sep 2018 16:13:08 +0000</pubDate>
+      <description>As I mentioned yesterday, I'm keeping a digital and analog journal of my day. This is inspired by a course I'm taking on London diaries, partially my own past experience, and partially a conversation I had with the professor of the course. The course on diaries includes an interactive component. That is, in addition to... </description>
+    </item>
+    <item>
+      <title>How I'm Keeping Track of My Time Abroad</title>
+      <link>https://j.rebelsky.com/how-im-keeping-track-of-my-time-abroad.html/</link>
+      <pubDate>Sat, 01 Sep 2018 18:54:11 +0000</pubDate>
+      <description>I don't tend to keep track of my daily movements for a variety of reasons. The biggest of these is that one day in Grinnell is rarely much different from a handful or more other days, and those that are I don't always want to remember. The second reason I don't track myself is the... </description>
+    </item>
+    <item>
+      <title>Street Music in London</title>
+      <link>https://j.rebelsky.com/street-music-in-london.html/</link>
+      <pubDate>Fri, 31 Aug 2018 19:38:42 +0000</pubDate>
+      <description>As with most cities, London has its share of musicians performing on the street. Although I've only been here a few days and in a small portion of the city, I've noticed two things about the street music that I don't like. The first, and pettiest, of these is that I haven't seen or heard... </description>
+    </item>
+    <item>
+      <title>First 56 Hours</title>
+      <link>https://j.rebelsky.com/first-56-hours.html/</link>
+      <pubDate>Thu, 30 Aug 2018 15:56:57 +0000</pubDate>
+      <description>My first 56 hours of life in London have passed me by, so it felt like a good time to get some reflections out of the way. Since I've never lived anywhere but Grinnell, I thought I'd be a little more culture shocked than I was. To be honest, London feels a lot like Grinnell... </description>
     </item>
   </channel>
 </rss>
