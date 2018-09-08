@@ -8,3 +8,4 @@ feeling-safe.tex:Feeling Safe
 disclaimer.tex:Disclaimer
 musing-on-music.tex:Musing on Music
 riverwalk.tex:Riverwalk
+arranging-for-bagpipe.tex:Arranging for Bagpipe
