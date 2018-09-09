@@ -9,3 +9,4 @@ disclaimer.tex:Disclaimer
 musing-on-music.tex:Musing on Music
 riverwalk.tex:Riverwalk
 arranging-for-bagpipe.tex:Arranging for Bagpipe
+pierogi-recipe.tex:A Pierogi Recipe: Or Why I Pronounce Ukulele the Way I Do
