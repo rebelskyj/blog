@@ -11,4 +11,5 @@ riverwalk.tex:Riverwalk
 arranging-for-bagpipe.tex:Arranging for Bagpipe
 pierogi-recipe.tex:A Pierogi Recipe
 dance-nation.tex:Dance Nation Review
+why-i-dive.tex:Why I Dive
 small-changes.tex:Small Changes
