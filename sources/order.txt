@@ -16,3 +16,4 @@ small-changes.tex:Small Changes
 arranging-for-bagpipes-ii.tex:Arranging for Bagpipes Part 2
 playing-the-ukulele.tex:Playing the Ukulele
 sleepy-days.tex:Sleepy Days
+todays-gospel.tex:Today's Gospel
