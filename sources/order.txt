@@ -18,3 +18,6 @@ playing-the-ukulele.tex:Playing the Ukulele
 sleepy-days.tex:Sleepy Days
 todays-gospel.tex:Today's Gospel
 othello.tex:Othello Review
+digital-diaries.tex:Digital Diaries
+digital-diaries.tex:Digital Diaries
+digital-diaries.tex:Digital Diaries
