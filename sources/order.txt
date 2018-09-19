@@ -19,3 +19,4 @@ sleepy-days.tex:Sleepy Days
 todays-gospel.tex:Today's Gospel
 othello.tex:Othello Review
 digital-diaries.tex:Digital Diaries
+footnote-frenzy.tex:Footnote Frenzy
