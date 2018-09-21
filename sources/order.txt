@@ -21,3 +21,4 @@ othello.tex:Othello Review
 digital-diaries.tex:Digital Diaries
 footnote-frenzy.tex:Footnote Frenzy
 will-he-or-wont-he.tex:Will He or Won't He?
+wicked.tex:Wicked Review
