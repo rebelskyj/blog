@@ -22,3 +22,4 @@ digital-diaries.tex:Digital Diaries
 footnote-frenzy.tex:Footnote Frenzy
 will-he-or-wont-he.tex:Will He or Won't He?
 wicked.tex:Wicked Review
+making-a-mixtape:Making a Mixtape
