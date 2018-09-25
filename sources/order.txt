@@ -25,3 +25,4 @@ wicked.tex:Wicked Review
 making-a-mixtape.tex:Making a Mixtape
 toffee-recipe.tex:Toffee Making
 basic-bread-recipe.tex:Basic Bread Recipe
+importance-of-being-earnest.tex:The Importance of Being Earnest Review
