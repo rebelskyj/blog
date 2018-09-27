@@ -27,3 +27,4 @@ toffee-recipe.tex:Toffee Making
 basic-bread-recipe.tex:Basic Bread Recipe
 importance-of-being-earnest.tex:The Importance of Being Earnest Review
 pasta-and-white-sauce.tex:Pasta and White Sauce Recipe
+first-day-of-class.tex:First Day of Class!
