@@ -30,3 +30,4 @@ pasta-and-white-sauce.tex:Pasta and White Sauce Recipe
 first-day-of-class.tex:First Day of Class!
 basic-flatbread-recipe.tex:Basic Flatbread Recipe
 orchard-visit.tex:Orchard Visit
+reflections-on-readings-26-ordinary-b.tex:Reflections on Today's Gospel
