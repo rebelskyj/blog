@@ -34,3 +34,4 @@ reflections-on-readings-26-ordinary-b.tex:Reflections on Today's Gospel
 dance-nation-essay.tex:Dance Nation Review (Essay Form)
 class-day-ii.tex:Class Day 2
 diving.tex:Diving!
+whats-a-day.tex:What's a Day?
