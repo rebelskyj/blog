@@ -38,3 +38,4 @@ whats-a-day.tex:What's a Day?
 broken-nose.tex:A Broken Nose
 ten.tex:1010
 reflections-on-readings-27-ordinary-b.tex:Reflections on Today's Gospel
+misty.tex:Misty Review
