@@ -41,3 +41,4 @@ reflections-on-readings-27-ordinary-b.tex:Reflections on Today's Gospel
 misty.tex:Misty Review
 growing-the-beard.tex:Growing the Beard
 thinking-about-drafts.tex:Thinking About Drafts
+homesickness.tex:Homesickness
