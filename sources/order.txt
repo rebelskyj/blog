@@ -42,3 +42,4 @@ misty.tex:Misty Review
 growing-the-beard.tex:Growing the Beard
 thinking-about-drafts.tex:Thinking About Drafts
 homesickness.tex:Homesickness
+playing-with-garageband.tex:Playing With Garageband
