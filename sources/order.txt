@@ -44,4 +44,5 @@ thinking-about-drafts.tex:Thinking About Drafts
 homesickness.tex:Homesickness
 playing-with-garageband.tex:Playing With Garageband
 getting-lost.tex:Getting Lost
-reflections-on-readings-28-ordinary-b:Reflections on Today's Gospel
+reflections-on-readings-28-ordinary-b.tex:Reflections on Today's Gospel
+twelfth-night.tex:Twelfth Night Review
