@@ -47,3 +47,4 @@ getting-lost.tex:Getting Lost
 reflections-on-readings-28-ordinary-b.tex:Reflections on Today's Gospel
 twelfth-night.tex:Twelfth Night Review
 platform-diving.tex:Platform Diving
+sinister-diary.tex: Sinister Diary
