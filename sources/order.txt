@@ -50,3 +50,4 @@ platform-diving.tex:Platform Diving
 sinister-diary.tex:Sinister Diary
 silly-putty-and-pitch.tex:Silly Putty and Pitch
 writers-block.tex:Writer's Block
+citations.tex:Citation Styles
