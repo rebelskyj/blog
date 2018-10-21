@@ -52,4 +52,3 @@ silly-putty-and-pitch.tex:Silly Putty and Pitch
 writers-block.tex:Writer's Block
 citations.tex:Citation Styles
 reflections-on-readings-29-ordinary-b.tex:Reflections on Today's Gospel
-importance-of-being-earnest-essay.tex:Essay About Importance of Being Earnest
