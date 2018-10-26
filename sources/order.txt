@@ -56,3 +56,4 @@ antony-and-cleopatra.tex:Antony and Cleopatra Review
 defining-diary.tex:Defining Diary
 doubting-myself.tex:Doubting Myself
 alumni-events.tex:Alumni Events
+stonehenge.tex:Stonehenge
