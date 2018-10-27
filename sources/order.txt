@@ -57,3 +57,4 @@ defining-diary.tex:Defining Diary
 doubting-myself.tex:Doubting Myself
 alumni-events.tex:Alumni Events
 stonehenge.tex:Stonehenge
+writing-a-song.tex:Writing a Song
