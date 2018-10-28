@@ -58,3 +58,4 @@ doubting-myself.tex:Doubting Myself
 alumni-events.tex:Alumni Events
 stonehenge.tex:Stonehenge
 writing-a-song.tex:Writing a Song
+reflections-on-readings-30-ordinary-b.tex:Reflections on Today's Gospel
