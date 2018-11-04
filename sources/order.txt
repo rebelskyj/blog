@@ -65,3 +65,4 @@ feeling-lucky.tex:Feeling Lucky
 nanowrimo.tex:NaNoWriMo
 font.tex:Font!
 missing-time.tex:Missing Time
+reflections-on-readings-31-ordinary-b.tex:Reflections on Today's Gospel
