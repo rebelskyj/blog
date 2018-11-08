@@ -69,3 +69,4 @@ reflections-on-readings-31-ordinary-b.tex:Reflections on Today's Gospel
 baking-bread-abroad.tex:Baking Bread Abroad
 la-bayadere.tex:La Bayadere Review
 book-of-mormon.tex:Book of Mormon Review
+exponential-growth.tex:Exponential Growth
