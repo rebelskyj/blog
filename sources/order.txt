@@ -70,3 +70,4 @@ baking-bread-abroad.tex:Baking Bread Abroad
 la-bayadere.tex:La Bayadere Review
 book-of-mormon.tex:Book of Mormon Review
 exponential-growth.tex:Exponential Growth
+reading-week.tex:Reading Week Review
