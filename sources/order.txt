@@ -71,3 +71,4 @@ la-bayadere.tex:La Bayadere Review
 book-of-mormon.tex:Book of Mormon Review
 exponential-growth.tex:Exponential Growth
 reading-week.tex:Reading Week Review
+failing.tex:Failing
