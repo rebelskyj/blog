@@ -74,3 +74,4 @@ reading-week.tex:Reading Week Review
 failing.tex:Failing
 reflections-on-readings-32-ordinary-b.tex:Reflections on Today's Gospel
 company.tex:Company Review
+walking-blind.tex:Walking Blind
