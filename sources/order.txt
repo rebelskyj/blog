@@ -75,3 +75,4 @@ failing.tex:Failing
 reflections-on-readings-32-ordinary-b.tex:Reflections on Today's Gospel
 company.tex:Company Review
 walking-blind.tex:Walking Blind
+fear-of-heights.tex:Fear of Heights
