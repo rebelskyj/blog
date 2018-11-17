@@ -78,3 +78,4 @@ walking-blind.tex:Walking Blind
 fear-of-heights.tex:Fear of Heights
 did-it.tex:I Did It
 what-we-dont-write.tex:What We Don't Write
+chocolate-factory.tex:Chocolate Factory Review
