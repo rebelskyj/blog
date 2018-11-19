@@ -80,3 +80,4 @@ did-it.tex:I Did It
 what-we-dont-write.tex:What We Don't Write
 chocolate-factory.tex:Chocolate Factory Review
 reflections-on-readings-33-ordinary-b.tex:Reflections on Today's Gospel
+company-essay.tex:Company Essay
