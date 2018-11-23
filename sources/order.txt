@@ -82,3 +82,5 @@ chocolate-factory.tex:Chocolate Factory Review
 reflections-on-readings-33-ordinary-b.tex:Reflections on Today's Gospel
 company-essay.tex:Company Essay
 history-of-keyboards.tex:History of Keyboards
+new-beginnings.tex:New Beginnings
+thanksgiving-2018.tex:Thanksgiving Abroad
