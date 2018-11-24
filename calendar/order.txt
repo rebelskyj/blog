@@ -84,4 +84,4 @@ Company Essay:company-essay.html:Nov 19
 History of Keyboards:history-of-keyboards.html:Nov 20
 New Beginnings:new-beginnings.html:Nov 21
 Thanksgiving Abroad:thanksgiving-2018.html:Nov 22
-Baking Competition:baking-competition.tex:Nov 23
+Baking Competition:baking-competition.html:Nov 23
