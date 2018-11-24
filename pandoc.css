@@ -343,7 +343,7 @@ table td {
 .nav-next::after {
   content: " >";
 }
-iframe {
+/*iframe {
   position: fixed;
   top: 0px;
   left: 0px;
@@ -356,4 +356,36 @@ body {
   padding-left: 20%;
   right: 0px;
   margin: auto;
+}*/
+
+/* As per https://stackoverflow.com/questions/6370690/media-queries-how-to-target-desktop-tablet-and-mobile 's suggestion */
+
+@media (min-width:641px)  { 
+  iframe {
+    position: relative;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+  }
+  body {
+    padding: none;
+    margin: auto;
+  }
+}
+@media (min-width:961px)  {
+  iframe {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 20%;
+    border: none;
+  }
+
+  body {
+    padding-left: 20%;
+    right: 0px;
+    margin: auto;
+  }
 }

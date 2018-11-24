@@ -2,6 +2,7 @@
   border-spacing: 0px;
   text-align: center;
   background-color: #EEE;
+  display: inline-block;
 }
 .cal-month a {
   color: blue;
