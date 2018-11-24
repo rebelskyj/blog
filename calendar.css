@@ -47,7 +47,18 @@ a:focus {
   outline: thin dotted;
 }
 table.calmonth th, table.calmonth td {
-  padding: .1em 1em;
+  padding: 0;
   border: 1px solid #ddd;
   border-collapse: collapse;
 }
+.calmonth * {
+  padding: 0;
+}
+/* As per https://stackoverflow.com/questions/6370690/media-queries-how-to-target-desktop-tablet-and-mobile 's suggestion */
+
+@media (min-width:1025px) {
+  table.calmonth th, table.calmonth td {
+    padding: .1em 1em;
+  }
+}
+
