@@ -1,6 +1,9 @@
-htmls = $(patsubst sources/%.tex,%.html,$(wildcard sources/*.tex))
+posts = $(patsubst sources/%.tex,%.html,$(wildcard sources/*.tex))
 snippets = $(patsubst sources/%.tex,sources/base/%.html,$(wildcard sources/*.tex))
-make : $(htmls) $(snippets) index.html calendar.html calendar_base.html
+auto : index.html
+	python sources/compile.py $$(tail -n1 sources/order.txt | sed 's/\(.*\).tex:.*/\1.html/g') | bash
+	python sources/compile.py $$(tail -n2 sources/order.txt | head -n1 | sed 's/\(.*\).tex:.*/\1.html/g') | bash
+all : $(posts) $(snippets) index.html calendar.html calendar_base.html
 calendar.html : calendar/order.txt calendar/calendar.md
 	calendar/compile.sh
 calendar_base.html : calendar/order.txt calendar/calendar.md
@@ -13,4 +16,4 @@ sources/base/%.html : sources/%.tex
 	pandoc -o $@ $<
 
 %.html : sources/%.tex sources/template.html sources/order.txt
-	 python sources/compile.py $@ | bash
+	python sources/compile.py $@ | bash
