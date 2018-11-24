@@ -343,3 +343,17 @@ table td {
 .nav-next::after {
   content: " >";
 }
+iframe {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 20%;
+  border: none;
+}
+
+body {
+  padding-left: 20%;
+  right: 0px;
+  margin: auto;
+}
