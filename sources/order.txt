@@ -88,3 +88,4 @@ baking-competition.tex:Baking Competition
 rolls.tex:Rolls
 reflections-on-readings-christ-king-b.tex:Reflections on Today's Gospel
 pinter-at-pinter.tex:Pinter at Pinter Review
+bat-out-of-hell.tex:Bat Out Of Hell (Singalong)
