@@ -1,0 +1,69 @@
+\documentclass[12pt]{article}[titlepage]
+\newcommand{\say}[1]{``#1''}
+\newcommand{\nsay}[1]{`#1'}
+\usepackage{endnotes}
+\newcommand{\1}{\={a}}
+\newcommand{\2}{\={e}}
+\newcommand{\3}{\={\i}}
+\newcommand{\4}{\=o}
+\newcommand{\5}{\=u}
+\newcommand{\6}{\={A}}
+\newcommand{\B}{\backslash{}}
+\newcommand{\sub}[1]{\textsubscript{#1}}
+\renewcommand{\,}{\textsuperscript{,}}
+\usepackage{setspace}
+\usepackage{tipa}
+\usepackage{hyperref}
+\begin{document}
+\doublespacing
+\section{\href{polymer-3.html}{Polymer Review Part 3}}
+First Published 2018 November 30
+
+Prereading note: I actually looked in my notes for this one!
+
+\section{Draft 1}
+Today we're talking about the factors that affect T\sub{g} and T\sub{m}.
+Factors that affect T\sub{g} will affect all polymers, while the factors that affect T\sub{m} will only affect semi-crystalline thermoplastics.
+
+There are four main kinds of factors that affect T\sub{g}: intramolecular forces, intermolecular forces, chain length, and timescale.
+
+The intramolecular forces that affect T\sub{g} are: chain stiffness, side groups, and cross link density.
+As chain stiffness goes up,\footnote{usually because you have bulky groups or groups that have double bonds and whatnot (really anything that increases the rotational energy required)} T\sub{g} goes up.
+This is because as the amount of energy it takes to rotate along a bond\footnote{which \href{polymer-2.html}{yesterday} we said is what T\sub{g} means} increases, so too does T\sub{g}. 
+As side groups become bulkier, they increase T\sub{g}, for the same reason.
+As cross-link density goes up, so does T\sub{g}, 
+This is because it's hard to rotate around a link, because the side group is suddenly large.
+Also, if cross-link density isn't 0, there is no T\sub{m}.
+
+The intermolecular forces that affect T\sub{g} are: side group dipole moments,\footnote{I think this is just polarity} side group chain length, and plasticizers.
+As the side groups become more polar, T\sub{g} goes up, because it draws the different polymer chains closer together.
+For that same reason, as side groups become longer, T\sub{g} goes down, because it keeps them further away.
+For that same reason, plasticizers also tend to lower T\sub{g}.
+
+Third, assuming the molecular mass is less than M\sub{e},\footnote{\href{polymer-1.html}{the mass required to form an entanglement}} the increase of molecular mass will increase T\sub{g}.
+Above M\sub{e}, there is effectively no difference in T\sub{g} for chain length.
+
+Finally, everything in polymers is time dependent.
+This makes sense when you think about how free energy diagrams work.
+At any temperature above 0K, there's some energy.
+Given enough time, any bond can rotate, because it'll at some point be able to overcome its energy barrier.
+Heating it just makes that happen faster.
+So, T\sub{g} decreases as the time-scale you view it from increases.
+This also works in reverse, so a polymer that's being stressed at high rates will remain solid at higher temperatures than one that is not.
+
+In order of importance, the intramolecular forces are more important than the intermolecular forces are more important than the other two in governing T\sub{g}.\footnote{according to my professor}
+
+So, assuming cross-link density is 0, eventually the polymer will become viscous.\footnote{T\sub{m}}
+This is affected mainly by the same factors that influence T\sub{g}, which is why they have the relationship \href{polymer-2.html}{I talked about in Polymer Review 2}.
+As interactions between the chains goes up, T\sub{m} goes up.
+As chain stiffness goes up, T\sub{m} goes up.
+As branching\footnote{side group frequency} goes up, T\sub{m} goes down.
+As delta S\footnote{change in entropy} goes up, T\sub{m} goes down.
+To explain this, T\sub{m} can also be expressed as delta H\footnote{enthalpy} divided by delta S\footnote{entropy}.
+Turning a crystal, which is highly ordered, into a liquid, which is not, increases the entropy of the state a lot.
+So, somehow that also works in reverse?
+This part is where the physics goes beyond me.
+
+To lower delta S, you can orient the polymer more.
+This leads well into crystals which is almost certainly the topic of tomorrow's post.
+\end{document}

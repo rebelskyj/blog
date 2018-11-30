@@ -87,3 +87,8 @@ Thanksgiving Abroad:thanksgiving-2018.html:Nov 22
 Baking Competition:baking-competition.html:Nov 23
 Rolls:rolls.html:Nov 24
 reflections-on-readings-christ-king-b.html:Nov 25
+pinter-at-pinter.tex:Nov 26
+bat-out-of-hell.tex:Nov 27
+polymer-1.tex:Nov 28
+polymer-2.tex:Nov 29
+polymer-3.tex:Nov 30

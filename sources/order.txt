@@ -91,3 +91,4 @@ pinter-at-pinter.tex:Pinter at Pinter Review
 bat-out-of-hell.tex:Bat Out Of Hell (Singalong)
 polymer-1.tex:Polymer Review Part 1
 polymer-2.tex:Polymer Review Part 2
+polymer-3.tex:Polymer Review Part 3
