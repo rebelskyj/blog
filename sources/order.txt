@@ -92,3 +92,4 @@ bat-out-of-hell.tex:Bat Out Of Hell (Singalong)
 polymer-1.tex:Polymer Review Part 1
 polymer-2.tex:Polymer Review Part 2
 polymer-3.tex:Polymer Review Part 3
+polymer-4.tex:Polymer Review Part 4
