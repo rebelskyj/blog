@@ -1,6 +1,6 @@
 posts = $(patsubst sources/%.tex,%.html,$(wildcard sources/*.tex))
 snippets = $(patsubst sources/%.tex,sources/base/%.html,$(wildcard sources/*.tex))
-auto : index.html
+auto : index.html calendar
 	python sources/compile.py $$(tail -n1 sources/order.txt | sed 's/\(.*\).tex:.*/\1.html/g') | bash
 	python sources/compile.py $$(tail -n2 sources/order.txt | head -n1 | sed 's/\(.*\).tex:.*/\1.html/g') | bash
 all : $(posts) $(snippets) index.html calendar.html calendar_base.html
