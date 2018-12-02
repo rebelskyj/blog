@@ -97,5 +97,6 @@ Bat Out Of Hell (Singalong):bat-out-of-hell.html:27
 Polymer Review Part 1:polymer-1.html:28
 Polymer Review Part 2:polymer-2.html:29
 Polymer Review Part 3:polymer-3.html:30
+-December
 Polymer Review Part 4:polymer-4.html:1
 Reflections on Today's Gospel:reflections-on-readings-1-advent-c.html:2
