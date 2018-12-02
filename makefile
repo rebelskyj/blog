@@ -4,6 +4,7 @@ auto : index.html
 	python sources/compile.py $$(tail -n1 sources/order.txt | sed 's/\(.*\).tex:.*/\1.html/g') | bash
 	python sources/compile.py $$(tail -n2 sources/order.txt | head -n1 | sed 's/\(.*\).tex:.*/\1.html/g') | bash
 all : $(posts) $(snippets) index.html calendar.html calendar_base.html
+calendar: calendar.html calendar_base.html
 calendar.html : calendar/order.txt calendar/calendar.md
 	calendar/compile.sh
 calendar_base.html : calendar/order.txt calendar/calendar.md
