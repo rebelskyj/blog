@@ -1,5 +1,5 @@
 from sys import argv
-cal = argv[1]
+cal = argv[1].replace("_\x08", "") # Remove Mac cal highlight
 cal = cal.split("\n")
 with open("calendar/month.md") as file:
   month_temp = file.read()
