@@ -86,9 +86,9 @@ New Beginnings:new-beginnings.html:Nov 21
 Thanksgiving Abroad:thanksgiving-2018.html:Nov 22
 Baking Competition:baking-competition.html:Nov 23
 Rolls:rolls.html:Nov 24
-reflections-on-readings-christ-king-b.html:Nov 25
-pinter-at-pinter.tex:Nov 26
-bat-out-of-hell.tex:Nov 27
-polymer-1.tex:Nov 28
-polymer-2.tex:Nov 29
-polymer-3.tex:Nov 30
+Reflections on Today's Gospel:reflections-on-readings-christ-king-b.html:Nov 25
+Pinter at Pinter Review:pinter-at-pinter.html:Nov 26
+Bat Out Of Hell (Singalong):bat-out-of-hell.html:Nov 27
+Polymer Review Part 1:polymer-1.html:Nov 28
+Polymer Review Part 2:polymer-2.html:Nov 29
+Polymer Review Part 3:polymer-3.html:Nov 30
