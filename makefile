@@ -9,7 +9,7 @@ calendar.html : calendar/order.txt calendar/calendar.md
 	calendar/compile.sh
 calendar_base.html : calendar/order.txt calendar/calendar.md
 	calendar/compile_base.sh
-index.html : sources/base/*
+index.html : $(snippets)
 	python sources/fix_order.py
 	pandoc -s -o index.html $$(tail -r sources/order.txt | sed 's/\(.*\).tex:.*/sources\/base\/\1.html/g') -M pagetitle=Home --template=sources/template.html --css pandoc.css
 
