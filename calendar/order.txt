@@ -1,94 +1,99 @@
-Hello World!:hello-world.html:Aug 29
-First 56 Hours:first-56-hours.html:Aug 30
-Street Music in London:street-music-in-london.html:Aug 31
-How I’m Keeping Track of My Time Abroad:how-im-keeping-track-of-my-time-abroad.html:Sep 1
-Analog Vs. Digital:analog-vs-digital.html:Sep 2
-My Wonderful Brothers:my-wonderful-brothers.html:Sep 3
-Feeling Safe:feeling-safe.html:Sep 4
-Disclaimer:disclaimer.html:Sep 5
-Musing on Music:musing-on-music.html:Sep 6
-Riverwalk:riverwalk.html:Sep 7
-Arranging for Bagpipe:arranging-for-bagpipe.html:Sep 8
-A Pierogi Recipe:pierogi-recipe.html:Sep 9
-Dance Nation Review:dance-nation.html:Sep 10
-Why I Dive:why-i-dive.html:Sep 11
-Small Changes:small-changes.html:Sep 12
-Arranging for Bagpipes Part 2:arranging-for-bagpipes-ii.html:Sep 13
-Playing the Ukulele:playing-the-ukulele.html:Sep 14
-Sleepy Days:sleepy-days.html:Sep 15
-Today's Gospel:todays-gospel.html:Sep 16
-Othello Review:othello.html:Sep 17
-Digital Diaries:digital-diaries.html:Sep 18
-Footnote Frenzy:footnote-frenzy.html:Sep 19
-Will He or Won't He?:will-he-or-wont-he.html:Sep 20
-Wicked Review:wicked.html:Sep 21
-Making a Mixtape:making-a-mixtape.html:Sep 22
-Toffee Making:toffee-recipe.html:Sep 23
-Basic Bread Recipe:basic-bread-recipe.html:Sep 24
-The Importance of Being Earnest Review:importance-of-being-earnest.html:Sep 25
-Pasta and White Sauce Recipe:pasta-and-white-sauce.html:Sep 26
-First Day of Class!:first-day-of-class.html:Sep 27
-Basic Flatbread Recipe:basic-flatbread-recipe.html:Sep 28
-Orchard Visit:orchard-visit.html:Sep 29
-Reflections on Today's Gospel:reflections-on-readings-26-ordinary-b.html:Sep 30
-Dance Nation Review (Essay Form):dance-nation-essay.html:Oct 1
-Class Day 2:class-day-ii.html:Oct 2
-Diving!:diving.html:Oct 3
-What's a Day?:whats-a-day.html:Oct 4
-A Broken Nose:broken-nose.html:Oct 5
-1010:ten.html:Oct 6
-Reflections on Today's Gospel:reflections-on-readings-27-ordinary-b.html:Oct 7
-Misty Review:misty.html:Oct 8
-Growing the Beard:growing-the-beard.html:Oct 9
-Thinking About Drafts:thinking-about-drafts.html:Oct 10
-Homesickness:homesickness.html:Oct 11
-Playing With Garageband:playing-with-garageband.html:Oct 12
-Getting Lost:getting-lost.html:Oct 13
-Reflections on Today's Gospel:reflections-on-readings-28-ordinary-b.html:Oct 14
-Twelfth Night Review:twelfth-night.html:Oct 15
-Platform Diving:platform-diving.html:Oct 16
-Sinister Diary:sinister-diary.html:Oct 17
-Silly Putty and Pitch:silly-putty-and-pitch.html:Oct 18
-Writer's Block:writers-block.html:Oct 19
-Citation Styles:citations.html:Oct 20
-Reflections on Today's Gospel:reflections-on-readings-29-ordinary-b.html:Oct 21
-Antony and Cleopatra Review:antony-and-cleopatra.html:Oct 22
-Defining Diary:defining-diary.html:Oct 23
-Doubting Myself:doubting-myself.html:Oct 24
-Alumni Events:alumni-events.html:Oct 25
-Stonehenge:stonehenge.html:Oct 26
-Writing a Song:writing-a-song.html:Oct 27
-Reflections on Today's Gospel:reflections-on-readings-30-ordinary-b.html:Oct 28
-The Height of the Storm Review:height-of-the-storm.html:Oct 29
-Concert!:concert.html:Oct 30
-Feeling Lucky:feeling-lucky.html:Oct 31
-NaNoWriMo:nanowrimo.html:Nov 1
-Font!:font.html:Nov 2
-Missing Time:missing-time.html:Nov 3
-Reflections on Today's Gospel:reflections-on-readings-31-ordinary-b.html:Nov 4
-Baking Bread Abroad:baking-bread-abroad.html:Nov 5
-La Bayadere Review:la-bayadere.html:Nov 6
-Book of Mormon Review:book-of-mormon.html:Nov 7
-Exponential Growth:exponential-growth.html:Nov 8
-Reading Week Review:reading-week.html:Nov 9
-Failing:failing.html:Nov 10
-Reflections on Today's Gospel:reflections-on-readings-32-ordinary-b.html:Nov 11
-Company Review:company.html:Nov 12
-Walking Blind:walking-blind.html:Nov 13
-Fear of Heights:fear-of-heights.html:Nov 14
-I Did It:did-it.html:Nov 15
-What We Don't Write:what-we-dont-write.html:Nov 16
-Chocolate Factory Review:chocolate-factory.html:Nov 17
-Reflections on Today's Gospel:reflections-on-readings-33-ordinary-b.html:Nov 18
-Company Essay:company-essay.html:Nov 19
-History of Keyboards:history-of-keyboards.html:Nov 20
-New Beginnings:new-beginnings.html:Nov 21
-Thanksgiving Abroad:thanksgiving-2018.html:Nov 22
-Baking Competition:baking-competition.html:Nov 23
-Rolls:rolls.html:Nov 24
-Reflections on Today's Gospel:reflections-on-readings-christ-king-b.html:Nov 25
-Pinter at Pinter Review:pinter-at-pinter.html:Nov 26
-Bat Out Of Hell (Singalong):bat-out-of-hell.html:Nov 27
-Polymer Review Part 1:polymer-1.html:Nov 28
-Polymer Review Part 2:polymer-2.html:Nov 29
-Polymer Review Part 3:polymer-3.html:Nov 30
+*2018
+-August
+Hello World!:hello-world.html:29
+First 56 Hours:first-56-hours.html:30
+Street Music in London:street-music-in-london.html:31
+-September
+How I’m Keeping Track of My Time Abroad:how-im-keeping-track-of-my-time-abroad.html:1
+Analog Vs. Digital:analog-vs-digital.html:2
+My Wonderful Brothers:my-wonderful-brothers.html:3
+Feeling Safe:feeling-safe.html:4
+Disclaimer:disclaimer.html:5
+Musing on Music:musing-on-music.html:6
+Riverwalk:riverwalk.html:7
+Arranging for Bagpipe:arranging-for-bagpipe.html:8
+A Pierogi Recipe:pierogi-recipe.html:9
+Dance Nation Review:dance-nation.html:10
+Why I Dive:why-i-dive.html:11
+Small Changes:small-changes.html:12
+Arranging for Bagpipes Part 2:arranging-for-bagpipes-ii.html:13
+Playing the Ukulele:playing-the-ukulele.html:14
+Sleepy Days:sleepy-days.html:15
+Today's Gospel:todays-gospel.html:16
+Othello Review:othello.html:17
+Digital Diaries:digital-diaries.html:18
+Footnote Frenzy:footnote-frenzy.html:19
+Will He or Won't He?:will-he-or-wont-he.html:20
+Wicked Review:wicked.html:21
+Making a Mixtape:making-a-mixtape.html:22
+Toffee Making:toffee-recipe.html:23
+Basic Bread Recipe:basic-bread-recipe.html:24
+The Importance of Being Earnest Review:importance-of-being-earnest.html:25
+Pasta and White Sauce Recipe:pasta-and-white-sauce.html:26
+First Day of Class!:first-day-of-class.html:27
+Basic Flatbread Recipe:basic-flatbread-recipe.html:28
+Orchard Visit:orchard-visit.html:29
+Reflections on Today's Gospel:reflections-on-readings-26-ordinary-b.html:30
+-October
+Dance Nation Review (Essay Form):dance-nation-essay.html:1
+Class Day 2:class-day-ii.html:2
+Diving!:diving.html:3
+What's a Day?:whats-a-day.html:4
+A Broken Nose:broken-nose.html:5
+1010:ten.html:6
+Reflections on Today's Gospel:reflections-on-readings-27-ordinary-b.html:7
+Misty Review:misty.html:8
+Growing the Beard:growing-the-beard.html:9
+Thinking About Drafts:thinking-about-drafts.html:10
+Homesickness:homesickness.html:11
+Playing With Garageband:playing-with-garageband.html:12
+Getting Lost:getting-lost.html:13
+Reflections on Today's Gospel:reflections-on-readings-28-ordinary-b.html:14
+Twelfth Night Review:twelfth-night.html:15
+Platform Diving:platform-diving.html:16
+Sinister Diary:sinister-diary.html:17
+Silly Putty and Pitch:silly-putty-and-pitch.html:18
+Writer's Block:writers-block.html:19
+Citation Styles:citations.html:20
+Reflections on Today's Gospel:reflections-on-readings-29-ordinary-b.html:21
+Antony and Cleopatra Review:antony-and-cleopatra.html:22
+Defining Diary:defining-diary.html:23
+Doubting Myself:doubting-myself.html:24
+Alumni Events:alumni-events.html:25
+Stonehenge:stonehenge.html:26
+Writing a Song:writing-a-song.html:27
+Reflections on Today's Gospel:reflections-on-readings-30-ordinary-b.html:28
+The Height of the Storm Review:height-of-the-storm.html:29
+Concert!:concert.html:30
+Feeling Lucky:feeling-lucky.html:31
+-November
+NaNoWriMo:nanowrimo.html:1
+Font!:font.html:2
+Missing Time:missing-time.html:3
+Reflections on Today's Gospel:reflections-on-readings-31-ordinary-b.html:4
+Baking Bread Abroad:baking-bread-abroad.html:5
+La Bayadere Review:la-bayadere.html:6
+Book of Mormon Review:book-of-mormon.html:7
+Exponential Growth:exponential-growth.html:8
+Reading Week Review:reading-week.html:9
+Failing:failing.html:10
+Reflections on Today's Gospel:reflections-on-readings-32-ordinary-b.html:11
+Company Review:company.html:12
+Walking Blind:walking-blind.html:13
+Fear of Heights:fear-of-heights.html:14
+I Did It:did-it.html:15
+What We Don't Write:what-we-dont-write.html:16
+Chocolate Factory Review:chocolate-factory.html:17
+Reflections on Today's Gospel:reflections-on-readings-33-ordinary-b.html:18
+Company Essay:company-essay.html:19
+History of Keyboards:history-of-keyboards.html:20
+New Beginnings:new-beginnings.html:21
+Thanksgiving Abroad:thanksgiving-2018.html:22
+Baking Competition:baking-competition.html:23
+Rolls:rolls.html:24
+Reflections on Today's Gospel:reflections-on-readings-christ-king-b.html:25
+Pinter at Pinter Review:pinter-at-pinter.html:26
+Bat Out Of Hell (Singalong):bat-out-of-hell.html:27
+Polymer Review Part 1:polymer-1.html:28
+Polymer Review Part 2:polymer-2.html:29
+Polymer Review Part 3:polymer-3.html:30
