@@ -1,7 +1,7 @@
 from sys import argv
 cal = argv[1]
 cal = cal.split("\n")
-with open("month.md") as file:
+with open("calendar/month.md") as file:
   month_temp = file.read()
 
 month = cal[0].strip().split(" ")[0]

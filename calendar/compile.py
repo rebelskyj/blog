@@ -1,26 +1,24 @@
+import subprocess
+months = {"January": 1, "February": 2, "March": 3, "April": 4, "May": 5, "June": 6, "July": 7, "August": 8, "September": 9, "October": 10, "November": 11, "December": 12}
 with open("calendar/calendar.md") as base:
-  content = base.read().split("\n")
+  content = base.read()
 
 with open("calendar/order.txt") as order:
+  tmp = ""
   for line in order:
-    title, url, date = line.split(":")
-    month, day = date.strip().split(" ")
-    result = []
-    found = False
-    done = False
-    for line in content:
-      if(not done):
-        if(not found):
-          if(line.find(month) != -1):
-            found = True
-        else:
-          try:
-            if(int(line.split(">")[1].split("<")[0]) == int(day)):
-              line = "      <td><a href='%s'>%s<div>%s</div></a></td>" % (url, str(int(day)), title)
-              done = True
-          except:
-            pass
-      result.append(line)
-    content = result
+    line = line.strip()
+    if(line[0] == "*"):
+      year = int(line[1:])
+      content += "<h2>%d</h2>\n" % year
+    elif(line[0] == "-"):
+      month = months[line[1:]]
+      content += tmp
+      tmp = subprocess.check_output(["calendar/mkcal.sh", str(month), str(year)])
+    else:
+      title, url, day = line.split(":")
+      day = int(day)
+      tmp = tmp.replace("<td>%d</td>" % day, "<td><a href='%s'>%s<div>%s</div></a></td>" % (url, str(day), title))
 
-print("\n".join(content))
+content += tmp
+
+print(content)
