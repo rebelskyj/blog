@@ -1,0 +1,144 @@
+\documentclass[12pt]{article}[titlepage]
+\newcommand{\say}[1]{``#1''}
+\newcommand{\nsay}[1]{`#1'}
+\usepackage{endnotes}
+\newcommand{\1}{\={a}}
+\newcommand{\2}{\={e}}
+\newcommand{\3}{\={\i}}
+\newcommand{\4}{\=o}
+\newcommand{\5}{\=u}
+\newcommand{\6}{\={A}}
+\newcommand{\B}{\backslash{}}
+\renewcommand{\,}{\textsuperscript{,}}
+\usepackage{setspace}
+\usepackage{tipa}
+\usepackage{hyperref}
+\begin{document}
+\doublespacing
+\section{\href{cartography-final.html}{Creative Cartography Final Project}}
+First Published 2018 December 3
+\section{Draft 2}
+One of the classes I'm enrolled in while abroad is Creative Cartography.\footnote{those of you who've read through the archive may know that I've written about an assignment for this class \href{riverwalk.html}{before}}
+The goal of the class is to explore the different ways that maps can express information and authorship.
+For a final project, we were assigned the task of creating our own unique map of London.
+So, being a musical child like I am, I decided to make my end product something auditory.
+
+While discussing with my professor, we had many potential ideas.
+But, what ended up seeming most fruitful was a one hour walk, where I would follow a series of strangers, logging myself with a stopwatch.
+Every time that I made a turn, I would start a new lap on the watch.
+By the end of the hour, I'd accumulated 426 times, so 425 turns.
+Along with that, I had GPS data tracking my movements and a heart rate monitor that was linked to that GPS.
+
+To create the music, I then needed to find a way to convert the raw data into something musical.
+I decided to create a melody that could be played solely on the white notes of the piano, rather than other scale options, for a variety of reasons.
+Had I chosen a pentatonic scale, the data would be harder to express.
+Had I chosen a chromatic scale, the final piece would have sounded incredibly atonal.
+
+So, I assigned the time in seconds that I had lasted before turning as the basis for the melody.
+If I walked for less than a second, I would make the melody note an A, for 1-1.99, B, and so on through the scale.
+Of course, I knew that some of my turns would last seven or more seconds, so I would then repeat.
+That is, If it took 7-7.99 seconds, I would still have an A.
+But, in doing so, I would obscure a lot of data.
+
+To combat this, I decided that I would use multiple voices in the final piece. 
+I chose ninth chords, because they have an interesting lack of resolution to them that I thought might allow my music to feel more natural, especially as they tend to have forward movement that is needed when imagining a walk.
+If the turn would last for less than seven seconds, it would be the root of the chord, seven to 13.99, the third, and so on through the ninth.
+I assumed that I would then be able to uniquely identify each number of seconds.
+But, I ended up having ten turns that lasted more than 35 seconds.
+I decided that I would simply deal with that problem by ignoring it, looping at 35 seconds.
+
+I then had to choose the way that each ninth chord would be constructed.
+I decided that I didn't want diminished fifths from the bass, because I didn't feel like it.
+My watch was accurate to the .01 seconds, so I kept that in mind.
+
+To decide whether the third would be major or minor, I looked at the fractional time.
+If it was less than .5, I would make it minor.
+Otherwise, the third would be major.
+
+The fifth was perfect.
+
+The seventh was major if within .25 seconds 0.
+That is, from 0-.24 fractional seconds, it would be major.
+.25-.74 was minor, and .75 and up was again major.
+
+The ninth was determined by the final digit.
+If the fractional second was even (.00,.02,.04...), it would be major.
+Otherwise, it would be minor.
+
+By doing this, I constructed a lot of chords that don't exist in the diatonic world.
+Of course, then I needed to find a way to automate the calculation of the data, because manually computing 426 data points sounded like a horrible idea, especially since I wouldn't have the time.
+So, I automated the production of each note of the chord.
+I then plotted the melody and bass line, deciding that each chord would be root position.
+What was left was four voices.
+Using the principle of parsimonious voice leading,\footnote{minimizing movement between chords} I crafted each of the lines by hand.
+I then uploaded the midi data to a synthesizer, where I mixed the levels a bit until I was satisfied.
+I did nothing with dynamics or fading because that seemed to detract from the music itself.
+For tempo, I chose 120 as that is the typical person's cadence.
+For voicing, I made sure that the bass was always the lowest and that the soprano was always the highest.
+The other voices, because of how I wrote them, progressed steadily higher throughout the piece.
+It creates an interesting effect of growing movement.
+Happily, it resolves on a CMaj7,9 chord, which fits the C diatonic scale.
+
+If you want to listen, it's currently hosted on \href{https://soundcloud.com/user-700800182/walk-26-november-2018}{Soundcloud}. 
+
+\section{Draft 1}
+One of the classes I'm enrolled in while abroad is Creative Cartography.\footnote{those of you who've read through the archive may know that I've written about an assignment for this class \href{riverwalk.html}{before}}
+The goal of the class is to explore the different ways that maps can express information and authorship.
+For a final project, we were assigned the task of creating our own unique map of London.
+So, being a musical child like I am, I decided to make my end product something auditory.
+
+While discussing with my professor, we had many potential ideas.
+But, what ended up seeming most fruitful was a one hour walk, where I would follow a series of strangers, logging myself with a stopwatch.
+Every time that I made a turn, I would start a new lap on the watch.
+By the end of the hour, I'd accumulated 426 times, so 425 turns.
+Along with that, I had GPS data tracking my movements and a heart rate monitor that was linked to that GPS.
+
+To create the music, I then needed to find a way to convert the raw data into something musical.
+Although I'd initially thought of using either a chromatic or pentatonic scale, as those each have their own benefits, I ended up deciding to use the C Ionian\footnote{or D Dorian, E Phrygian, F Lydian, G Mixolydian, A Aeolian, or B Locrian} mode as my basis for melody.
+There has to be a better way to say that.
+Maybe: I decided to use the diatonic scale with no accidentals.
+I decided to create a melody that could be played solely on the white notes of the piano.
+That's better.
+
+So, I assigned the time in seconds that I had lasted before turning as the basis for the melody.
+If I walked for less than a second, I would make the melody note an A, for 1-1.99, B, and so on through the scale.
+Of course, I knew that some of my turns would last seven or more seconds, so I would then repeat.
+That is, If it took 7-7.99 seconds, I would still have an A.
+But, in doing so, I would have obscured a lot of the data.
+
+So, I decided that I would have multiple voices. 
+I chose ninth chords, because they have an interesting lack of resolution to them that I thought might allow my music to feel more natural.
+So, if the turn would last for less than seven seconds, it would be the root of the chord, seven to 13.99, the third, and so on through the ninth.
+I assumed that I would then be able to uniquely identify each number of seconds.
+But, I ended up having ten turns that lasted more than 35 seconds.
+I decided that I would simply deal with that by ignoring it, looping at 35.
+
+Then, I had to choose the way that each ninth chord would be constructed.
+I decided that I didn't want diminished fifths from the bass, because I didn't feel like it.
+My watch was accurate to the .01 seconds, so I kept that in mind.
+
+To decide whether the third would be major or minor, I looked at the fractional time.
+If it was less than .5, I would make it minor.
+Otherwise, the third would be major.
+
+The fifth was perfect.
+
+The seventh was major if within .25 seconds 0.
+That is, from 0-.24 fractional seconds, it would be major.
+.25-.74 was minor, and .75 and up was again major.
+
+The ninth was determined by the final digit.
+If the fractional second was even (.00,.02,.04...), it would be major.
+Otherwise, it would be minor.
+
+By doing this, I constructed a lot of chords that don't exist in the diatonic world.
+Of course, then I needed to find a way to automate the calculation of the data, because manually computing 426 data points sounded like a horrible idea, especially since I wouldn't have the time.
+So, I automated the production of each note of the chord.
+I then plotted the melody and bass line, deciding that each chord would be root position.
+What was left was four voices.
+Using the principle of parsimonious voice leading,\footnote{minimizing movement between chords} I crafted each of the lines by hand.
+I then uploaded the midi data to a synthesizer, where I mixed the levels a bit until I was satisfied.
+I did nothing with dynamics or fading because that seemed to detract from the music itself.
+
+If you want to listen, it's currently hosted on \href{https://soundcloud.com/user-700800182/walk-26-november-2018}{Soundcloud}. 
+\end{document}
