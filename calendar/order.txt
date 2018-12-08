@@ -105,3 +105,4 @@ Christmas Concert:christmas-concert.html:4
 Whoops:whoops.html:5
 The Dilemma of Digital Diaries:dilemma-digital-diary.html:6
 Northumbrian Pipe Museum Review:northumbrian-pipe-museum.html:7
+How I Practice:how-i-practice.html:8
