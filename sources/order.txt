@@ -101,3 +101,4 @@ dilemma-digital-diary.tex:The Dilemma of Digital Diaries
 northumbrian-pipe-museum.tex:Northumbrian Pipe Museum Review
 how-i-practice.tex:How I Practice
 reflections-on-readings-2-advent-c.tex: Reflections on Today's Gospel
+caroline.tex:Caroline, or Change
