@@ -103,3 +103,4 @@ how-i-practice.tex:How I Practice
 reflections-on-readings-2-advent-c.tex: Reflections on Today's Gospel
 caroline.tex:Caroline, or Change
 prepping-for-finals-2018.tex:Prepping for Finals
+theatre-final.tex:Theatre Final
