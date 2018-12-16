@@ -107,3 +107,4 @@ theatre-final.tex:Theatre Final
 and-so-we-make-an-end.tex:And So We Make An End
 what-comes-next.tex:What Comes Next?
 guinness-brewery.tex:Guinness Brewery Tour
+reflections-on-readings-3-advent-c.tex:Reflections on Today's Gospel
