@@ -109,3 +109,4 @@ what-comes-next.tex:What Comes Next?
 guinness-brewery.tex:Guinness Brewery Tour
 reflections-on-readings-3-advent-c.tex:Reflections on Today's Gospel
 jameson-distillery.tex:Jameson Distillery Tour
+atonal-precomposition-2.tex:Atonal Precomposition, Chord Progressions
