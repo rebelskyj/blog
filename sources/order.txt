@@ -111,3 +111,4 @@ reflections-on-readings-3-advent-c.tex:Reflections on Today's Gospel
 jameson-distillery.tex:Jameson Distillery Tour
 atonal-precomposition-2.tex:Atonal Precomposition, Chord Progressions
 home.tex:Home
+first-hours.tex:First Hours
