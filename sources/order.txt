@@ -115,3 +115,4 @@ first-hours.tex:First Hours
 baking-take-one.tex:Baking Competition Prep 1st Attempt
 baking-take-two.tex:Baking Competition Prep 2nd Attempt
 reflections-on-readings-4-advent-c.tex:Reflections on Today's Gospel
+christmas-eve.tex:Christmas Eve
