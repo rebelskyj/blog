@@ -120,3 +120,4 @@ christmas-2018.tex:Christmas 2018
 baking-take-three.tex: Baking Competition Prep 2nd Attempt
 finishing-audiobook.tex:Finishing an Audiobook
 learning-something.tex:Learning Something
+dumb-regrets.tex:Dumb Regrets
