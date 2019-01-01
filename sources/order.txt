@@ -122,3 +122,4 @@ finishing-audiobook.tex:Finishing an Audiobook
 learning-something.tex:Learning Something
 dumb-regrets.tex:Dumb Regrets
 reflections-on-readings-holy-family-c.tex:Reflections on Today's Gospel
+ending-18.tex:Ending 2018
