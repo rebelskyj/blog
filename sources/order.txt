@@ -128,3 +128,4 @@ bus-rides.tex:Bus Rides
 boiling-water.tex:Boiling Water
 making-pizza.tex:Making Pizza
 first-meet.tex:First Meet
+reflections-on-readings-epiphany-c.tex:Reflections on Today's Gospel
