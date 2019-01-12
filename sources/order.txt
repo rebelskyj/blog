@@ -133,3 +133,4 @@ baking-take-four.tex:Baking Competition Prep 4th Attempt
 trouble-with-double.tex:Trouble With Double
 commando.tex:Commando Review
 tortilla-recipe.tex:Tortilla Recipe
+timelapse.tex:Timelapse
