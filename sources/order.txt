@@ -134,3 +134,4 @@ trouble-with-double.tex:Trouble With Double
 commando.tex:Commando Review
 tortilla-recipe.tex:Tortilla Recipe
 timelapse.tex:Timelapse
+remember-to-breathe.tex:Remember How to Breathe
