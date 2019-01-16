@@ -143,4 +143,6 @@ Commando Review:commando.html:9
 Tortilla Recipe:tortilla-recipe.html:10
 Timelapse:timelapse.html:11
 Remember How to Breathe:remember-to-breathe.html:12
-Questionable Bread:questionable-bread.html:13
+Reflections on Today's Gospel:reflections-on-readings-baptism-c.html:13
+Questionable Bread:questionable-bread.html:14
+Crowded Bus Rides:crowded-bus-rides.html:15
