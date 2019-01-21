@@ -148,4 +148,6 @@ Questionable Bread:questionable-bread.html:14
 Crowded Bus Rides:crowded-bus-rides.html:15
 Fall Behind:fall-behind.html:16
 Sad Reality:sad-reality.html:17
-Diving Update:diving-18-jan:18
+Diving Update:diving-18-jan.hmtl:18
+Diving Update:diving-19-jan.html:19
+Reflections on Today's Gospel:reflections-on-readings-2-ordinary-c.html:20
