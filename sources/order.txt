@@ -145,3 +145,5 @@ diving-19-jan.tex:Diving Update
 reflections-on-readings-2-ordinary-c.tex:Reflections on Today's Gospel
 last-day-of-break.tex:Last Day of Break
 diving-23-jan.tex:Diving Update
+learning-continuo.tex:Learning Continuo
+bus-ride-iii.tex:Another Bus Ride
