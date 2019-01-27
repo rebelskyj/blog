@@ -147,3 +147,4 @@ last-day-of-break.tex:Last Day of Break
 diving-23-jan.tex:Diving Update
 learning-continuo.tex:Learning Continuo
 bus-ride-iii.tex:Another Bus Ride
+motivation.tex:Motivation
