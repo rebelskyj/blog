@@ -148,3 +148,4 @@ diving-23-jan.tex:Diving Update
 learning-continuo.tex:Learning Continuo
 bus-ride-iii.tex:Another Bus Ride
 motivation.tex:Motivation
+reflections-on-readings-3-ordinary-c.tex:Reflections on Today's Gospel
