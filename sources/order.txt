@@ -149,3 +149,6 @@ learning-continuo.tex:Learning Continuo
 bus-ride-iii.tex:Another Bus Ride
 motivation.tex:Motivation
 reflections-on-readings-3-ordinary-c.tex:Reflections on Today's Gospel
+cold-days.tex:Cold Days
+spem-1.tex:Spem 1st Try
+cold-day-reflection.tex:Cold Day Reflection
