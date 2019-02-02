@@ -153,3 +153,4 @@ cold-days.tex:Cold Days
 spem-1.tex:Spem 1st Try
 cold-day-reflection.tex:Cold Day Reflection
 reflection-january-19.tex:Monthly Reflection
+ballad-rules.tex:Ballad Rules
