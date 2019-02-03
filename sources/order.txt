@@ -155,3 +155,4 @@ cold-day-reflection.tex:Cold Day Reflection
 reflection-january-19.tex:Monthly Reflection
 ballad-rules.tex:Ballad Rules
 diving-2-feb.tex:Diving Update
+reflections-on-readings-4-ordinary-c.tex:Reflections on Today's Gospel
