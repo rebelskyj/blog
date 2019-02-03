@@ -164,3 +164,4 @@ Cold Day Reflection:cold-day-reflection.html:30
 Monthly Reflection:reflection-january-19.html:31
 -February
 Ballad Rules:ballad-rules.html:1
+Diving Update:diving-2-feb.html:2
