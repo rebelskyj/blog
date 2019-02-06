@@ -167,3 +167,4 @@ Ballad Rules:ballad-rules.html:1
 Diving Update:diving-2-feb.html:2
 Reflections on Today's Gospel:reflections-on-readings-4-ordinary-c.html:3
 Letter to the Editor:letter-to-the-editor.html:4
+Notes on Counterpoint:notes-on-counterpoint.html:5
