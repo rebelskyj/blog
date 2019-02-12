@@ -163,3 +163,4 @@ poor-choices.tex:Poor Choices
 family-appreciation.tex:Family Appreciation
 diving-9-feb.tex:Diving Update
 reflections-on-readings-5-ordinary-c.tex:Reflections on Today's Gospel
+forgetfulness.tex:Forgetfulness
