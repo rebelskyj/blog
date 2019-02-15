@@ -166,3 +166,4 @@ reflections-on-readings-5-ordinary-c.tex:Reflections on Today's Gospel
 forgetfulness.tex:Forgetfulness
 ballad-update.tex:Ballad Update
 diving-13-feb.tex:Diving Update
+last-practice.tex:Last Practice
