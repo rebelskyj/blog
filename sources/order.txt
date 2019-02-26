@@ -169,3 +169,4 @@ diving-13-feb.tex:Diving Update
 last-practice.tex:Last Practice
 diving-15-feb.tex:Diving Update
 diving-15-feb.tex:Diving Update
+reflections-on-readings-6-ordinary-c.tex:Reflections on Today's Gospel
