@@ -173,3 +173,4 @@ reflections-on-readings-6-ordinary-c.tex:Reflections on Today's Gospel
 missing-days.tex:Missing Days
 metric-prose-1.tex:Metric Prose First Attempt
 research.tex:Research
+placeholder.tex:Placeholder
