@@ -9,6 +9,8 @@ with open("calendar/order.txt") as order:
     line = line.strip()
     if(line[0] == "*"):
       year = int(line[1:])
+      content += tmp
+      tmp = ""
       content += "<h2>%d</h2>\n" % year
     elif(line[0] == "-"):
       month = months[line[1:]]
