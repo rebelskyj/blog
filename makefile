@@ -1,4 +1,4 @@
-REVERSE := tac
+REVERSE := tail -r
 posts = $(patsubst sources/%.tex,docs/%.html,$(wildcard sources/*.tex))
 snippets = $(patsubst sources/%.tex,sources/base/%.html,$(wildcard sources/*.tex))
 auto : docs/index.html calendar
