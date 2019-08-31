@@ -70,13 +70,13 @@ FILEYEAR=$(tail -r calendar/order.txt | grep -m1 "^*" | sed "s/^*//")
 if [ $YEAR != $FILEYEAR ]
 then
   echo "Appending $(tput bold)*$YEAR$(tput sgr0) to $(tput bold)calendar/order.txt$(tput sgr0)"
-  echo "*$YEAR" >> calendar.order.txt
+  echo "*$YEAR" >> calendar/order.txt
 fi
 
 if [ $MONTH != $FILEMONTH ]
 then
   echo "Appending $(tput bold)-$MONTH$(tput sgr0) to $(tput bold)calendar/order.txt$(tput sgr0)"
-  echo "*$MONTH" >> calendar.order.txt
+  echo "*$MONTH" >> calendar/order.txt
 fi
 
 echo Appending "$(tput bold)$TITLE:$(echo $FN | sed "s/tex/html/g"):$DAY$(tput sgr0)" to "$(tput bold)calendar/order.txt$(tput sgr0)"

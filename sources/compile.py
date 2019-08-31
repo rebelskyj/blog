@@ -1,7 +1,7 @@
 from sys import argv
 	# pandoc -s -o $@ $< -M "pagetitle=$$(grep '$(<F)' sources/order.txt | sed 's/.*://')" --template=sources/template.html
 
-filename = argv[1].replace(".html", "")
+filename = argv[1].replace(".html", "").replace("docs/","")
 with open("sources/order.txt", "r") as order:
   lines = order.readlines()
 
@@ -19,7 +19,7 @@ def get_index(lines, index):
     return ['', '']
 
 source = "sources/{}.tex".format(filename)
-dest = "{}.html".format(filename)
+dest = "docs/{}.html".format(filename)
 name = lines[index].split(":")[1]
 prevurl, prev = get_index(lines, index-1)
 nexturl, next = get_index(lines, index+1)
