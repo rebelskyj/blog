@@ -2,8 +2,8 @@ REVERSE := tac
 posts = $(patsubst sources/%.tex,docs/%.html,$(wildcard sources/*.tex))
 snippets = $(patsubst sources/%.tex,sources/base/%.html,$(wildcard sources/*.tex))
 auto : docs/index.html calendar
-	python sources/compile.py $$(tail -n1 sources/order.txt | sed 's/\(.*\).tex:.*/\1.html/g') | bash
-	python sources/compile.py $$(tail -n2 sources/order.txt | head -n1 | sed 's/\(.*\).tex:.*/\1.html/g') | bash
+	python sources/compile.py $$(tail -n1 sources/order.txt | sed 's/\(.*\).tex:.*/docs\/\1.html/g') | bash
+	python sources/compile.py $$(tail -n2 sources/order.txt | head -n1 | sed 's/\(.*\).tex:.*/docs\/\1.html/g') | bash
 all : $(posts) $(snippets) docs/index.html docs/calendar.html docs/calendar_base.html
 calendar: docs/calendar.html docs/calendar_base.html
 docs/calendar.html : calendar/order.txt calendar/calendar.md
