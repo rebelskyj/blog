@@ -1,0 +1,1 @@
+	# pandoc -s -o docs/index.html $$(${REVERSE} sources/order.txt | sed 's-\(.*\).tex:.*-sources/base/\1.html-g') -M pagetitle=Home --template=sources/template.html --css pandoc.css

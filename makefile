@@ -12,7 +12,9 @@ docs/calendar_base.html : calendar/order.txt calendar/calendar.md
 	calendar/compile_base.sh
 docs/index.html : $(snippets)
 	python sources/fix_order.py
-	pandoc -s -o index.html $$(${REVERSE} sources/order.txt | sed 's/\(.*\).tex:.*/sources\/base\/\1.html/g') -M pagetitle=Home --template=sources/template.html --css pandoc.css
+	${REVERSE} sources/order.txt | sed 's-\(.*\).tex:.*-sources/base/\1.html-g' | python make_index.py
+	rm docs/index.html
+	ln -s docs/index0.html docs/index.html
 
 sources/base/%.html : sources/%.tex
 	pandoc -o $@ $<
