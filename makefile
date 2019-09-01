@@ -10,10 +10,8 @@ docs/calendar.html : calendar/order.txt calendar/calendar.md
 	calendar/compile.sh
 docs/calendar_base.html : calendar/order.txt calendar/calendar.md
 	calendar/compile_base.sh
-docs/index.html : $(snippets)
-	python sources/fix_order.py
-	${REVERSE} sources/order.txt | sed 's-\(.*\).tex:.*-sources/base/\1.html-g' | python make_index.py
-	cp docs/index0.html docs/index.html
+docs/index.html : $(snippets) make_index.py
+	python sources/fix_order.py && ${REVERSE} sources/order.txt | sed 's-\(.*\).tex:.*-sources/base/\1.html-g' | python make_index.py && cp docs/index0.html docs/index.html
 
 sources/base/%.html : sources/%.tex
 	pandoc -o $@ $<
