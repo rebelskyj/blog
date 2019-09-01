@@ -4,7 +4,7 @@ from math import ceil
 with open("index_base.html", "r") as f:
     template = f.read()
 
-def write_file(sources, num, prev, next):
+def write_file(sources, num, next, prev):
     content = []
     nav_links = ""
     for i, source in enumerate(sources):
@@ -36,4 +36,4 @@ for i, line in enumerate(content):
 
 if(len(lines) > 0):
     num = int(ceil(i/10))
-    write_file(sources = lines, num = num, prev = False, next = True)
+    write_file(sources = lines, num = num, prev = True, next = False)
