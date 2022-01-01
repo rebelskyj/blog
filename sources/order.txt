@@ -175,3 +175,4 @@ metric-prose-1.tex:Metric Prose First Attempt
 research.tex:Research
 placeholder.tex:Placeholder
 still-behind.tex:Still Behind
+restarting.tex:Restarting
