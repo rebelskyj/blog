@@ -30,7 +30,7 @@ for i, line in enumerate(content):
     lines.append(line.rstrip())
     if((i + 1) % 10 == 0):
         args = {}
-        num = i/10
+        num = i//10
         write_file(sources = lines, num = num, prev = num != 0, next = i != len(content))
         lines = []
 
