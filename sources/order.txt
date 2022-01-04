@@ -177,3 +177,4 @@ placeholder.tex:Placeholder
 still-behind.tex:Still Behind
 restarting.tex:Restarting
 reflections-on-readings-epiphany-c-2022.tex:Reflections on Readings
+screaming-into-void.tex:Screaming Into the Void, or Why I'm (Still) Writing This
