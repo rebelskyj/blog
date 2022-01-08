@@ -181,3 +181,4 @@ screaming-into-void.tex:Screaming Into the Void, or Why I'm (Still) Writing This
 ice-skating.tex:Ice Skating
 candied-orange.tex:Candied Orange (Peel)
 learning-racket.tex:Learning Racket
+missed-day.tex:Missed Day

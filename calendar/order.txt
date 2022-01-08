@@ -193,3 +193,4 @@ Screaming Into the Void, or Why I'm (Still) Writing This:screaming-into-void.htm
 Ice Skating:ice-skating.html:04
 Candied Orange (Peel):candied-orange.html:05
 Learning Racket:learning-racket.html:06
+Missed Day:missed-day.html:7
