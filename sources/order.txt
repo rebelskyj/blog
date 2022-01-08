@@ -182,3 +182,4 @@ ice-skating.tex:Ice Skating
 candied-orange.tex:Candied Orange (Peel)
 learning-racket.tex:Learning Racket
 missed-day.tex:Missed Day
+crochet.tex:Crochet
