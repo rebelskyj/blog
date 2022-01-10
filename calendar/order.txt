@@ -195,3 +195,4 @@ Candied Orange (Peel):candied-orange.html:05
 Learning Racket:learning-racket.html:06
 Missed Day:missed-day.html:7
 Crochet:crochet.html:08
+Reflections on Today's Gospel:reflections-on-readings-baptism-c-2022.html:09

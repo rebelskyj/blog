@@ -183,3 +183,4 @@ candied-orange.tex:Candied Orange (Peel)
 learning-racket.tex:Learning Racket
 missed-day.tex:Missed Day
 crochet.tex:Crochet
+reflections-on-readings-baptism-c-2022.tex:Reflections on Today's Gospel
