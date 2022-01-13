@@ -15,4 +15,4 @@ cal = map(lambda row: "    <tr>\n%s\n    </tr>" % "\n".join(
   )
 ), cal)
 
-print month_temp.replace("{month}", month).replace("{body}", "\n".join(cal))
+print(month_temp.replace("{month}", month).replace("{body}", "\n".join(cal)))

@@ -1,34 +1,61 @@
-from sys import argv
-	# pandoc -s -o $@ $< -M "pagetitle=$$(grep '$(<F)' sources/order.txt | sed 's/.*://')" --template=sources/template.html
+from sys import argv, exit, stderr
+import subprocess
+import shlex
 
-filename = argv[1].replace(".html", "").replace("docs/","")
-with open("sources/order.txt", "r") as order:
-  lines = order.readlines()
+def main():
+    if argv[1].startswith("docs/"):
+        filename = argv[1].partition("docs/")[2].replace(".html", "")
+    else:
+        # We've been given a line from sources/order.txt
+        filename = argv[1].split(":")[0].replace(".tex", "")
+    with open("sources/order.txt") as order:
+        prev = ":"
+        lines = iter(order)
+        for i, line in enumerate(lines):
+            if line.startswith(filename):
+                break
+            prev = line
+        else:
+            print(f"Couldn't find `{filename}` in sources/order.txt")
+            exit(1)
+        try:
+            next_ = next(lines)
+        except StopIteration:
+            next_ = ":"
 
-for i, line in enumerate(lines):
-  if line.find(filename) != -1:
-    index = i
-    break
+    source = f"sources/{filename}.tex"
+    dest = f"docs/{filename}.html"
 
-def get_index(lines, index):
-  if(index < 0):
-    return ['', '']
-  try:
-    return lines[index].split(":")
-  except:
-    return ['', '']
+    name = line.split(":")[1]
+    prev_url, prev_name = prev.split(":")
+    next_url, next_name = next_.split(":")
+    next_url = next_url.replace(".tex", ".html")
+    prev_url = prev_url.replace(".tex", ".html")
 
-source = "sources/{}.tex".format(filename)
-dest = "docs/{}.html".format(filename)
-name = lines[index].split(":")[1]
-prevurl, prev = get_index(lines, index-1)
-nexturl, next = get_index(lines, index+1)
-nexturl = nexturl.replace(".tex", ".html")
-prevurl = prevurl.replace(".tex", ".html")
+    options = {
+        "next": next_name,
+        "prev": prev_name,
+        "nexturl": next_url,
+        "prevurl": prev_url,
+        "pagetitle": name
+    }
 
-options = {"next": next, "prev": prev, "nexturl": nexturl, "prevurl": prevurl, "pagetitle": name}
-options_string = filter(lambda x: options[x] != "", options.keys())
-options_string = map(lambda x: '-M "{}={}"'.format(x.strip(), options[x].strip()), options_string)
-options_string = " ".join(list(options_string))
+    command = [
+        "pandoc",
+        source,
+        "-s", "-o", dest,
+        "--template=sources/template.html",
+        "--css", "pandoc.css"
+    ]
 
-print('pandoc -s -o {} {} --template=sources/template.html {} --css pandoc.css'.format(dest, source, options_string))
+    for key, val in options.items():
+        key, val = key.strip(), val.strip()
+        if val:
+            command += ["-M", f"{key}={val}"]
+
+    print(f"Running `{shlex.join(command)}`")
+    subprocess.run(command)
+
+
+if __name__ == "__main__":
+    main()
