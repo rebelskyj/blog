@@ -1,2 +1,2 @@
 #!/bin/bash
-python calendar/cal.py "$(cal $1 $2)"
+python3 calendar/cal.py "$(cal $1 $2)"

@@ -7,13 +7,13 @@
 .cal-month a {
   color: blue;
 }
-.cal-month a div{
+.cal-month td a div{
   display: none;
   background-color: #EEE;
   border-radius: 5px;
   border: 1px solid #333;
 }
-.cal-month a:hover div{
+.cal-month td:hover a div{
   display: block;
   position: absolute;
 }

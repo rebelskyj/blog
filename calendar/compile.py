@@ -7,15 +7,15 @@ with open("calendar/order.txt") as order:
   tmp = ""
   for line in order:
     line = line.strip()
-    if(line[0] == "*"):
+    if line[0] == "*":
       year = int(line[1:])
       content += tmp
       tmp = ""
       content += "<h2>%d</h2>\n" % year
-    elif(line[0] == "-"):
+    elif line[0] == "-":
       month = months[line[1:]]
       content += tmp
-      tmp = subprocess.check_output(["calendar/mkcal.sh", str(month), str(year)])
+      tmp = subprocess.check_output(["calendar/mkcal.sh", str(month), str(year)]).decode()
     else:
       title, url, day = line.split(":")
       day = int(day)
