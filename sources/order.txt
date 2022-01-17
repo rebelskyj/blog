@@ -190,3 +190,4 @@ thinking-about-life.tex:Thinking About Life
 walking-in-winter.tex:Walking in Winter
 listening-times.tex:Listening Times
 toffee.tex:Toffee
+reflections-on-readings-2-ordinary-c-2022.tex:Reflections on Today's Readings
