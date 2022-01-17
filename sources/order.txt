@@ -191,3 +191,4 @@ walking-in-winter.tex:Walking in Winter
 listening-times.tex:Listening Times
 toffee.tex:Toffee
 reflections-on-readings-2-ordinary-c-2022.tex:Reflections on Today's Readings
+creative-hobbies.tex:Creative Hobbies
