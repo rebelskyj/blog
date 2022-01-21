@@ -206,3 +206,4 @@ Reflections on Today's Readings:reflections-on-readings-2-ordinary-c-2022.html:1
 Creative Hobbies:creative-hobbies.html:17
 Drawing:drawing.html:18
 Living Schedule(d):living-scheduled.html:19
+Switching Browsers:switching-browsers.html:20
