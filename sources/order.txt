@@ -195,3 +195,4 @@ creative-hobbies.tex:Creative Hobbies
 drawing.tex:Drawing
 living-scheduled.tex:Living Schedule(d)
 switching-browsers.tex:Switching Browsers
+losing-marbles.tex:Losing My Marbles
