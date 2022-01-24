@@ -197,3 +197,4 @@ living-scheduled.tex:Living Schedule(d)
 switching-browsers.tex:Switching Browsers
 losing-marbles.tex:Losing My Marbles
 on-villanelles.tex:On Villanelles
+reflections-on-readings-3-ordinary-c-2022.tex:Reflections on Today's Gospel
