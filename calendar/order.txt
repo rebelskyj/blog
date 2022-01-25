@@ -210,3 +210,4 @@ Switching Browsers:switching-browsers.html:20
 Losing My Marbles:losing-marbles.html:21
 On Villanelles:on-villanelles.html:22
 Reflections on Today's Gospel:reflections-on-readings-3-ordinary-c-2022.html:23
+Bad Days:bad-days.html:24
