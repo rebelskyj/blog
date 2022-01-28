@@ -201,3 +201,4 @@ reflections-on-readings-3-ordinary-c-2022.tex:Reflections on Today's Gospel
 bad-days.tex:Bad Days
 first-day-of-class-S2022.tex:First Day of Classes
 aleatoric-lite.tex:Aleatoric Lite Music
+spoons-and-spell-slots.tex:On Spoons and Spell Slots
