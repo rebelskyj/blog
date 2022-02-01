@@ -203,3 +203,4 @@ first-day-of-class-S2022.tex:First Day of Classes
 aleatoric-lite.tex:Aleatoric Lite Music
 spoons-and-spell-slots.tex:On Spoons and Spell Slots
 reflections-on-readings-4-ordinary-c-2022.tex:Reflections on Today's Readings
+reflection-january-22.tex:Monthly Reflection
