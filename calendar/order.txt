@@ -216,3 +216,5 @@ Aleatoric Lite Music:aleatoric-lite.html:26
 On Spoons and Spell Slots:spoons-and-spell-slots.html:28
 Reflections on Today's Readings:reflections-on-readings-4-ordinary-c-2022.html:30
 Monthly Reflection:reflection-january-22.html:31
+*February
+Celtic Crochet:celtic-crochet.html:01
