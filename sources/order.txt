@@ -205,3 +205,4 @@ spoons-and-spell-slots.tex:On Spoons and Spell Slots
 reflections-on-readings-4-ordinary-c-2022.tex:Reflections on Today's Readings
 reflection-january-22.tex:Monthly Reflection
 celtic-crochet.tex:Celtic Crochet
+planning-to-fail.tex:Planning to Fail
