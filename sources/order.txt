@@ -208,3 +208,4 @@ celtic-crochet.tex:Celtic Crochet
 planning-to-fail.tex:Planning to Fail
 making-a-box.tex:On Making a High Voltage Box
 dungeons-dragons.tex:Dungeons and Dragons Again
+science-bowl.tex:Science Bowl
