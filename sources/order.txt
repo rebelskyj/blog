@@ -212,3 +212,4 @@ science-bowl.tex:Science Bowl
 reflections-on-readings-5-ordinary-c-22.tex:Reflections on Today's Gospel
 reading.tex:On Reading
 writing.tex:On Writing
+writing-2.tex:On Writing (Continued)
