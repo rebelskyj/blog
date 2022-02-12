@@ -214,3 +214,4 @@ reading.tex:On Reading
 writing.tex:On Writing
 writing-2.tex:On Writing (Continued)
 ions.tex:Ion Experiment Part 1
+meta-schedules.tex:Meta-Schedules
