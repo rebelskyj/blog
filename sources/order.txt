@@ -217,3 +217,4 @@ ions.tex:Ion Experiment Part 1
 meta-schedules.tex:Meta-Schedules
 writers-block-2.tex:More Writer's Block
 reflections-on-readings-6-ordinary-c-22.tex:Reflections on Today's Gospel
+valentines-2022.tex:Valentine's Day
