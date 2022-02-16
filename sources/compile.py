@@ -12,7 +12,7 @@ def main():
         prev = ":"
         lines = iter(order)
         for i, line in enumerate(lines):
-            if line.startswith(filename):
+            if line.startswith(f"{filename}.tex:"):
                 break
             prev = line
         else:
