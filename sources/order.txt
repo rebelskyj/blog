@@ -221,3 +221,4 @@ valentines-2022.tex:Valentine's Day
 valentines-22.tex:Valentine's Day
 valentines-2022.tex:Valentine's Day
 valentines-2022.tex:Valentine's Day
+novel-update-1.tex:Novel Update
