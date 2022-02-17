@@ -219,3 +219,4 @@ writers-block-2.tex:More Writer's Block
 reflections-on-readings-6-ordinary-c-22.tex:Reflections on Today's Gospel
 valentines-2022.tex:Valentine's Day
 novel-update-1.tex:Novel Update
+formal-language.tex:On Formal Language, or Why Experts are Bad at Explaining
