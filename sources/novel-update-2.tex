@@ -1,0 +1,43 @@
+\documentclass[12pt]{article}[titlepage]
+\newcommand{\say}[1]{``#1''}
+\newcommand{\nsay}[1]{`#1'}
+\usepackage{endnotes}
+\newcommand{\1}{\={a}}
+\newcommand{\2}{\={e}}
+\newcommand{\3}{\={\i}}
+\newcommand{\4}{\=o}
+\newcommand{\5}{\=u}
+\newcommand{\6}{\={A}}
+\newcommand{\B}{\backslash{}}
+\renewcommand{\,}{\textsuperscript{,}}
+\usepackage{setspace}
+\usepackage{tipa}
+\usepackage{hyperref}
+\begin{document}
+\doublespacing
+\section{\href{novel-update-2.html}{Novel Update}}
+First Published: 2022 February 18
+
+\section{Draft 1}
+As I promised, I will be using my novel updates as a way of generating content when I'm mentally exhausted from writing a novel.
+Today I wrote almost 3000 words, not including the code I wrote so I knew what words to write.
+
+If that sounds a little strange, I guess I should explain.
+I don't remember if I have mentioned that the book I'm writing is a LitRPG, which stands for Literary RPG\footnote{RPG stands for nothing here because its not a game}
+More or less, imagine a roleplaying game but instead of playing, you're reading.
+That is to say, characters have statistics and can train and specifically watch numbers go up when they do.
+As a result, readers of this genre tend to be far more accepting of weird contrivances that are due to math.
+
+I decided that I wanted there to be some way that hard spells are more difficult than easy ones.
+What I decided on is layers of connections between the points which make up the spell.
+The first level is fairly simple, energy flows from each point to its neighboring point.
+The second level has energy flowing from each point to the square of it mod the number of points.
+So, the first point flows to itself, the second to the fourth, etc.
+
+Since the spell I had him learn has\footnote{completely arbitrarily} 25 nodes, the sixth piece connects to the 25th slot and the 11th slot, since those add to 36.
+The eighth connects to the twenty fifth one twice, since 64>25+25.
+Somehow I wrote almost 3000 words of a character learning this himself, and I really hope that my alpha reader doesn't find it too boring.
+
+That's about all the writing I have space for now, since it's already past my bedtime and I completely lost track of time writing.
+
+\end{document}
