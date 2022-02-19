@@ -222,3 +222,4 @@ novel-update-1.tex:Novel Update
 formal-language.tex:On Formal Language, or Why Experts are Bad at Explaining
 scholastic-metaphysics-1.tex:Scholastic Metaphysics 1, An Introduction
 novel-update-2.tex:Novel Update
+novel-update-3.tex:Novel Update

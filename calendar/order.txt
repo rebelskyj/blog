@@ -235,3 +235,4 @@ Novel Update:novel-update-1.html:15
 On Formal Language, or Why Experts are Bad at Explaining:formal-language.html:16
 Scholastic Metaphysics 1, An Introduction:scholastic-metaphysics-1.html:17
 Novel Update:novel-update-2.html:18
+Novel Update:novel-update-3.html:19
