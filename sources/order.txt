@@ -225,3 +225,4 @@ novel-update-2.tex:Novel Update
 novel-update-3.tex:Novel Update
 reflections-on-readings-7-ordinary-c-22.tex:Reflections on Today's Gospel
 reflections-on-readings-7-ordinary-c-22.tex:Reflections on Today's Readings
+reflections-on-readings-7-ordinary-c-22.tex:Reflections on Today's Gospel
