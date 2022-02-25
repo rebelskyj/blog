@@ -227,3 +227,4 @@ reflections-on-readings-7-ordinary-c-22.tex:Reflections on Today's Gospel
 she-loves-me.tex:She Loves Me Review
 reading-2.tex:On Reading Continued
 mind-drains.tex:Mind Drains
+whoops-2.tex:Whoops
