@@ -229,3 +229,4 @@ reading-2.tex:On Reading Continued
 mind-drains.tex:Mind Drains
 whoops-2.tex:Whoops
 scholastic-metaphysics-2.tex:Scholastic Metaphysics Chapter 1
+writers-block-3.tex:Even More Writer's Block
