@@ -233,3 +233,4 @@ writers-block-3.tex:Even More Writer's Block
 reflections-on-readings-8-ordinary-c-22.tex:Reflections on Today's Gospel
 chocolate-cake.tex:Chocolate Cake
 reflection-february-22.tex:Monthly Reflection
+fasting.tex:On Fasting
