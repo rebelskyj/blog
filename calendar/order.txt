@@ -253,3 +253,6 @@ On Fasting:fasting.html:02
 *2022
 *March
 Scholastic Metaphysics Chapter 2:scholastic-metaphysics-3.html:03
+*2022
+*March
+Quick Post:quick-post.html:04
