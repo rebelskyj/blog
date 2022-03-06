@@ -236,3 +236,4 @@ reflection-february-22.tex:Monthly Reflection
 fasting.tex:On Fasting
 scholastic-metaphysics-3.tex:Scholastic Metaphysics Chapter 2
 quick-post.tex:Quick Post
+bad-ideas.tex:Bad Ideas
