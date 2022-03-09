@@ -238,3 +238,5 @@ scholastic-metaphysics-3.tex:Scholastic Metaphysics Chapter 2
 quick-post.tex:Quick Post
 bad-ideas.tex:Bad Ideas
 reflections-on-readings-1-lent-c-2022.tex:Reflections on Today's Gospel
+open-mic.tex:Open Mic
+sweeney.tex:Sweeney Todd
