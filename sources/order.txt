@@ -243,3 +243,4 @@ sweeney.tex:Sweeney Todd
 lock-ins-0.tex:Lock Ins
 spring-concert.tex:Concert
 spring-concert.tex:Concert
+grad-recruiting.tex:Graduate Recruiting
