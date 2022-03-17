@@ -247,3 +247,4 @@ grad-recruiting.tex:Graduate Recruiting
 reflections-on-readings-2-lent-2022.tex:Reflections on Today's Gospel
 novel-update-4.tex:Novel Update
 pathfinder-0.tex:Pathfinder Session 0
+pathfinder-0-1.tex:Pathfinder Character Backstory

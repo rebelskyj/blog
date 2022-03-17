@@ -261,3 +261,4 @@ Graduate Recruiting:grad-recruiting.html:11
 Reflections on Today's Gospel:reflections-on-readings-2-lent-2022.html:13
 Novel Update:novel-update-4.html:14
 Pathfinder Session 0:pathfinder-0.html:15
+Pathfinder Character Backstory:pathfinder-0-1.html:16
