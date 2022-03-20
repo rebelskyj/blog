@@ -263,3 +263,4 @@ Novel Update:novel-update-4.html:14
 Pathfinder Session 0:pathfinder-0.html:15
 Pathfinder Character Backstory:pathfinder-0-1.html:16
 Scholastic Metaphysics Chapter 3:scholastic-metaphysics-4.html:17
+Taking a Break:taking-a-break.html:19
