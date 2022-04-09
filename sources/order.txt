@@ -250,5 +250,3 @@ pathfinder-0-1.tex:Pathfinder Character Backstory
 scholastic-metaphysics-4.tex:Scholastic Metaphysics Chapter 3
 taking-a-break.tex:Taking a Break
 restarting-again.tex:Restarting (Again)
-restarting-again.tex:Restarting (Again)
-restarting-again.tex:Restarting (Again)
