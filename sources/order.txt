@@ -252,3 +252,4 @@ taking-a-break.tex:Taking a Break
 restarting-again.tex:Restarting (Again)
 whoops-3.tex:Whoops
 reflections-on-readings-palm-c-2022.tex:Reflections on Today's Gospel
+reflection-march-2022.tex:Monthy Reflection
