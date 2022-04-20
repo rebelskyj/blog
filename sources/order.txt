@@ -257,3 +257,4 @@ poetry-forms-1.tex:Writing through Poetry Forms
 poetry-forms-2.tex:Writing through Poetry Forms
 poetry-forms-3.tex:Writing through Poetry Forms
 illness.tex:On Illness
+crochet-1.tex:On Crocheting Continued
