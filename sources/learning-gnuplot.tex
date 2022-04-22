@@ -1,0 +1,68 @@
+o\documentclass[12pt]{article}[titlepage]
+\newcommand{\say}[1]{``#1''}
+\newcommand{\nsay}[1]{`#1'}
+\usepackage{endnotes}
+\newcommand{\1}{\={a}}
+\newcommand{\2}{\={e}}
+\newcommand{\3}{\={\i}}
+\newcommand{\4}{\=o}
+\newcommand{\5}{\=u}
+\newcommand{\6}{\={A}}
+\newcommand{\B}{\backslash{}}
+\renewcommand{\,}{\textsuperscript{,}}
+\usepackage{setspace}
+\usepackage{tipa}
+\usepackage{hyperref}
+\begin{document}
+\doublespacing
+\section{\href{learning-gnuplot.html}{Learning GNUPlot}}
+First Published: 2022 April 21
+
+
+\section{Draft 1}
+As should be fairly unsurprising to most of my readers, in my research I\footnote{will} need to graph a lot of things.
+Historically, I've graphed in either Excel\footnote{natively} or Python\footnote{using matplotlib.pyplot}, but I'm not really happy with either.
+It's been suggested to me that I should learn Igor, which I feel notably unhappy about.
+
+\say{Why}, you might ask, \say{do you have strong feelings about graphing?
+More to the point, what strong feelings do you have?}
+you might continue.
+
+I have strong feelings because I think things should be done well.
+Python fails for graphing in my opinion because it takes far too long for me to load my data, and I don't love the way that the graphs look automatically.\footnote{though it can export to a format that makes the figure text readable in my LaTeX documents.}
+Excel is worse on that front, and is awkward to manipulate graphs in.
+Excel is also bad for a major reason I mislike Igor: neither is FOSS\footnote{Free and Open Source Software.}
+
+If as I scientist I believe that information calls to be shared\footnote{and if I don't, why am I doing research?}, then I fail to see how I can justify using proprietary software any more than is utterly essential.
+Now, I admit some amount of hypocrisy here.
+I do not run on Linux or another FOS operating system, but I try hard to make sure all the software I use is runnable on those systems if possible.
+And, while I accept that there are circumstances where closed access programs may be essential for research,\footnote{though I can't think of many outside of government-enforced secrecy, which is its own bag of worms} plotting data should not be one of them.
+
+Of course, I also mislike Igor for other reasons, mostly dealing with the complete dearth of help available for it on the internet, its complete lack of user friendliness, and its absolutely baffling choices to be different than every other system I've worked with in handling x and y data.
+Is it powerful?
+I have to assume so, though I have no intention of learning how.
+
+So, 118 words later, time to finally get to the title of this post.
+Yesterday I saw a groupmate working on GNUPlot, and realized that it could likely solve a lot of my issues.
+It's super fun and easy, if I want to plot sin of x, for instance, I just say \say{plot sin(x)} and I get a pretty little graph.
+As I learned fairly quickly, you can make really fun arbitrary graphs, for instance using the commands:
+\begin{itemize}
+\item set xrange [-1:1]\footnote{this limits the plotting range so you can actually see the pretty things}
+\item plot for [i=1:30] x**i lw i/2
+\end{itemize}
+This plots 30 lines of increasing thickness.
+Why did I do this, you may ask.
+
+There's an argument for color where setting the color to -1 results in black.
+I was curious how many colors there were, so wanted to plot an arbitrary number of lines.
+Then I quickly got distracted after learning there were 8 and played around more.
+
+Now, that isn't to say that GNUPlot is without its issues.
+
+One thing that Python and Excel do really well is allow you to edit and manipulate your data.
+GNUPlot doesn't support doing that.
+However, when I need to manipulate my data, I'm probably going to be doing so inside of the spectral fitting software we use,\footnote{which you can download the source for} rather than in either program, which makes that less of a concern.
+I still don't know how to export the graph\footnote{an immediate google search seems to suggest the use of it with LaTeX is common and well-accepted, which is nice.} or plot an existing piece of data, but those both seem simple enough, and the documentation available online is really incredibly useful and prevalent.
+
+So, moving forward I hope to switch over to GNUPlot for my plotting needs.
+\end{document}
