@@ -4,8 +4,8 @@ DOCS := $(patsubst sources/%.tex,docs/%.html,$(TEX_FILES))
 SNIPPETS := $(patsubst sources/%.tex,sources/base/%.html,$(TEX_FILES))
 
 all : $(DOCS) $(SNIPPETS) docs/index.html calendar
-	python3 sources/compile.py $$(head -n1 sources/order.txt)
-	python3 sources/compile.py $$(head -n2 sources/order.txt | tail -n1)
+	python3 sources/compile.py $$(tail -n1 sources/order.txt)
+	python3 sources/compile.py $$(tail -n2 sources/order.txt | head -n1)
 calendar: docs/calendar.html docs/calendar_base.html
 
 docs/calendar.html : calendar/order.txt calendar/calendar.md
