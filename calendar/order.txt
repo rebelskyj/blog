@@ -274,3 +274,4 @@ Writing through Poetry Forms:poetry-forms-2.html:14
 Writing through Poetry Forms:poetry-forms-3.html:15
 On Illness:illness.html:18
 On Crocheting Continued:crochet-1.html:20
+Learning GNUPlot:learning-gnuplot.html:21

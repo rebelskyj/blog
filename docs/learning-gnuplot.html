@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Learning GNUPlot</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <link rel="stylesheet" href="pandoc.css" />
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<center>
+<a href="index.html"><h2>Musings</h2></a>
+<h4>I'm just copying my father</h4>
+<h5><a href="index.html">Home</a></h5>
+</center>
+<p>o</p>
+<h1 id="learning-gnuplot"><a href="learning-gnuplot.html">Learning GNUPlot</a></h1>
+<p>First Published: 2022 April 21</p>
+<h1 id="draft-1">Draft 1</h1>
+<p>As should be fairly unsurprising to most of my readers, in my research I<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> need to graph a lot of things. Historically, I’ve graphed in either Excel<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> or Python<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a>, but I’m not really happy with either. It’s been suggested to me that I should learn Igor, which I feel notably unhappy about.</p>
+<p>“Why”, you might ask, “do you have strong feelings about graphing? More to the point, what strong feelings do you have?” you might continue.</p>
+<p>I have strong feelings because I think things should be done well. Python fails for graphing in my opinion because it takes far too long for me to load my data, and I don’t love the way that the graphs look automatically.<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a> Excel is worse on that front, and is awkward to manipulate graphs in. Excel is also bad for a major reason I mislike Igor: neither is FOSS<a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a></p>
+<p>If as I scientist I believe that information calls to be shared<a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a>, then I fail to see how I can justify using proprietary software any more than is utterly essential. Now, I admit some amount of hypocrisy here. I do not run on Linux or another FOS operating system, but I try hard to make sure all the software I use is runnable on those systems if possible. And, while I accept that there are circumstances where closed access programs may be essential for research,<a href="#fn7" class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a> plotting data should not be one of them.</p>
+<p>Of course, I also mislike Igor for other reasons, mostly dealing with the complete dearth of help available for it on the internet, its complete lack of user friendliness, and its absolutely baffling choices to be different than every other system I’ve worked with in handling x and y data. Is it powerful? I have to assume so, though I have no intention of learning how.</p>
+<p>So, 118 words later, time to finally get to the title of this post. Yesterday I saw a groupmate working on GNUPlot, and realized that it could likely solve a lot of my issues. It’s super fun and easy, if I want to plot sin of x, for instance, I just say “plot sin(x)” and I get a pretty little graph. As I learned fairly quickly, you can make really fun arbitrary graphs, for instance using the commands:</p>
+<ul>
+<li><p>set xrange [-1:1]<a href="#fn8" class="footnote-ref" id="fnref8" role="doc-noteref"><sup>8</sup></a></p></li>
+<li><p>plot for [i=1:30] x**i lw i/2</p></li>
+</ul>
+<p>This plots 30 lines of increasing thickness. Why did I do this, you may ask.</p>
+<p>There’s an argument for color where setting the color to -1 results in black. I was curious how many colors there were, so wanted to plot an arbitrary number of lines. Then I quickly got distracted after learning there were 8 and played around more.</p>
+<p>Now, that isn’t to say that GNUPlot is without its issues.</p>
+<p>One thing that Python and Excel do really well is allow you to edit and manipulate your data. GNUPlot doesn’t support doing that. However, when I need to manipulate my data, I’m probably going to be doing so inside of the spectral fitting software we use,<a href="#fn9" class="footnote-ref" id="fnref9" role="doc-noteref"><sup>9</sup></a> rather than in either program, which makes that less of a concern. I still don’t know how to export the graph<a href="#fn10" class="footnote-ref" id="fnref10" role="doc-noteref"><sup>10</sup></a> or plot an existing piece of data, but those both seem simple enough, and the documentation available online is really incredibly useful and prevalent.</p>
+<p>So, moving forward I hope to switch over to GNUPlot for my plotting needs.</p>
+<section class="footnotes" role="doc-endnotes">
+<hr />
+<ol>
+<li id="fn1" role="doc-endnote"><p>will<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2" role="doc-endnote"><p>natively<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3" role="doc-endnote"><p>using matplotlib.pyplot<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4" role="doc-endnote"><p>though it can export to a format that makes the figure text readable in my LaTeX documents.<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn5" role="doc-endnote"><p>Free and Open Source Software.<a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn6" role="doc-endnote"><p>and if I don’t, why am I doing research?<a href="#fnref6" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn7" role="doc-endnote"><p>though I can’t think of many outside of government-enforced secrecy, which is its own bag of worms<a href="#fnref7" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn8" role="doc-endnote"><p>this limits the plotting range so you can actually see the pretty things<a href="#fnref8" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn9" role="doc-endnote"><p>which you can download the source for<a href="#fnref9" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn10" role="doc-endnote"><p>an immediate google search seems to suggest the use of it with LaTeX is common and well-accepted, which is nice.<a href="#fnref10" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
+<div class = "nav-links">
+<a class="nav-previous" href="crochet-1.html">On Crocheting Continued</a>
+</div>
+<iframe src="calendar_base.html"></iframe>
+</body>
+</html>
