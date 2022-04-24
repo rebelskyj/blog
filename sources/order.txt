@@ -259,3 +259,4 @@ poetry-forms-3.tex:Writing through Poetry Forms
 illness.tex:On Illness
 crochet-1.tex:On Crocheting Continued
 learning-gnuplot.tex:Learning GNUPlot
+novel-update-5.tex:Novel Update
