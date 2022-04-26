@@ -261,3 +261,4 @@ crochet-1.tex:On Crocheting Continued
 learning-gnuplot.tex:Learning GNUPlot
 novel-update-5.tex:Novel Update
 reflections-on-readings-divine-mercy-c-2022.tex:Reflections on Today's Gospel
+making-lemon-wine.tex:Making Lemon Wine
