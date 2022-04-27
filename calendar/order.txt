@@ -278,3 +278,4 @@ Learning GNUPlot:learning-gnuplot.html:21
 Novel Update:novel-update-5.html:23
 Reflections on Today's Gospel:reflections-on-readings-divine-mercy-c-2022.html:24
 Making Lemon Wine:making-lemon-wine.html:25
+Pathfinder Character Update:pathfinder-1.html:26

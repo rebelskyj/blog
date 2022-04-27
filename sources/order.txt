@@ -262,3 +262,4 @@ learning-gnuplot.tex:Learning GNUPlot
 novel-update-5.tex:Novel Update
 reflections-on-readings-divine-mercy-c-2022.tex:Reflections on Today's Gospel
 making-lemon-wine.tex:Making Lemon Wine
+pathfinder-1.tex:Pathfinder Character Update
