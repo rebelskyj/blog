@@ -265,3 +265,4 @@ making-lemon-wine.tex:Making Lemon Wine
 pathfinder-1.tex:Pathfinder Character Update
 ending-choir-spring-2022.tex:Ending a Year of Choir
 novel-update-6.tex:Novel Update
+poetry-forms-4.tex:Writing Through Poetry Forms
