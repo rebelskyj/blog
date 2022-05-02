@@ -267,3 +267,4 @@ ending-choir-spring-2022.tex:Ending a Year of Choir
 novel-update-6.tex:Novel Update
 poetry-forms-4.tex:Writing Through Poetry Forms
 learning-guitar.tex:Learning Guitar
+reflections-on-readings-3-easter-c-2022.tex:Reflections on Today's Gospel
