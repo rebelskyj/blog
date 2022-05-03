@@ -269,3 +269,4 @@ poetry-forms-4.tex:Writing Through Poetry Forms
 learning-guitar.tex:Learning Guitar
 reflections-on-readings-3-easter-c-2022.tex:Reflections on Today's Gospel
 reflection-april-2022.tex:Monthly Reflection
+isbn-gripe.tex:Griping about ISBN
