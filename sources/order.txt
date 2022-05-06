@@ -271,3 +271,4 @@ reflections-on-readings-3-easter-c-2022.tex:Reflections on Today's Gospel
 reflection-april-2022.tex:Monthly Reflection
 isbn-gripe.tex:Griping about ISBN
 poetry-forms-5.tex:Writing Through Poetry Forms
+writers-block-3.tex:Writer's Block
