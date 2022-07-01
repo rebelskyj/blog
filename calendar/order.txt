@@ -289,3 +289,5 @@ Monthly Reflection:reflection-april-2022.html:02
 Griping about ISBN:isbn-gripe.html:03
 Writing Through Poetry Forms:poetry-forms-5.html:04
 Writer's Block:writers-block-3.html:06
+*June
+Monthly Reflection:reflection-june-2022.html:30

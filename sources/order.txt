@@ -272,3 +272,4 @@ reflection-april-2022.tex:Monthly Reflection
 isbn-gripe.tex:Griping about ISBN
 poetry-forms-5.tex:Writing Through Poetry Forms
 writers-block-3.tex:Writer's Block
+reflection-june-2022.tex:Monthly Reflection
