@@ -76,7 +76,7 @@ fi
 if [ $MONTH != $FILEMONTH ]
 then
   echo "Appending $(tput bold)-$MONTH$(tput sgr0) to $(tput bold)calendar/order.txt$(tput sgr0)"
-  echo "*$MONTH" >> calendar/order.txt
+  echo "-$MONTH" >> calendar/order.txt
 fi
 
 echo Appending "$(tput bold)$TITLE:$(echo $FN | sed "s/tex/html/g"):$DAY$(tput sgr0)" to "$(tput bold)calendar/order.txt$(tput sgr0)"
