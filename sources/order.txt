@@ -276,3 +276,4 @@ reflection-june-2022.tex:Monthly Reflection
 lemon-wine.tex:Lemon Wine
 reflections-on-readings-14-ordinary-c-22.tex:Reflections on Today's Gospel
 solomon-crochet.tex:Solomon Crochet
+storms.tex:On Storms
