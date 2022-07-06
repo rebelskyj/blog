@@ -296,3 +296,4 @@ Lemon Wine:lemon-wine.html:01
 Reflections on Today's Gospel:reflections-on-readings-14-ordinary-c-22.html:03
 Solomon Crochet:solomon-crochet.html:04
 On Storms:storms.html:05
+On Reading Continued:reading-3.html:06
