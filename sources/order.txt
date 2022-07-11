@@ -280,3 +280,4 @@ storms.tex:On Storms
 reading-3.tex:On Reading Continued
 venite.tex:Venite Adoremus
 dungeons-dragons-2.tex:Dungeons and Dragons Again
+reflections-on-readings-15-ordinary-c-22.tex:Reflections on Today's Gospel
