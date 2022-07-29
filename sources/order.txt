@@ -284,3 +284,4 @@ reflections-on-readings-15-ordinary-c-22.tex:Reflections on Today's Gospel
 finishing-a-blanket.tex:Finishing a Blanket
 whoops-4.tex:Whoops
 reflections-on-readings-17-ordinary-c-22.tex:Reflections on Today's Gospel
+running.tex:On Running
