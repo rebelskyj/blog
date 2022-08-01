@@ -305,3 +305,5 @@ Whoops:whoops-4.html:23
 Reflections on Today's Gospel:reflections-on-readings-17-ordinary-c-22.html:24
 On Running:running.html:29
 Reflections on Today's Gospel:reflections-on-readings-18-ordinary-c-22.html:31
+-August
+Monthy Reflection:reflection-july-2022.html:01
