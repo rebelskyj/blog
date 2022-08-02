@@ -287,3 +287,4 @@ reflections-on-readings-17-ordinary-c-22.tex:Reflections on Today's Gospel
 running.tex:On Running
 reflections-on-readings-18-ordinary-c-22.tex:Reflections on Today's Gospel
 reflection-july-2022.tex:Monthy Reflection
+metaphor.tex:On Metaphor
