@@ -290,3 +290,4 @@ reflection-july-2022.tex:Monthy Reflection
 metaphor.tex:On Metaphor
 talk-planning-1.tex:Talk Planning
 talk-planning-2.tex:Talk Planning, Tuning Theory
+book-review-faces-lewis.tex:Book Review of Till We Have Faces
