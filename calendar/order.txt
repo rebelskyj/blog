@@ -312,3 +312,4 @@ Talk Planning:talk-planning-1.html:08
 Talk Planning, Tuning Theory:talk-planning-2.html:09
 Book Review of Till We Have Faces:book-review-faces-lewis.html:10
 Reflections on Today's Gospel:reflections-on-readings-20-ordinary-c-22.html:14
+Open Mic:open-mic-2.html:16
