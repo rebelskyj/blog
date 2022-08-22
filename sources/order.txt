@@ -295,3 +295,4 @@ reflections-on-readings-20-ordinary-c-22.tex:Reflections on Today's Gospel
 open-mic-2.tex:Open Mic
 sharing-a-song.tex:Sharing a song
 supper-club.tex:Supper Club
+board-games.tex:Board Games
