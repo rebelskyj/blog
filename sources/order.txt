@@ -297,3 +297,4 @@ sharing-a-song.tex:Sharing a song
 supper-club.tex:Supper Club
 board-games.tex:Board Games
 reflections-on-readings-21-ordinary-c-22.tex:Reflections on Today's Gospel
+twenty-four.tex:24 for Twenty Four
