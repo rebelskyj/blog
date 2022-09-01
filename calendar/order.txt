@@ -318,3 +318,5 @@ Supper Club:supper-club.html:19
 Board Games:board-games.html:20
 Reflections on Today's Gospel:reflections-on-readings-21-ordinary-c-22.html:21
 24 for Twenty Four:twenty-four.html:22
+-September
+Reflections on Today's Gospel:reflections-on-readings-22-ordinary-c-22.html:01
