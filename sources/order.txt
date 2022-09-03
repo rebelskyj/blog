@@ -300,3 +300,4 @@ reflections-on-readings-21-ordinary-c-22.tex:Reflections on Today's Gospel
 twenty-four.tex:24 for Twenty Four
 reflections-on-readings-22-ordinary-c-22.tex:Reflections on Today's Gospel
 reflection-august-2022.tex:Monthly Reflection
+running-1.tex:On Running Redux

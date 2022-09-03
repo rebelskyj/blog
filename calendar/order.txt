@@ -321,3 +321,4 @@ Reflections on Today's Gospel:reflections-on-readings-21-ordinary-c-22.html:21
 Reflections on Today's Gospel:reflections-on-readings-22-ordinary-c-22.html:28
 -September
 Monthly Reflection:reflection-august-2022.html:01
+On Running Redux:running-1.html:02
