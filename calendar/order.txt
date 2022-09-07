@@ -324,3 +324,4 @@ Monthly Reflection:reflection-august-2022.html:01
 On Running Redux:running-1.html:02
 On Handwriting:handwriting.html:03
 Reflections on Today's Gospel:reflections-on-readings-23-ordinary-c-22.html:04
+Talk Planning, Introduction:talk-planning-3.html:06

@@ -303,3 +303,4 @@ reflection-august-2022.tex:Monthly Reflection
 running-1.tex:On Running Redux
 handwriting.tex:On Handwriting
 reflections-on-readings-23-ordinary-c-22.tex:Reflections on Today's Gospel
+talk-planning-3.tex:Talk Planning, Introduction
