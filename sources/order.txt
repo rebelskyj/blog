@@ -306,3 +306,4 @@ reflections-on-readings-23-ordinary-c-22.tex:Reflections on Today's Gospel
 talk-planning-3.tex:Talk Planning, Introduction
 first-day-of-class-F2022.tex:First Day of Class
 libraries.tex:On Libraries
+reflections-on-readings-24-ordinary-c-22.tex:Reflections on Today's Gospel
