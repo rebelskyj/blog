@@ -309,3 +309,4 @@ libraries.tex:On Libraries
 reflections-on-readings-24-ordinary-c-22.tex:Reflections on Today's Gospel
 talk-planning-4.tex:Talk Planning, Making gifs
 juggling.tex:On Juggling
+reflections-on-readings-26-ordinary-c-22.tex:Reflections on Today's Gospel
