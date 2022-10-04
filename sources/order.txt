@@ -313,3 +313,4 @@ reflections-on-readings-26-ordinary-c-22.tex:Reflections on Today's Gospel
 performing-a-song.tex:Performing a Song
 reflection-september-2022.tex:Monthly Reflection
 reflections-on-readings-27-ordinary-c-22.tex:Reflections on Today's Gospel
+accordion-repair.tex:Accordion Repair
