@@ -316,3 +316,4 @@ reflections-on-readings-27-ordinary-c-22.tex:Reflections on Today's Gospel
 accordion-repair.tex:Accordion Repair
 theology-question.tex:Theology Question
 talk-planning-5.tex:Talk Planning, Giving the Talk
+villanelles-2.tex:On Villanelles (Redux)
