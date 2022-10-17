@@ -339,3 +339,4 @@ Accordion Repair:accordion-repair.html:03
 Theology Question:theology-question.html:05
 Talk Planning, Giving the Talk:talk-planning-5.html:12
 On Villanelles (Redux):villanelles-2.html:14
+Reflections on Today's Gospel:reflections-on-readings-29-ordinary-c-22.html:16
