@@ -318,3 +318,4 @@ theology-question.tex:Theology Question
 talk-planning-5.tex:Talk Planning, Giving the Talk
 villanelles-2.tex:On Villanelles (Redux)
 reflections-on-readings-29-ordinary-c-22.tex:Reflections on Today's Gospel
+sharing-another-song.tex:Sharing Another Song
