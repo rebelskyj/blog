@@ -321,3 +321,4 @@ reflections-on-readings-29-ordinary-c-22.tex:Reflections on Today's Gospel
 sharing-another-song.tex:Sharing Another Song
 book-review-atomic-habits.tex:Book Review of Atomic Habits
 book-review-gideon-ninth.tex:Book Review of Gideon the Ninth
+reflections-on-readings-30-ordinary-c-22.tex:Reflections on Today's Gospel
