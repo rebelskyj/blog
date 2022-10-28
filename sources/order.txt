@@ -325,3 +325,4 @@ reflections-on-readings-30-ordinary-c-22.tex:Reflections on Today's Gospel
 bagpipes.tex:On Bagpipes
 celtic-knots.tex:On Celtic Knots
 schedules.tex:On Schedules
+nanowrimo-2.tex:NaNoWriMo Redux
