@@ -327,3 +327,4 @@ celtic-knots.tex:On Celtic Knots
 schedules.tex:On Schedules
 nanowrimo-2.tex:NaNoWriMo Redux
 reflections-on-readings-31-ordinary-c-22.tex:Reflections on Today's Gospel
+open-mic-3.tex:Open Mic
