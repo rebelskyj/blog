@@ -271,7 +271,7 @@ reflections-on-readings-3-easter-c-2022.tex:Reflections on Today's Gospel
 reflection-april-2022.tex:Monthly Reflection
 isbn-gripe.tex:Griping about ISBN
 poetry-forms-5.tex:Writing Through Poetry Forms
-writers-block-3.tex:Writer's Block
+writers-block-4.tex:Writer's Block
 reflection-june-2022.tex:Monthly Reflection
 lemon-wine.tex:Lemon Wine
 reflections-on-readings-14-ordinary-c-22.tex:Reflections on Today's Gospel
@@ -330,3 +330,4 @@ reflections-on-readings-31-ordinary-c-22.tex:Reflections on Today's Gospel
 open-mic-3.tex:Open Mic
 reflection-october-2022.tex:Monthly Reflection
 all-souls.tex:All Soul's Day
+writers-block-5.tex:Writer's Block

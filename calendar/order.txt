@@ -288,7 +288,7 @@ Reflections on Today's Gospel:reflections-on-readings-3-easter-c-2022.html:01
 Monthly Reflection:reflection-april-2022.html:02
 Griping about ISBN:isbn-gripe.html:03
 Writing Through Poetry Forms:poetry-forms-5.html:04
-Writer's Block:writers-block-3.html:06
+Writer's Block:writers-block-4.html:06
 -June
 Monthly Reflection:reflection-june-2022.html:30
 -July
@@ -353,3 +353,4 @@ Open Mic:open-mic-3.html:31
 -November
 Monthly Reflection:reflection-october-2022.html:01
 All Soul's Day:all-souls.html:02
+Writer's Block:writers-block-5.html:03
