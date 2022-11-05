@@ -354,3 +354,4 @@ Open Mic:open-mic-3.html:31
 Monthly Reflection:reflection-october-2022.html:01
 All Soul's Day:all-souls.html:02
 Writer's Block:writers-block-5.html:03
+Talk Planning, Giving the Talk (again):talk-planning-6.html:04

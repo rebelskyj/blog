@@ -331,3 +331,4 @@ open-mic-3.tex:Open Mic
 reflection-october-2022.tex:Monthly Reflection
 all-souls.tex:All Soul's Day
 writers-block-5.tex:Writer's Block
+talk-planning-6.tex:Talk Planning, Giving the Talk (again)
