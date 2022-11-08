@@ -333,3 +333,4 @@ all-souls.tex:All Soul's Day
 writers-block-5.tex:Writer's Block
 talk-planning-6.tex:Talk Planning, Giving the Talk (again)
 reflections-on-readings-32-ordinary-c-22.tex:Reflections on Today's Gospel
+nanowrimo-3.tex:NaNoWriMo Update
