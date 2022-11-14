@@ -335,3 +335,4 @@ talk-planning-6.tex:Talk Planning, Giving the Talk (again)
 reflections-on-readings-32-ordinary-c-22.tex:Reflections on Today's Gospel
 nanowrimo-3.tex:NaNoWriMo Update
 remembering.tex:On Remembering
+reflections-on-readings-33-ordinary-c-22.tex:Reflections On Today's Gospel
