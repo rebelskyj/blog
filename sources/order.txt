@@ -340,3 +340,4 @@ reflections-on-readings-christ-king-c-22.tex:Reflections on Today's Gospel
 book-review-housekeeper-professor-ogawa.tex:Book Review The Housekeeper and the Professor
 come-from-away.tex:Come From Away Review
 muse.tex:To My Muse
+nanowrimo-4.tex:NaNoWriMo Update
