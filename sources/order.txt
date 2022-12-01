@@ -341,3 +341,4 @@ book-review-housekeeper-professor-ogawa.tex:Book Review The Housekeeper and the 
 come-from-away.tex:Come From Away Review
 muse.tex:To My Muse
 nanowrimo-4.tex:NaNoWriMo Update
+reflection-november-2022.tex:Monthly Reflection

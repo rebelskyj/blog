@@ -364,3 +364,5 @@ Book Review The Housekeeper and the Professor:book-review-housekeeper-professor-
 Come From Away Review:come-from-away.html:23
 To My Muse:muse.html:24
 NaNoWriMo Update:nanowrimo-4.html:25
+-December
+Monthly Reflection:reflection-november-2022.html:01
