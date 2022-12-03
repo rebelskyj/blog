@@ -342,3 +342,4 @@ come-from-away.tex:Come From Away Review
 muse.tex:To My Muse
 nanowrimo-4.tex:NaNoWriMo Update
 reflection-november-2022.tex:Monthly Reflection
+dungeons-dragons-3.tex:Dungeons and Dragons Again!
