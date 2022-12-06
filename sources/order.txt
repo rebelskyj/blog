@@ -344,3 +344,4 @@ nanowrimo-4.tex:NaNoWriMo Update
 reflection-november-2022.tex:Monthly Reflection
 dungeons-dragons-3.tex:Dungeons and Dragons Again!
 reflections-on-readings-2-advent-a-22.tex:Reflections On Today's Gospel
+open-mic-4.tex:Open Mic
