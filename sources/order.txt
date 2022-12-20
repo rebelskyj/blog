@@ -347,3 +347,4 @@ reflections-on-readings-2-advent-a-22.tex:Reflections On Today's Gospel
 open-mic-4.tex:Open Mic
 musescore-4.tex:Musescore 4 Initial Review (Rave)
 reflections-on-readings-4-advent-a-22.tex:Reflections on Today's Gospel
+species-counerpoint-planning.tex:Species Counterpoint Planning
