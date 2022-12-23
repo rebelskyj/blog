@@ -350,3 +350,4 @@ reflections-on-readings-4-advent-a-22.tex:Reflections on Today's Gospel
 species-counterpoint-planning.tex:Species Counterpoint Planning
 coding.tex:On Coding
 species-counterpoint-2.tex:Species Counterpoint
+novel-update-7.tex:Novel Update
