@@ -375,3 +375,5 @@ Species Counterpoint Planning:species-counterpoint-planning.html:19
 On Coding:coding.html:20
 Species Counterpoint:species-counterpoint-2.html:21
 Novel Update:novel-update-7.html:22
+New Year Plans for 2023:new-year-plans-23.html:23
+Species Counterpoint First Week Reflection:species-counterpoint-week-1.html:24
