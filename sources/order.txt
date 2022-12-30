@@ -356,3 +356,4 @@ species-counterpoint-week-1.tex:Species Counterpoint First Week Reflection
 christmas-2022.tex:Christmas 2022
 poetry-planning.tex:Poetry Planning
 allergies.tex:Allergies
+novel-update-8.tex:Novel Update
