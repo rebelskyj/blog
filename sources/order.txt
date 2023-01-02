@@ -360,3 +360,4 @@ novel-update-8.tex:Novel Update
 schedules-2.tex:On Schedules
 species-counterpoint-week-2.tex:Species Counterpoint Second Week Reflection
 reflections-on-readings-mary-mother-23.tex:Reflections on Today's Gospel
+reflection-2022.tex:Yearly Reflection
