@@ -362,3 +362,4 @@ species-counterpoint-week-2.tex:Species Counterpoint Second Week Reflection
 reflections-on-readings-mary-mother-23.tex:Reflections on Today's Gospel
 reflection-2022.tex:Yearly Reflection
 music-planning.tex:Music Planning
+species-counterpoint-3.tex:Species Counterpoint Progress
