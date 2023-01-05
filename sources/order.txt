@@ -356,10 +356,10 @@ species-counterpoint-week-1.tex:Species Counterpoint First Week Reflection
 christmas-2022.tex:Christmas 2022
 poetry-planning.tex:Poetry Planning
 allergies.tex:Allergies
+species-counterpoint-3.tex:Species Counterpoint Progress
 novel-update-8.tex:Novel Update
 schedules-2.tex:On Schedules
 species-counterpoint-week-2.tex:Species Counterpoint Second Week Reflection
 reflections-on-readings-mary-mother-23.tex:Reflections on Today's Gospel
 reflection-2022.tex:Yearly Reflection
 music-planning.tex:Music Planning
-species-counterpoint-3.tex:Species Counterpoint Progress
