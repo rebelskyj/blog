@@ -364,3 +364,4 @@ reflections-on-readings-mary-mother-23.tex:Reflections on Today's Gospel
 reflection-2022.tex:Yearly Reflection
 music-planning.tex:Music Planning
 species-counterpoint-4.tex:Species Counterpoint Progress
+catechesis.tex:Catechesis
