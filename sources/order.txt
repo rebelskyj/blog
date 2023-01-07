@@ -365,3 +365,4 @@ reflection-2022.tex:Yearly Reflection
 music-planning.tex:Music Planning
 species-counterpoint-4.tex:Species Counterpoint Progress
 catechesis.tex:Catechesis
+dungeons-dragons-4.tex:Dungeons and Dragons Again
