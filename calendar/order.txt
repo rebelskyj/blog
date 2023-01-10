@@ -393,3 +393,4 @@ Species Counterpoint Progress:species-counterpoint-4.html:04
 Catechesis:catechesis.html:05
 Dungeons and Dragons Again:dungeons-dragons-4.html:06
 Species Counterpoint Third Week Reflection:species-counterpoint-week-3.html:07
+DnD Character Backstory:dungeons-dragons-rex-0.html:10
