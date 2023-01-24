@@ -371,3 +371,4 @@ dungeons-dragons-rex-0.tex:DnD Character Backstory
 orp-1.tex:Research Proposal Update
 bound-moon-rising-1.tex:Bound Moon Rising Campaign First Session Recap
 species-counterpoint-week-4.tex:Species Counterpoint Fourth Week Reflection
+whoops-5.tex:Whoops
