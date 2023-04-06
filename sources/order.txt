@@ -374,3 +374,4 @@ species-counterpoint-week-4.tex:Species Counterpoint Fourth Week Reflection
 whoops-5.tex:Whoops
 reflection-january-23.tex:Monthly Reflection
 restarting-again-again.tex:Restarting (Again (again))
+candidate.tex:Announcement
