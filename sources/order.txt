@@ -376,3 +376,4 @@ reflection-january-23.tex:Monthly Reflection
 restarting-again-again.tex:Restarting (Again (again))
 candidate.tex:Announcement
 novel-update-9.tex:Novel Update
+easter-23.tex:Easter
