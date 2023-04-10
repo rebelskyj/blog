@@ -377,3 +377,4 @@ restarting-again-again.tex:Restarting (Again (again))
 candidate.tex:Announcement
 novel-update-9.tex:Novel Update
 easter-23.tex:Easter
+writing-3.tex:On Writing (Redux)
