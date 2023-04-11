@@ -378,3 +378,4 @@ candidate.tex:Announcement
 novel-update-9.tex:Novel Update
 easter-23.tex:Easter
 writing-3.tex:On Writing (Redux)
+open-mic-5.tex:Open Mic

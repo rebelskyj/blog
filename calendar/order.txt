@@ -406,3 +406,4 @@ Announcement:candidate.html:06
 Novel Update:novel-update-9.html:07
 Easter:easter-23.html:08
 On Writing (Redux):writing-3.html:09
+Open Mic:open-mic-5.html:10
