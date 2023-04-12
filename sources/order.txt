@@ -379,3 +379,4 @@ novel-update-9.tex:Novel Update
 easter-23.tex:Easter
 writing-3.tex:On Writing (Redux)
 open-mic-5.tex:Open Mic
+book-review-grandmother-sorry.tex:Book Review of My Grandmother Asked Me to Tell You She's Sorry
