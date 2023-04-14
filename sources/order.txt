@@ -381,3 +381,4 @@ writing-3.tex:On Writing (Redux)
 open-mic-5.tex:Open Mic
 book-review-grandmother-sorry.tex:Book Review of My Grandmother Asked Me to Tell You She's Sorry
 celtic-knots-2.tex:On Celtic Knots (Again)
+running-2.tex:On Running Another Year
