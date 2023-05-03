@@ -384,3 +384,4 @@ celtic-knots-2.tex:On Celtic Knots (Again)
 running-2.tex:On Running Another Year
 handwriting-2.tex:On Handwriting Again
 reflection-april-23.tex:Monthly Reflection
+baking-reflection.tex:Baking Reflection
