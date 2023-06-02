@@ -389,3 +389,4 @@ writathon-23-april.tex:Writathon Retrospective
 writing-4.tex:On Writing Again
 plasma.tex:On Plasmas
 reflection-may-23.tex:Monthly Reflection
+universe.tex:Universe in the Park (Part 3? 1?)
