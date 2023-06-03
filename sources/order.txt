@@ -390,3 +390,4 @@ writing-4.tex:On Writing Again
 plasma.tex:On Plasmas
 reflection-may-23.tex:Monthly Reflection
 universe.tex:Universe in the Park (Part 3? 1?)
+do-versus-done.tex:On Doing Versus Having Done
