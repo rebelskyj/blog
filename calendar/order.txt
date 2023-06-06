@@ -421,3 +421,4 @@ On Plasmas:plasma.html:15
 Monthly Reflection:reflection-may-23.html:01
 Universe in the Park (Part 3? 1?):universe.html:02
 On Doing Versus Having Done:do-versus-done.html:03
+Open Mic:open-mic-6.html:06
