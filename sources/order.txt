@@ -397,3 +397,4 @@ book-review-after-dragons.tex:Book Review of After the Dragons
 wedding.tex:Wedding Recap
 spoons-2.tex:Spoons Continued
 conference.tex:Conference (etc) Recap
+writing-5.tex:On Writing Again
