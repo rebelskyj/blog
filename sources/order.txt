@@ -398,3 +398,4 @@ wedding.tex:Wedding Recap
 spoons-2.tex:Spoons Continued
 conference.tex:Conference (etc) Recap
 writing-5.tex:On Writing Again
+cocktail-catechesis.tex:Cocktails and Catechesis
