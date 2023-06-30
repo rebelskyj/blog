@@ -399,3 +399,4 @@ spoons-2.tex:Spoons Continued
 conference.tex:Conference (etc) Recap
 writing-5.tex:On Writing Again
 cocktail-catechesis.tex:Cocktails and Catechesis
+crochet-2.tex:On Crochet Again
