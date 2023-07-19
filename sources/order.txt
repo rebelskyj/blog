@@ -402,3 +402,4 @@ cocktail-catechesis.tex:Cocktails and Catechesis
 crochet-2.tex:On Crochet Again
 reflection-june-23.tex:Monthly Reflection
 restarting-again-again-again.tex:Restarting (Again (again again))
+universe-3.tex:Universe in the Park Part 3
