@@ -406,3 +406,4 @@ universe-3.tex:Universe in the Park Part 3
 conference-2.tex:Conference Recap
 writing-6.tex:On Writing Again
 mission-trip.tex:Mission Trip Recap
+book-review-maus.tex:Book Review of Maus
