@@ -441,3 +441,4 @@ Book Review of Maus:book-review-maus.html:29
 Reflecting:reflection.html:30
 -August
 Monthly Reflection:reflection-july-23.html:01
+Open Mic:open-mic-7.html:02

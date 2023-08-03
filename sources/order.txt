@@ -409,3 +409,4 @@ mission-trip.tex:Mission Trip Recap
 book-review-maus.tex:Book Review of Maus
 reflection.tex:Reflecting
 reflection-july-23.tex:Monthly Reflection
+open-mic-7.tex:Open Mic
