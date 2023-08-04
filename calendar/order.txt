@@ -428,6 +428,7 @@ Wedding Recap:wedding.html:13
 Spoons Continued:spoons-2.html:14
 Conference (etc) Recap:conference.html:25
 On Writing Again:writing-5.html:26
+Lemon Wine Redux:lemon-wine-2.html:27
 Cocktails and Catechesis:cocktail-catechesis.html:28
 On Crochet Again:crochet-2.html:29
 -July
@@ -442,5 +443,3 @@ Reflecting:reflection.html:30
 -August
 Monthly Reflection:reflection-july-23.html:01
 Open Mic:open-mic-7.html:02
--June
-Lemon Wine Redux:lemon-wine-2.html:27
