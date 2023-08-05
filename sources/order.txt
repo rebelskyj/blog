@@ -398,6 +398,7 @@ wedding.tex:Wedding Recap
 spoons-2.tex:Spoons Continued
 conference.tex:Conference (etc) Recap
 writing-5.tex:On Writing Again
+lemon-wine-2.tex:Lemon Wine Redux
 cocktail-catechesis.tex:Cocktails and Catechesis
 crochet-2.tex:On Crochet Again
 reflection-june-23.tex:Monthly Reflection
@@ -410,5 +411,5 @@ book-review-maus.tex:Book Review of Maus
 reflection.tex:Reflecting
 reflection-july-23.tex:Monthly Reflection
 open-mic-7.tex:Open Mic
-lemon-wine-2.tex:Lemon Wine Redux
 lemon-wine-3.tex:Lemon Wine Starting and Ending
+open-mic-planning.tex:Open Mic Planning
