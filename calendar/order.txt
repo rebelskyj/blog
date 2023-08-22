@@ -445,3 +445,4 @@ Monthly Reflection:reflection-july-23.html:01
 Open Mic:open-mic-7.html:02
 Lemon Wine Starting and Ending:lemon-wine-3.html:03
 Open Mic Planning:open-mic-planning.html:04
+Pinball Part One:pinball.html:22
