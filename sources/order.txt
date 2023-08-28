@@ -417,3 +417,4 @@ universe-4.tex:Universe in the Park Part 4
 pinball.tex:Pinball Part One
 twenty-five.tex:25 for Twenty Five
 ms-holmes-ms-watson.tex:Ms. Holmes and Ms. Watson Review
+book-club.tex:Family Book Club
