@@ -450,3 +450,5 @@ Pinball Part One:pinball.html:22
 25 for Twenty Five:twenty-five.html:23
 Ms. Holmes and Ms. Watson Review:ms-holmes-ms-watson.html:24
 Family Book Club:book-club.html:28
+Talk Planning, Redux:talk-planning-redux-1.html:29
+Family Board Games:board-game-night.html:30

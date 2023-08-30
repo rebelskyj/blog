@@ -418,3 +418,5 @@ pinball.tex:Pinball Part One
 twenty-five.tex:25 for Twenty Five
 ms-holmes-ms-watson.tex:Ms. Holmes and Ms. Watson Review
 book-club.tex:Family Book Club
+talk-planning-redux-1.tex:Talk Planning, Redux
+board-game-night.tex:Family Board Games
