@@ -420,3 +420,4 @@ ms-holmes-ms-watson.tex:Ms. Holmes and Ms. Watson Review
 book-club.tex:Family Book Club
 talk-planning-redux-1.tex:Talk Planning, Redux
 board-game-night.tex:Family Board Games
+reflection-august-23.tex:Monthly Reflection
