@@ -456,3 +456,4 @@ Family Board Games:board-game-night.html:30
 Monthly Reflection:reflection-august-23.html:03
 Universe in the Park Part 5:universe-5.html:04
 Talk Planning (Eclipse):talk-planning-eclipse-1.html:12
+Euchre Tournament:euchre-tournament.html:13

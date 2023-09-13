@@ -423,3 +423,4 @@ board-game-night.tex:Family Board Games
 reflection-august-23.tex:Monthly Reflection
 universe-5.tex:Universe in the Park Part 5
 talk-planning-eclipse-1.tex:Talk Planning (Eclipse)
+euchre-tournament.tex:Euchre Tournament
