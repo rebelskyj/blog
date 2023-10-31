@@ -460,3 +460,4 @@ Euchre Tournament:euchre-tournament.html:13
 St. Jude's Relic:st-jude.html:14
 -October
 Monthly Reflection:reflection-september-23.html:1
+Monthly Reflection:reflection-october-23.html:31
