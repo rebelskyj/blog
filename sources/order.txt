@@ -427,3 +427,4 @@ euchre-tournament.tex:Euchre Tournament
 st-jude.tex:St. Jude's Relic
 reflection-september-23.tex:Monthly Reflection
 reflection-october-23.tex:Monthly Reflection
+nanowrimo-5.tex:NaNoWriMo 2023!
