@@ -429,3 +429,4 @@ reflection-september-23.tex:Monthly Reflection
 reflection-october-23.tex:Monthly Reflection
 nanowrimo-5.tex:NaNoWriMo 2023!
 christian-writing.tex:On Christian Writing
+game-night.tex:Game Night
