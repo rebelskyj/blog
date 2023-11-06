@@ -431,3 +431,4 @@ nanowrimo-5.tex:NaNoWriMo 2023!
 christian-writing.tex:On Christian Writing
 game-night.tex:Game Night
 embroidery.tex:On Embroidery
+reflections-on-readings-31-ordinary-a-23.tex:Reflections on Today's Gospel
