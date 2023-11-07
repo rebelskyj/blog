@@ -432,3 +432,4 @@ christian-writing.tex:On Christian Writing
 game-night.tex:Game Night
 embroidery.tex:On Embroidery
 reflections-on-readings-31-ordinary-a-23.tex:Reflections on Today's Gospel
+dungeons-dragons-5.tex:Dungeons and Dragons Again
