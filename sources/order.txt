@@ -436,3 +436,4 @@ dungeons-dragons-5.tex:Dungeons and Dragons Again
 pathfinder-2.tex:Pathfinder Again
 flash-fiction.tex:Flash Fiction Friday
 embroidery-2.tex:On Embroidery Continued
+reflections-on-readings-32-ordinary-a-23.tex:Reflections on Today's Gospel
