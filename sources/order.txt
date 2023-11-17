@@ -440,3 +440,4 @@ reflections-on-readings-32-ordinary-a-23.tex:Reflections on Today's Gospel
 dungeons-dragons-6.tex:Dungeons and Dragons Again
 writing-7.tex:On Writing Again
 book-review-creative-survivor.tex:Book Review of The Creative Writer's Survival Guide
+thesis-prep.tex:On Thesis Prep
