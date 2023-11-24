@@ -446,3 +446,4 @@ twelfth-night-23.tex:Twelfth Night Review
 reflections-on-readings-33-ordinary-a-23.tex:Reflections on Today's Gospel
 dungeons-dragons-7.tex:Dungeons and Dragons Again
 carbonara-recipe.tex:Something I'm Calling Carbonara Recipe
+bagels-23.tex:Bagels!
