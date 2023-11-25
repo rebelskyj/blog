@@ -448,3 +448,4 @@ dungeons-dragons-7.tex:Dungeons and Dragons Again
 carbonara-recipe.tex:Something I'm Calling Carbonara Recipe
 bagels-23.tex:Bagels!
 thanksgiving-2023.tex:Thanksgiving Ahome
+flash-fiction-228.tex:Flash Fiction Friday
