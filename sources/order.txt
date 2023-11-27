@@ -449,3 +449,4 @@ carbonara-recipe.tex:Something I'm Calling Carbonara Recipe
 bagels-23.tex:Bagels!
 thanksgiving-2023.tex:Thanksgiving Ahome
 flash-fiction-228.tex:Flash Fiction Friday
+reflections-on-readings-christ-king-a-23.tex:Reflections on Today's Gospel
