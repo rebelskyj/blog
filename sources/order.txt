@@ -452,3 +452,4 @@ flash-fiction-228.tex:Flash Fiction Friday
 reflections-on-readings-christ-king-a-23.tex:Reflections on Today's Gospel
 songwriting.tex:On Songwriting
 to-markdown.tex:Moving to Markdown
+nanowrimo-6.tex:NaNoWriMo 2023 Retrospective
