@@ -488,3 +488,4 @@ Reflections on Today's Gospel:reflections-on-readings-christ-king-a-23.html:26
 On Songwriting:songwriting.html:27
 Moving to Markdown:to-markdown.html:28
 NaNoWriMo 2023 Retrospective:nanowrimo-6.html:29
+Monthly Reflection:reflection-november-23.html:30
