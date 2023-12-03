@@ -455,3 +455,4 @@ to-markdown.tex:Moving to Markdown
 nanowrimo-6.tex:NaNoWriMo 2023 Retrospective
 reflection-november-23.tex:Monthly Reflection
 flash-fiction-229.tex:Flash Fiction Friday
+adoration.tex:On Adoration
