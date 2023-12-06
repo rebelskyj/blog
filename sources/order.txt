@@ -458,3 +458,4 @@ flash-fiction-229.tex:Flash Fiction Friday
 adoration.tex:On Adoration
 reflections-on-readings-1-advent-b-23.tex:Reflections on Today's Gospel
 spoons-3.tex:Spoons Continued
+science-mysticism.tex:On Science and Mysticism
