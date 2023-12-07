@@ -495,3 +495,4 @@ On Adoration:adoration.html:02
 Reflections on Today's Gospel:reflections-on-readings-1-advent-b-23.html:03
 Spoons Continued:spoons-3.html:04
 On Science and Mysticism:science-mysticism.html:05
+On Conclusions:conclusions.html:06
