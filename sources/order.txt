@@ -461,3 +461,4 @@ spoons-3.tex:Spoons Continued
 science-mysticism.tex:On Science and Mysticism
 conclusions.tex:On Conclusions
 flash-fiction-230.tex:Flash Fiction Friday
+editing.tex:On Editing
