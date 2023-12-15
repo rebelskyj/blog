@@ -466,3 +466,4 @@ reflections-on-readings-2-advent-b-23.tex:Reflections on Today's Gospel
 open-mic-9.tex:Open Mic
 blogging.tex:On Blogging
 crochet-teaching.tex:On Teaching Crochet
+book-review-fundamentals-faith.tex:Book Review of Fundamentals of the Fiath
