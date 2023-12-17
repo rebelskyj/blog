@@ -504,3 +504,4 @@ On Blogging:blogging.html:12
 On Teaching Crochet:crochet-teaching.html:13
 Book Review of Fundamentals of the Faith:book-review-fundamentals-faith.html:14
 Flash Fiction Friday:flash-fiction-231.html:15
+On Ratings:ratings.html:16
