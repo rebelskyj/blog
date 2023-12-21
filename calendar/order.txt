@@ -508,3 +508,4 @@ On Ratings:ratings.html:16
 Reflections on Today's Gospel:reflections-on-readings-3-advent-b-23.html:17
 Dungeons and Dragons Again:dungeons-dragons-8.html:18
 On Being Seen:being-seen.html:19
+On Why Versus How:why-versus-how.html:20
