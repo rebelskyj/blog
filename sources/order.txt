@@ -473,3 +473,4 @@ reflections-on-readings-3-advent-b-23.tex:Reflections on Today's Gospel
 dungeons-dragons-8.tex:Dungeons and Dragons Again
 being-seen.tex:On Being Seen
 why-versus-how.tex:On Why Versus How
+4thewords.tex:4thewords Review
