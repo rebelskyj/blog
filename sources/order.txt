@@ -476,3 +476,4 @@ why-versus-how.tex:On Why Versus How
 4thewords.tex:4thewords Review
 flash-fiction-232.tex:Flash Fiction Friday
 family-recipes.tex:On Family Recipes
+reflections-on-readings-4-advent-b-23.tex:Reflections on Today's Gospel
