@@ -477,3 +477,4 @@ why-versus-how.tex:On Why Versus How
 flash-fiction-232.tex:Flash Fiction Friday
 family-recipes.tex:On Family Recipes
 reflections-on-readings-4-advent-b-23.tex:Reflections on Today's Gospel
+christmas-2023.tex:Christmas 2023
