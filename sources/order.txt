@@ -480,3 +480,4 @@ reflections-on-readings-4-advent-b-23.tex:Reflections on Today's Gospel
 christmas-2023.tex:Christmas 2023
 practicing-scales.tex:On Practicing Scales
 schedules-3.tex:On Schedules
+reading-writing-21-12-28.tex:What I Read and Wrote
