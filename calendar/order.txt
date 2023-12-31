@@ -517,3 +517,4 @@ Christmas 2023:christmas-2023.html:25
 On Practicing Scales:practicing-scales.html:26
 On Schedules:schedules-3.html:27
 What I Read and Wrote:reading-writing-21-12-28.html:28
+On Faith and Reason:fides-ratio.html:30
