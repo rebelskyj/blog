@@ -482,3 +482,4 @@ practicing-scales.tex:On Practicing Scales
 schedules-3.tex:On Schedules
 reading-writing-21-12-28.tex:What I Read and Wrote
 fides-ratio.tex:On Faith and Reason
+reflections-on-readings-holy-family-b-23.tex:Reflections on Today's Gospel
