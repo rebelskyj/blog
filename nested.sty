@@ -1,0 +1,33 @@
+%% A simple package for nested endnotes
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{nested}[2024/01/01 Nested endnotes]
+\RequirePackage{hyperref}
+
+% A counter for the endnote numbers
+\newcounter{ennum}
+\setcounter{ennum}{100}
+
+\newcommand{\ENnext}[1]{\setcounter{ennum}{#1}\stepcounter{ennum}}
+
+% All of the endnotes gathered so far.
+\newcommand\ENcontents{}
+
+% The version of the text
+\newcommand{\ENversion}{}
+
+% The prefix used for links
+\newcommand{\ENprefix}{}
+
+% Change the prefix
+\newcommand{\endnoteversion}[1]{\renewcommand{\ENprefix}{#1}\renewcommand{\ENcontents}{}}
+
+% The endnote mark
+\newcommand{\endnotemark}[1][\theennum]{\hypertarget{link\ENprefix#1}{\hyperlink{target\ENprefix#1}{\textsuperscript{#1}}}}
+
+% The endnote text
+\newcommand{\endnotetext}[2][\theennum]{
+  \edef\ENcontents{\ENcontents{}\hypertarget{target\ENprefix#1}{\hyperlink{link\ENprefix#1}{\textsuperscript{#1}}} #2 \par 
+  } }
+
+% All of the endnotes
+\newcommand{\endnotes}[0]{\ENcontents}

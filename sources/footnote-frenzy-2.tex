@@ -1,0 +1,51 @@
+\documentclass[12pt]{article}[titlepage]
+\newcommand{\say}[1]{``#1''}
+\newcommand{\nsay}[1]{`#1'}
+\usepackage{endnotes}
+\newcommand{\B}{\backslash{}}
+\renewcommand{\,}{\textsuperscript{,}}
+\usepackage{setspace}
+\usepackage{tipa}
+\usepackage{hyperref}
+\usepackage{nested}
+\begin{document}
+\doublespacing
+\section{\href{footnote-frenzy-2.html}{Footnote Frenzy Continued}}
+First Published: 2024 January 2
+
+\section{Draft 1}
+\endnoteversion[a] 
+At the beginning of the 'blog, I mentioned that one of my great inspirations for writing this was my father.\endnotemark[1]
+\endnotetext[1]{That remains true, but I did say it then}
+One of the\endnotemark[2] \endnotetext[2]{arguably\endnotemark[3] the most}\endnotetext[3]{arguably implies that there are people on both side of the argument. Given that I'm making my own private echo chamber here, I don't need to do that} most striking pieces of his blog is the use of footnotes.\endnotetext[4]{he calls them end notes. Given that it's an infinite scroll page, the two do feel interchangeable. Then again, when you scroll multiple musings at once, they do appear at the end of each musing, so end note might be more accurate}
+That is, in addition to using footnotes,\endnotemark[5]\endnotetext[5]{Like this} he also uses end notes which are called from other end notes.\endnotemark[6]\endnotetext[6]{Like this\endnotemark[7] }\endnotetext[7]{An end note which was called by another}
+Now, like many people exploring a medium, he has done any number of interesting things with these end notes.\endnotemark[8]\endnotetext[8]{such as having multiple references to the same end note, programming his system to automatically skip the number of a baker's dozen\endnotemark[9], I think once even having end notes referenced back to the main text, though I don't recall that in particular}
+\endnotetext[9]{the integer between 12 and 14, for those keeping track at home}
+
+As someone trying to emulate a lot of his blog,\endnotemark[10]\endnotetext[10]{and as someone who has lots of bonus thoughts attached to every thought} I also wanted nested footnotes.
+It turns out that, while I am not unique in this request, I am close to it.
+There appears to be a single reason that style guides believe that footnotes or end notes\endnotemark[11]\endnotetext[11]{For some reason my dictionary thinks that endnote isn't a word. I'll respect it, for now} can be reasonably nested.
+As we know\endnotemark[12]\endnotetext[12]{or, at least, as I know now and have vague senses of having known before}, there are only a few circumstances that most style guides will accept footnotes.
+
+Obviously, citations can go there in some style guides, but there is absolutely no reason that you would need a footnote from a citation.\endnotemark[13]\endnotetext[13]{I mean I can think of plenty of reasons, but those mostly boil down to like \say{I do not condone this author's viewpoints, etc.,} which should probably go in the main text}
+Otherwise, asides are sometimes welcome in the footnote, though, of course, it is bad for bonus thoughts to have their own bonus thoughts in most formal writing.
+Finally, translator's notes or editorial comments on editorial or translated editions, counterrespectively,\endnotemark[14]\endnotetext[14]{I love counterrespectively, even though I know it's poor form to use it. It reminds me of how the Majors of Chemistry, Biochemistry, and Biology at my undergraduate were sometimes referred to as Bio Bio Chem Chem} are allowed end or footnotes.
+I'm sure that some of you have pieced together where the nested footnote is allowed.
+A translator's note on a translated editorial piece may need to reference an aside as an aside.
+
+These tend to be ranked, however.
+They are nested, so there is a clear sense of ownership between first level and second level footnotes.
+I don't like that.
+To me, there are three levels of importance in the words within a text: main text, footnote, and not included.\endnotemark[15]\endnotetext[15]{Which I suppose should be implicit, given that every work is finite, and there are infinite combinations of words\endnotemark[16]}\endnotetext[16]{I suppose that there is also an infinite amount of nonsense, but that's its own issue, I suppose}
+I want footnotes referenced in other footnotes to be on the same level.
+
+Unfortunately, as I've mentioned a few times on here, this 'blog\endnotemark[17]\endnotetext[17]{I'm using apostrophe because I'm copying my father more closely in this musing} is written in LaTeX which is then compiled into HTML.
+LaTeX generally does not have issues with nesting of footnotes, but pandoc does not support it natively.
+For a while, I thought that I might need to switch to Markdown.
+Thankfully, I am related to people who are not just infinitely better at their domains than I am, but are also incredibly skilled in those domains on an objective level.
+My father was willing and able over break to figure out how to let nested end notes be a thing in my writings without forcing me to change from LaTeX.
+It does require a little bit of change, but that isn't too much.\endnotemark[18]\endnotetext[18]{Mostly I just have to use endnotemark and endnotetext instead of just footnote}
+One benefit will definitely be that the text will stay cleaner, because the bonus thoughts will keep being nested somewhere else.\endnotemark[19]\endnotetext[19]{Of course, that comes with its own bags of worms, one of which being that needing to type endnotemark, a number, endnotetext, a number, and then my footnotes means that I have a much easier time losing the thread of whatever I'm discussing}
+
+For other examples of endnotes used in creative ways, I have been told the book\endnotemark[20]\endnotetext[20]{Book may or may not be the right word. Experience?} \say{House of Leaves} does a wonderful job exploring the limits of the written page.
+\end{document}
