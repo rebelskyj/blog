@@ -486,3 +486,4 @@ reflections-on-readings-holy-family-b-23.tex:Reflections on Today's Gospel
 reflection-2023.tex:Yearly Reflection
 footnote-frenzy-2.tex:Footnote Frenzy Continued
 album-update-24-01-03.tex:Album Update
+reading-writing-24-01-04.tex:What I Read and Wrote
