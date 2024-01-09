@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Latin Hypercube Appendix</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <link rel="stylesheet" href="pandoc.css" />
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<center>
+<a href="index.html"><h2>Musings</h2></a>
+<h4>I'm just copying my father</h4>
+<h5><a href="index.html">Home</a></h5>
+</center>
+<h1 id="thesis-appendix-latin-hypercube"><a href="thesis-latin-hypercube.html">Thesis Appendix: Latin Hypercube</a></h1>
+<p>First Published: 2024 January 8</p>
+<h1 id="draft-2-8-january-2024">Draft 2: 8 January 2024</h1>
+<p>Ok so I missed a few days of posting there. However, I do want to make some progress on my thesis work tonight, even if it is only an appendix. So, let’s revise RebelFit Latin Hypercube.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
+<p>One of the fundamental algorithms in Rebelfit is Latin Hypercube Sampling/ It was initially described by () at () as a method for effectively sparsely sampling a space.</p>
+<p>It is sometimes difficult to conceptualize sampling high dimensional spaces. For instance, if one wanted to take five samples in each dimension and do it as a grid, the number of samples grows exponentially as the number of dimensions increases. By the time that one reaches 8 dimensions (the number of variables in a Reduced Rotational Hamiltonian with Quartic Centrifugal Distortion), a grid five samples wide would require nearly four hundred thousand samples.</p>
+<p>Another instinctual method for sampling a high dimensional space is to use a random sample. Or, at least, a pseudo-random sample (see appendix: randomness for more details). Latin Hypercube is demonstrably better at mapping a space than random sampling, though that improvement is reduced as dimensions and numbers of samples increase.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></p>
+<p>The name Latin Hypercube comes from the concept of a Latin Square, which is inspired by the work of Leonhard Euler.<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a> It does include some aspects of randomness. In each of M dimensions, the sample space is cut into N slices, where N is the number of total samples desired. The slices can be defined in any arbitrary way, but the most common are even spacings and a Baysian distribution based on prior knowledge. Once each dimension is sliced, a point is randomly picked in each of the N wells in each dimension, and they are randomly correlated together. Unlike random sampling, this ensures that values are measured over the entire range of each variable. Without randomly correlating the dimensions, the trivial Latin Hypercube is constructed, where you sample along the hyperhypotenuse.</p>
+<h1 id="draft-1-31-december-2023">Draft 1: 31 December 2023</h1>
+<p>One of the fundamental algorithms in Rebelfit is the Latin Hypercube. It was initially described by () at () as a method of more effectively sparsely sampling a space.</p>
+<p>Its name comes from the concept of a Latin Square, which is an arrangement of rooks on a grid such that none can take each other. As with all sampling methods that are better than random sampling, Latin Hypercube sampling becomes less better<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a> than random sampling as the number of samples or the number of dimensions increases.</p>
+<p>In order to construct a Latin Hypercube, you need to define the number of dimensions (M) and the number of samples (N) that you will use. In the general form of the algorithm, each of the dimensions is then cut into N different wells, and a point within each well is randomly selected.<a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a> Each dimension’s wells are then randomly assigned to each other, so that you don’t just sample around the n dimensional hyperhypotenuse.<a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a></p>
+<p>Latin Hypercube’s benefits are best demonstrated by comparison to other common sampling methods. If we compare to a Grid Search, where we want to sample 10 different points in each dimension, that requires a million data points by the time that we reach the 7th dimension. The N for samples is constant over any number of dimensions you ad,.</p>
+<section class="footnotes" role="doc-endnotes">
+<hr />
+<ol>
+<li id="fn1" role="doc-endnote"><p>n.b. the previous draft is probably not needed to be read because I’ve actually revised, rather than wholesale rewritten<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2" role="doc-endnote"><p>I forget where I read that, but it does seem to be common knowledge at this point<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3" role="doc-endnote"><p>cite wikipedia unless I can find a better source/read the original source<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4" role="doc-endnote"><p>oof that’s rough<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn5" role="doc-endnote"><p>see the appendix on randomness<a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn6" role="doc-endnote"><p>I know that’s not the real word, but it feels appropriate<a href="#fnref6" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
+<div class = "nav-links">
+<a class="nav-previous" href="science-mysticism-revisited.html">A Conclusion to Science as Mysticism</a>
+</div>
+<iframe src="calendar_base.html"></iframe>
+</body>
+</html>

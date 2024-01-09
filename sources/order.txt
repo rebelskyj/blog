@@ -489,3 +489,4 @@ album-update-24-01-03.tex:Album Update
 reading-writing-24-01-04.tex:What I Read and Wrote
 flash-fiction-234.tex:Flash Fiction Friday
 science-mysticism-revisited.tex:A Conclusion to Science as Mysticism
+thesis-latin-hypercube.tex:Latin Hypercube Appendix
