@@ -529,3 +529,4 @@ Flash Fiction Friday:flash-fiction-234.html:05
 A Conclusion to Science as Mysticism:science-mysticism-revisited.html:06
 Latin Hypercube Appendix:thesis-latin-hypercube.html:08
 Beetlejuice Review:beetlejuice-review.html:13
+Rotational Spectroscopy Primer:thesis-rotational-primer.html:15

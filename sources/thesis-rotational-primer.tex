@@ -1,0 +1,129 @@
+\documentclass[12pt]{article}[titlepage]
+\newcommand{\say}[1]{``#1''}
+\newcommand{\nsay}[1]{`#1'}
+\usepackage{endnotes}
+\newcommand{\B}{\backslash{}}
+\renewcommand{\,}{\textsuperscript{,}}
+\newcommand{\foott}[2]{\endnotemark[#1]\endnotetext[#1]{#2}}
+\usepackage{setspace}
+\usepackage{tipa}
+\usepackage{hyperref}
+\usepackage{nested}
+\begin{document}
+\doublespacing
+\section{\href{thesis-rotational-primer.html}{Thesis Appendix: Rotational Spectroscopy Primer}}
+First Published: 2024 January 15
+\section{Draft 2}
+\endnoteversion[b]
+
+There are any number of texts which derive and define rotational spectroscopy from first principles.\foott{1}{Bernath, Gordy and Cook, etc. etc. etc}
+The goal of this work is not to produce a thorough and mathematically rigorous derivation of rotational energy and transitions, but instead to provide a high level overview of the concepts and ideas which underlie this thesis.
+Rotational spectroscopy probes the lowest energy of the quantized transitions in a molecule.
+Most texts which derive rotational spectroscopy begin with the simplest case: a diatomic\foott{2}{and therefore inherently linear. There are so many ways to prove that any two points can be connected with a single line, and given the whole \say{this is not meant to be mathematically rigorous}, it is left as an exercise to the reader to prove that the molecule is linear} molecule.
+These molecules have a simple and algebraic\foott{3}{meaning you can write one expression once for all values that the energy can take} expression for both the energy of a given level and the energy of transitions between the levels.
+There are also fairly rigorous rules for what transitions are \say{allowed.}\foott{4}{scare quotes because forbidden transitions still occur. In much of astrochemistry, the forbidden transitions are actually the most easily detected}
+From there, the texts will move to the more difficult cases of a general linear molecule\foott{5}{there are an infinite number of ways you can construct a line from any number of atoms in a molecule}, a planar molecule\foott{6}{two dimensions! Spicy. Also yes, we will ignore the fact that these molecules are not infinitely thin, and so are never inherently linear or planar}, a spherical top, and then the two forms of a symmetric top: oblate and prolate.
+Only then will the texts get to the solution for the most common problems faced by spectroscopists: asymmetric tops.
+
+One benefit of deriving spectroscopy in that manner is that certain assumptions and simplifications seem more sensible when presented in those orders.
+However, as mentioned, this is not a rigorous treatment, and so hand waves will be needed.
+First, what is a molecule?
+
+A molecule, in rotational spectroscopy, at least, is something which meets two criteria: it is comprised of specific atoms\foott{7}{the fungibility of atoms will not be discussed in detail here, but isotopes and other charge differences are actually relevant, which sometimes throws people off} arranged in a specific pattern.\foott{8}{that is, structural isomers\endnotemark[9] or even different shapes of the same molecule will have different rotational spectra}\endnotetext[9]{molecules with the same atoms bonded differently together}
+What can we do with that knowledge?
+First, we must assume that the molecule rotates completely rigidly.
+That is, the energy we apply to it does not change the structure at all, and rotational energy is completely separable from vibrational energy.\foott{10}{that is an assumption we do correct for later, but note that it is a correction, rather than an actual solution}
+Once we have done so, however, we can simplify the problem significantly.
+
+A molecule can have any arbitrary number of atoms any arbitrary distance apart from one another.\foott{11}{there is a question about how well rigid rotor approximation would work on like HeH+ infinitely far apart, but if you assume rigid rotor, it does work, I suppose}
+Since we would like our solution to be generally useful, rather than starting from the beginning for each molecule, we then define an axis through which we hit the greatest mass of nuclei.\foott{12}{again, this is not rigorous, but trust that it works}
+This axis is known as C.
+We then pick the axis orthogonal to this which contains the greatest mass of nuclei that we can still reach, B.
+At this point, there is a single axis remaining: A.
+
+Once we have our molecule arranged in these axes, we reduce it to a three dimensional object by taking its reduced mass.
+That is, we look at the distance each atom has from each axis and multiply it by the mass of the atom, then sum over the entire molecule.\foott{13}{it feels like a centered molecule should have 0, but it turns out that we do not end up with that, which is pretty dang cool. There might also be a square somewhere, distance rather than just displacement, but I'm not being rigorous at this point}
+We do the same with the expected position of the electrons, and this gives us the dipole in each direction.\foott{14}{wow look at that handwave. what do we mean by expected position of an electron and everyything else I said? ask ur chem prof bruh}
+The dipoles are only relevant as a scaling factor for the expected magnitude of a rotational transition.
+
+Having now reduced our molecule to three moments of inertia, we can define the rotational constants, which are simply the inverse of the moments of inertia.\foott{15}{give or take some scaling factors}
+You may notice that A is definitionally smaller or equal to B and the same for C.
+When B is equal to A or C, we can treat the molecule as a symmetric top, which has a general analytic solution.
+If none of the constants are equal, however, we can only solve for the energy in matrix form.
+
+What does it mean to solve for the energy of a molecule in matrix form?
+Tl;dr, there are three diagonals that we fill in, and the quantum numbers are only vaguely meaningful anymore.\foott{16}{this is way too handwavey, but it's getting to be bed time and I want to just post this more than I want to get through this rigorously right now}
+Along the main diagonal, the matrix adds a minus E.
+When setting the determinant to 0, you can solve for E.
+It turns out that every rotational level J has 2J+1 energy levels available.\foott{17}{oof i need to discuss that in way more detail later}
+Because the matrix can be rearranged into a tridiagonal matrix, the solution is far faster.
+
+In general, the rotational energies of a molecule are almost never solved for symbolically.
+There are a variety of reasons for this, most of which come down to the redundancy of doing so.
+Solving a numeric matrix is something that computers are famously optimized for, and A B and C can be at least roughly estimated given a molecule.
+
+Of course, even slight errors in calculating A, B, or C will result in lines being shifted from their predicted locations.
+The goal of fitting a spectrum, then, takes a guess for A, B, and C and a known spectrum of the molecule, and forces the two together.
+In general, the constants can be predicted with fairly high accuracy using modern computational methods.
+
+Of course, the earlier assumption about rigid rotors is not entirely accurate.
+Those familiar with vibrational spectroscopy may be aware of the harmonic approximation used in that spectroscopy.
+As most rotational transitions have been historically assigned within the ground vibrational state of molecules, quartic distortions, which account for the quadratic shape of the energy well, are often needed.
+In fact, as Gordy and Cook note\foott{18}{double check that it's actually them ofc}, by solving for quartic distortion terms, the slope of the well can be found.
+As higher energy transitions and higher sensitivity instruments are used, corrections to the quadratic well can be added, though only on even powered terms.\foott{19}{i think that this might be too handwavey.
+Should read again in the morning, even though I know that I probably wont}
+Add in a few selection rules, and tada you have rotational spectroscopy.
+
+\endnotes{}
+\section{Draft 1}
+\endnoteversion[a]
+Rotational transitions are the lowest energy of the quantized ways that a molecule can absorb and emit energy.
+There is probably more to say about that, but I don't have the energy to do so right now.
+
+There are any number of texts which derive and define the way that rotational spectroscopy works\foott{1}{Bernath, Gordy and Cook, etc. N.B. When actually including this in your thesis, make sure to actually, you know, follow proper citationing}, and the goal of this work is not to go through a thorough and mathematically rigorous definition of a Hamiltonian, let alone a rotational Hamiltonian.
+Instead, the goal of this appendix\foott{2}{section? redefine as needed} is to provide a high level overview of how to conceptualize the contents necessary to understanding most of this text.
+So, we can begin by demystifying the opening sentence: \say{rotational transitions are the lowest energy of quantized ways that a molecule can absorb and emit energy}.
+What does that mean?
+
+Rotational transitions are more or less what they sound like.
+A molecule is rotating at one speed, and then it starts rotating at another.
+Unlike a bike wheel, however, the speeds that a molecule can rotate at are not continuous.
+That is, a molecule can only be rotating at very specific energies (quantized).
+
+It is the lowest energy of these quantized transitions, which implies the existence of other transitions.
+There are, indeed, other molecular transitions: vibrational and electronic.
+Electronic transitions will not be covered at all in this work, and vibrational transitions will only be covered as necessary to explain breakdowns in the standard rotational model.
+However, claiming that rotational transitions are the lowest energy of quantized ways, that implies that there is at least one way for a molecule to absorb and emit energy that is not quantized.
+And, indeed, we find that molecules\foott{3}{or indeed, anything} can move at any arbitrary speed, using translational motion.
+
+What do we mean by a molecule?
+Now, there are any number of ways to define a molecule.
+There is the classic reductionist view popular among physicists and physical chemists: a molecule is a collection of atoms bound together by different forces.\foott{4}{I should find places that claim this, if only because it's fun to cite many random books who say things the same ways}
+There is the opposite view, from an observational perspective: a molecule is the smallest unit that a thing can have.
+That is, although molecules are made of atoms, breaking molecules fundamentally means changing the material you are working with.
+The specific placement, numbering, and kind of atoms in a molecule is essential to understanding the molecule itself.
+Both of these definitions will be necessary to understand rotational spectroscopy.
+
+What does it mean to absorb and emit energy?
+Energy, as far as this text is concerned, takes two forms: potential and photon.
+That is, molecules can absorb energy, taking in photons and moving to less stable states.
+Or, molecules can relax, letting go of small packets of light.\foott{5}{photons. I should probably start with that definition}
+How?
+Without getting too deep into the weeds, light and matter interact only weakly.
+
+Light, as is often said, functions as both a wave and a particle.
+What does that mean?
+Wait no I don't want to get into that duality here. I'll assume that I'll cover light somewhere else in the thesis.
+
+Why does rotating take specific amounts of energy?
+Only some molecules have rotational transitions.
+Those molecules have what is known as a dipole, or an uneven distribution of its electrons' expected positions.\foott{6}{oof that's a bad definition of dipole, make sure to work on it}
+Most works on rotational spectroscopy begin with a simple linear molecule, showing that the energy is both quantized and algebraic.
+That is, from just a few known pieces of information about the atoms in a linear molecule, you can predict\foott{7}{ignoring distortion effects and everything else, which I am going to do right now. Do I think that I get to use footnotes in my thesis? hard to say for certain. I certainly like them, but I understand that they are somewhat inherently informal.
+I'll see. Probably more in the appendices and background information sections, since those are more likely to be skimmed over and what not}
+exactly how much energy it will take to make the molecule rotate, or how much energy it will release when it stops rotating.
+
+N.B. Coming back a few hours later, I think that I lost the thread a little bit.
+I'm going to restart and see if I cannot do better.
+
+\endnotes{}\end{document}
