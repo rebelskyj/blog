@@ -530,3 +530,5 @@ A Conclusion to Science as Mysticism:science-mysticism-revisited.html:06
 Latin Hypercube Appendix:thesis-latin-hypercube.html:08
 Beetlejuice Review:beetlejuice-review.html:13
 Rotational Spectroscopy Primer:thesis-rotational-primer.html:15
+-June
+Restarting (Again (again again again)):restarting-again-again-again-again.html:25

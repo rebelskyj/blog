@@ -492,3 +492,4 @@ science-mysticism-revisited.tex:A Conclusion to Science as Mysticism
 thesis-latin-hypercube.tex:Latin Hypercube Appendix
 beetlejuice-review.tex:Beetlejuice Review
 thesis-rotational-primer.tex:Rotational Spectroscopy Primer
+restarting-again-again-again-again.tex:Restarting (Again (again again again))
