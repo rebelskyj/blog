@@ -534,3 +534,4 @@ Rotational Spectroscopy Primer:thesis-rotational-primer.html:15
 Restarting (Again (again again again)):restarting-again-again-again-again.html:25
 -July
 Semi Yearly Reflection:reflection-2024a.html:01
+On Writer's Slumps:writers-slump.html:02
