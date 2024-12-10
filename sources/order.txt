@@ -495,3 +495,5 @@ thesis-rotational-primer.tex:Rotational Spectroscopy Primer
 restarting-again-again-again-again.tex:Restarting (Again (again again again))
 reflection-2024a.tex:Semi Yearly Reflection
 writers-slump.tex:On Writer's Slumps
+music-memories.tex:On Music Memories
+reflection-2024b.tex:Reflection

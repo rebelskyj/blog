@@ -535,3 +535,7 @@ Restarting (Again (again again again)):restarting-again-again-again-again.html:2
 -July
 Semi Yearly Reflection:reflection-2024a.html:01
 On Writer's Slumps:writers-slump.html:02
+-November
+On Music Memories:music-memories.html:12
+-December
+Reflection:reflection-2024b.html:06
