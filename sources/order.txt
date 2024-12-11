@@ -498,3 +498,4 @@ writers-slump.tex:On Writer's Slumps
 music-memories.tex:On Music Memories
 reflection-2024b.tex:Reflection
 quick-happy-memories.tex:Quick Happy Memories
+goal-updates.tex:Goal Updates and Scheduling
