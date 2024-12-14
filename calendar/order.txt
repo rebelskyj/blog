@@ -543,3 +543,4 @@ Quick Happy Memories:quick-happy-memories.html:09
 Goal Updates and Scheduling:goal-updates.html:10
 Donut Recipe:donut-recipe.html:12
 Brain Training:brain-training.html:13
+Learning to Draw:learning-drawing.html:14
