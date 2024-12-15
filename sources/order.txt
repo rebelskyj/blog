@@ -502,3 +502,4 @@ goal-updates.tex:Goal Updates and Scheduling
 donut-recipe.tex:Donut Recipe
 brain-training.tex:Brain Training
 learning-drawing.tex:Learning to Draw
+reflections-on-readings-3-advent-c-24.tex:Reflections on Today's Gospel

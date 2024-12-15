@@ -22,7 +22,21 @@ div.column{display: inline-block; vertical-align: top; width: 50%;}
       <h4>I'm just copying my father</h4>
       <h5><a href="index.html">Home</a></h5>
     </center>
-    <h1 id="thesis-appendix-rotational-spectroscopy-primer"><a href="thesis-rotational-primer.html">Thesis Appendix: Rotational Spectroscopy Primer</a></h1>
+    <h1 id="restarting-again-again-again-again"><a href="restarting-again-again-again-again.html">Restarting (Again (again again again))</a></h1>
+<p>First Published: 2024 June 25</p>
+<h1 id="draft-1">Draft 1</h1>
+<p>At some point I should really stop just appending a new again to the end of the title. Of course, at some point I should really either stop giving up on the blog or give up on it forever.<a href="#fn001" class="footnote-ref" id="fn00ref1" role="doc-noteref"><sup>1</sup></a> That being said, neither of those are happening now.</p>
+<p>I’ve started to get the familiar summer itch<a href="#fn002" class="footnote-ref" id="fn00ref2" role="doc-noteref"><sup>2</sup></a> to restart the blog, and so here we are. Very few updates since last time, though of course, if you’re interested, they’re mostly available on my <a href="twenty-five.html">yearly goal tracker</a>. In general, I think that I’ve been doing fairly well, which is nice to be able to say.</p>
+<p>Anyways, I’ve now basically given up on the post for the day, so I’m going to post this. Hopefully tomorrow I’ll be up to the rest of the reflecting I should do.</p>
+<section class="footnotes" role="doc-endnotes">
+<hr />
+<ol>
+<li id="fn001" role="doc-endnote"><p>hmm actually no I do really think that there’re points in my lives wherein the blog is better or worse for me. That being said, I do generally feel like the majority of points in my life are at least not worsened by the presence of a daily blog post, and it does help me to remain more reflective<a href="#fn00ref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn002" role="doc-endnote"><p>ok so scrolling through the calendar of my posts, it doesn’t really seem like there’s a rhythm or rhyme based on the pseudo solar calendar we all know and love<a href="#fn00ref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
+
+<h1 id="thesis-appendix-rotational-spectroscopy-primer"><a href="thesis-rotational-primer.html">Thesis Appendix: Rotational Spectroscopy Primer</a></h1>
 <p>First Published: 2024 January 15</p>
 <h1 id="draft-2">Draft 2</h1>
 <p>b]</p>
@@ -97,25 +111,25 @@ div.column{display: inline-block; vertical-align: top; width: 50%;}
 <h1 id="thesis-appendix-latin-hypercube"><a href="thesis-latin-hypercube.html">Thesis Appendix: Latin Hypercube</a></h1>
 <p>First Published: 2024 January 8</p>
 <h1 id="draft-2-8-january-2024">Draft 2: 8 January 2024</h1>
-<p>Ok so I missed a few days of posting there. However, I do want to make some progress on my thesis work tonight, even if it is only an appendix. So, let’s revise RebelFit Latin Hypercube.<a href="#fn021" class="footnote-ref" id="fn02ref1" role="doc-noteref"><sup>1</sup></a></p>
+<p>Ok so I missed a few days of posting there. However, I do want to make some progress on my thesis work tonight, even if it is only an appendix. So, let’s revise RebelFit Latin Hypercube.<a href="#fn031" class="footnote-ref" id="fn03ref1" role="doc-noteref"><sup>1</sup></a></p>
 <p>One of the fundamental algorithms in Rebelfit is Latin Hypercube Sampling/ It was initially described by () at () as a method for effectively sparsely sampling a space.</p>
 <p>It is sometimes difficult to conceptualize sampling high dimensional spaces. For instance, if one wanted to take five samples in each dimension and do it as a grid, the number of samples grows exponentially as the number of dimensions increases. By the time that one reaches 8 dimensions (the number of variables in a Reduced Rotational Hamiltonian with Quartic Centrifugal Distortion), a grid five samples wide would require nearly four hundred thousand samples.</p>
-<p>Another instinctual method for sampling a high dimensional space is to use a random sample. Or, at least, a pseudo-random sample (see appendix: randomness for more details). Latin Hypercube is demonstrably better at mapping a space than random sampling, though that improvement is reduced as dimensions and numbers of samples increase.<a href="#fn022" class="footnote-ref" id="fn02ref2" role="doc-noteref"><sup>2</sup></a></p>
-<p>The name Latin Hypercube comes from the concept of a Latin Square, which is inspired by the work of Leonhard Euler.<a href="#fn023" class="footnote-ref" id="fn02ref3" role="doc-noteref"><sup>3</sup></a> It does include some aspects of randomness. In each of M dimensions, the sample space is cut into N slices, where N is the number of total samples desired. The slices can be defined in any arbitrary way, but the most common are even spacings and a Baysian distribution based on prior knowledge. Once each dimension is sliced, a point is randomly picked in each of the N wells in each dimension, and they are randomly correlated together. Unlike random sampling, this ensures that values are measured over the entire range of each variable. Without randomly correlating the dimensions, the trivial Latin Hypercube is constructed, where you sample along the hyperhypotenuse.</p>
+<p>Another instinctual method for sampling a high dimensional space is to use a random sample. Or, at least, a pseudo-random sample (see appendix: randomness for more details). Latin Hypercube is demonstrably better at mapping a space than random sampling, though that improvement is reduced as dimensions and numbers of samples increase.<a href="#fn032" class="footnote-ref" id="fn03ref2" role="doc-noteref"><sup>2</sup></a></p>
+<p>The name Latin Hypercube comes from the concept of a Latin Square, which is inspired by the work of Leonhard Euler.<a href="#fn033" class="footnote-ref" id="fn03ref3" role="doc-noteref"><sup>3</sup></a> It does include some aspects of randomness. In each of M dimensions, the sample space is cut into N slices, where N is the number of total samples desired. The slices can be defined in any arbitrary way, but the most common are even spacings and a Baysian distribution based on prior knowledge. Once each dimension is sliced, a point is randomly picked in each of the N wells in each dimension, and they are randomly correlated together. Unlike random sampling, this ensures that values are measured over the entire range of each variable. Without randomly correlating the dimensions, the trivial Latin Hypercube is constructed, where you sample along the hyperhypotenuse.</p>
 <h1 id="draft-1-31-december-2023">Draft 1: 31 December 2023</h1>
 <p>One of the fundamental algorithms in Rebelfit is the Latin Hypercube. It was initially described by () at () as a method of more effectively sparsely sampling a space.</p>
-<p>Its name comes from the concept of a Latin Square, which is an arrangement of rooks on a grid such that none can take each other. As with all sampling methods that are better than random sampling, Latin Hypercube sampling becomes less better<a href="#fn024" class="footnote-ref" id="fn02ref4" role="doc-noteref"><sup>4</sup></a> than random sampling as the number of samples or the number of dimensions increases.</p>
-<p>In order to construct a Latin Hypercube, you need to define the number of dimensions (M) and the number of samples (N) that you will use. In the general form of the algorithm, each of the dimensions is then cut into N different wells, and a point within each well is randomly selected.<a href="#fn025" class="footnote-ref" id="fn02ref5" role="doc-noteref"><sup>5</sup></a> Each dimension’s wells are then randomly assigned to each other, so that you don’t just sample around the n dimensional hyperhypotenuse.<a href="#fn026" class="footnote-ref" id="fn02ref6" role="doc-noteref"><sup>6</sup></a></p>
+<p>Its name comes from the concept of a Latin Square, which is an arrangement of rooks on a grid such that none can take each other. As with all sampling methods that are better than random sampling, Latin Hypercube sampling becomes less better<a href="#fn034" class="footnote-ref" id="fn03ref4" role="doc-noteref"><sup>4</sup></a> than random sampling as the number of samples or the number of dimensions increases.</p>
+<p>In order to construct a Latin Hypercube, you need to define the number of dimensions (M) and the number of samples (N) that you will use. In the general form of the algorithm, each of the dimensions is then cut into N different wells, and a point within each well is randomly selected.<a href="#fn035" class="footnote-ref" id="fn03ref5" role="doc-noteref"><sup>5</sup></a> Each dimension’s wells are then randomly assigned to each other, so that you don’t just sample around the n dimensional hyperhypotenuse.<a href="#fn036" class="footnote-ref" id="fn03ref6" role="doc-noteref"><sup>6</sup></a></p>
 <p>Latin Hypercube’s benefits are best demonstrated by comparison to other common sampling methods. If we compare to a Grid Search, where we want to sample 10 different points in each dimension, that requires a million data points by the time that we reach the 7th dimension. The N for samples is constant over any number of dimensions you ad,.</p>
 <section class="footnotes" role="doc-endnotes">
 <hr />
 <ol>
-<li id="fn021" role="doc-endnote"><p>n.b. the previous draft is probably not needed to be read because I’ve actually revised, rather than wholesale rewritten<a href="#fn02ref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn022" role="doc-endnote"><p>I forget where I read that, but it does seem to be common knowledge at this point<a href="#fn02ref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn023" role="doc-endnote"><p>cite wikipedia unless I can find a better source/read the original source<a href="#fn02ref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn024" role="doc-endnote"><p>oof that’s rough<a href="#fn02ref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn025" role="doc-endnote"><p>see the appendix on randomness<a href="#fn02ref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn026" role="doc-endnote"><p>I know that’s not the real word, but it feels appropriate<a href="#fn02ref6" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn031" role="doc-endnote"><p>n.b. the previous draft is probably not needed to be read because I’ve actually revised, rather than wholesale rewritten<a href="#fn03ref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn032" role="doc-endnote"><p>I forget where I read that, but it does seem to be common knowledge at this point<a href="#fn03ref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn033" role="doc-endnote"><p>cite wikipedia unless I can find a better source/read the original source<a href="#fn03ref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn034" role="doc-endnote"><p>oof that’s rough<a href="#fn03ref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn035" role="doc-endnote"><p>see the appendix on randomness<a href="#fn03ref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn036" role="doc-endnote"><p>I know that’s not the real word, but it feels appropriate<a href="#fn03ref6" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section>
 
@@ -237,7 +251,7 @@ div.column{display: inline-block; vertical-align: top; width: 50%;}
 <h1 id="draft-1">Draft 1</h1>
 <p>It’s been another week, which means that I get this week’s version of what I’ve been reading and writing. I’ve read basically nothing over the past week, which is a little sad. It is also Christmastide still, so I guess that it doesn’t surprise me that much, and it isn’t really that bad of a thing.</p>
 <p>However, I did just start reading the extended Percy Jackson Universe book about Nico and Will, so we’ll see how fun that ends up being. Once I’ve finished that, it will probably be more or less time for me to go back to the actual reading goals that I have.</p>
-<p>In terms of writing, I mused about the album that I’d like to write, and I’ve started thinking about the album’s content. I’ve also managed to continue with daily musings, filled a few pages in my lab notebook with notes, and I’ve written two chapters of my web novel.<a href="#fn051" class="footnote-ref" id="fn05ref1" role="doc-noteref"><sup>1</sup></a> I think that’s everything!</p>
+<p>In terms of writing, I mused about the album that I’d like to write, and I’ve started thinking about the album’s content. I’ve also managed to continue with daily musings, filled a few pages in my lab notebook with notes, and I’ve written two chapters of my web novel.<a href="#fn061" class="footnote-ref" id="fn06ref1" role="doc-noteref"><sup>1</sup></a> I think that’s everything!</p>
 <p>Oh wait! I’ve also been working on some of my Saturday musings. That really is everything, which is a little bit disheartening, but I suppose doing this every week should hopefully keep me at least somewhat accountable for how much I’m reading and writing. Time to do another draft of one of the musings, I suppose.</p>
 <ul>
 <li><p>Blog? There’s this, and also the next draft on the Saturday musings that I’m going to try.</p></li>
@@ -255,7 +269,7 @@ div.column{display: inline-block; vertical-align: top; width: 50%;}
 <section class="footnotes" role="doc-endnotes">
 <hr />
 <ol>
-<li id="fn051" role="doc-endnote"><p>that is, I was well ahead by writing a chapter two days in a row, and then I haven’t really written since. I was worried about boom and bust, and it seems like that was a reasonable concern.<a href="#fn05ref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn061" role="doc-endnote"><p>that is, I was well ahead by writing a chapter two days in a row, and then I haven’t really written since. I was worried about boom and bust, and it seems like that was a reasonable concern.<a href="#fn06ref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section>
 
@@ -361,7 +375,7 @@ div.column{display: inline-block; vertical-align: top; width: 50%;}
 <ul>
 <li><p>Publishing my first first author paper</p></li>
 <li><p>Giving an invited lecture at a university</p></li>
-<li><p>I’m excited to grow in my relationships<a href="#fn081" class="footnote-ref" id="fn08ref1" role="doc-noteref"><sup>1</sup></a></p></li>
+<li><p>I’m excited to grow in my relationships<a href="#fn091" class="footnote-ref" id="fn09ref1" role="doc-noteref"><sup>1</sup></a></p></li>
 <li><p>I’m once again also excited to watch my little brother graduate</p></li>
 <li><p>I’m excited to record an album</p></li>
 </ul>
@@ -371,7 +385,7 @@ div.column{display: inline-block; vertical-align: top; width: 50%;}
 <li><p>I got to give a lecture to a classroom which is only slightly different than the last item but felt significantly different.</p></li>
 <li><p>I did open mics!</p></li>
 <li><p>I kind of became a computational chemist</p></li>
-<li><p>I got much better at writing! Both in terms of content and in terms of quality.<a href="#fn082" class="footnote-ref" id="fn08ref2" role="doc-noteref"><sup>2</sup></a></p></li>
+<li><p>I got much better at writing! Both in terms of content and in terms of quality.<a href="#fn092" class="footnote-ref" id="fn09ref2" role="doc-noteref"><sup>2</sup></a></p></li>
 </ul>
 <p>Last year I also had five items that I was excited for!</p>
 <ul>
@@ -381,11 +395,11 @@ div.column{display: inline-block; vertical-align: top; width: 50%;}
 <li><p>Watching my littlest brother graduate. It was fantastic.</p></li>
 <li><p>Growing in my relationships. I did! It was very rewarding, and I am very glad that I did it.</p></li>
 </ul>
-<p>I had a number of goals for last year, and I generally did not do a great job with them.<a href="#fn083" class="footnote-ref" id="fn08ref3" role="doc-noteref"><sup>3</sup></a></p>
+<p>I had a number of goals for last year, and I generally did not do a great job with them.<a href="#fn093" class="footnote-ref" id="fn09ref3" role="doc-noteref"><sup>3</sup></a></p>
 <p>This upcoming year, as with every year, I have any number of goals, however (un)reasonable they may be.</p>
 <ul>
-<li><p>Blog Daily<a href="#fn084" class="footnote-ref" id="fn08ref4" role="doc-noteref"><sup>4</sup></a></p></li>
-<li><p>Finish the research for my dissertation<a href="#fn085" class="footnote-ref" id="fn08ref5" role="doc-noteref"><sup>5</sup></a></p></li>
+<li><p>Blog Daily<a href="#fn094" class="footnote-ref" id="fn09ref4" role="doc-noteref"><sup>4</sup></a></p></li>
+<li><p>Finish the research for my dissertation<a href="#fn095" class="footnote-ref" id="fn09ref5" role="doc-noteref"><sup>5</sup></a></p></li>
 <li><p>Make significant progress on writing my thesis</p></li>
 <li><p>Figure out what I want to do after graduate school</p></li>
 <li><p>Apply to whatever I want to do next</p></li>
@@ -437,39 +451,39 @@ div.column{display: inline-block; vertical-align: top; width: 50%;}
 <li><p>Drink more water</p></li>
 </ul>
 <h1 id="draft-1">Draft 1</h1>
-<p>So, it’s been a year.<a href="#fn086" class="footnote-ref" id="fn08ref6" role="doc-noteref"><sup>6</sup></a> I’m planning to work on this in a few drafts, so let’s take a page from last year’s yearly reflection and do five things I was grateful for last year and five things I’m excited for this year.</p>
+<p>So, it’s been a year.<a href="#fn096" class="footnote-ref" id="fn09ref6" role="doc-noteref"><sup>6</sup></a> I’m planning to work on this in a few drafts, so let’s take a page from last year’s yearly reflection and do five things I was grateful for last year and five things I’m excited for this year.</p>
 <p>Last year I thought that I would be excited for:</p>
 <ul>
 <li><p>Passing my third year exam. I did it! I’m very proud of myself, and it’s wild that I’m now a dissertator</p></li>
-<li><p>Self publishing a book. As of the time that I’m drafting this right now, I’m sitting at just under three hundred and fifty thousand words, I have 1351 followers, and my chapters have been read an average of over four thousand times each.<a href="#fn087" class="footnote-ref" id="fn08ref7" role="doc-noteref"><sup>7</sup></a> It’s been a great experience, and I have definitely been forced<a href="#fn088" class="footnote-ref" id="fn08ref8" role="doc-noteref"><sup>8</sup></a> to reflect on myself based on how the writing I put out is received.</p></li>
+<li><p>Self publishing a book. As of the time that I’m drafting this right now, I’m sitting at just under three hundred and fifty thousand words, I have 1351 followers, and my chapters have been read an average of over four thousand times each.<a href="#fn097" class="footnote-ref" id="fn09ref7" role="doc-noteref"><sup>7</sup></a> It’s been a great experience, and I have definitely been forced<a href="#fn098" class="footnote-ref" id="fn09ref8" role="doc-noteref"><sup>8</sup></a> to reflect on myself based on how the writing I put out is received.</p></li>
 <li><p>Taking an improv class. Sadly, this never happened. I do think that I went to an improv show last year, which was fun. Hopefully I’ll find a time with my friend to go to improv class this year.</p></li>
 <li><p>Watching my littlest brother graduate. He did! It was fantastic to get to watch him, and it was really great getting to spend time with family and see him in his element.</p></li>
-<li><p>Growing in my relationships. Oh boy did I! I started being deliberate about writing letters to friends, and I made an effort to stay in touch with a lot of people. I think that they have by and large been successful goals, though I’ve also finally come to the realization that I don’t have to be friends with everyone. Some people will dislike me for who I am, and that’s ok.<a href="#fn089" class="footnote-ref" id="fn08ref9" role="doc-noteref"><sup>9</sup></a></p></li>
+<li><p>Growing in my relationships. Oh boy did I! I started being deliberate about writing letters to friends, and I made an effort to stay in touch with a lot of people. I think that they have by and large been successful goals, though I’ve also finally come to the realization that I don’t have to be friends with everyone. Some people will dislike me for who I am, and that’s ok.<a href="#fn099" class="footnote-ref" id="fn09ref9" role="doc-noteref"><sup>9</sup></a></p></li>
 </ul>
-<p>All of those tasks that I did accomplish were things that I am glad I did. Other highlights from the year,<a href="#fn0810" class="footnote-ref" id="fn08ref10" role="doc-noteref"><sup>10</sup></a></p>
+<p>All of those tasks that I did accomplish were things that I am glad I did. Other highlights from the year,<a href="#fn0910" class="footnote-ref" id="fn09ref10" role="doc-noteref"><sup>10</sup></a></p>
 <ul>
 <li><p>I got to explore my new home state and visit a lot of the state parks in it as outreach!</p></li>
-<li><p>I got to give a lecture to a classroom<a href="#fn0811" class="footnote-ref" id="fn08ref11" role="doc-noteref"><sup>11</sup></a></p></li>
+<li><p>I got to give a lecture to a classroom<a href="#fn0911" class="footnote-ref" id="fn09ref11" role="doc-noteref"><sup>11</sup></a></p></li>
 <li><p>I did open mics!</p></li>
 <li><p>I kind of became a computational chemist</p></li>
-<li><p>I got much better at writing! Both in terms of content and in terms of quality.<a href="#fn0812" class="footnote-ref" id="fn08ref12" role="doc-noteref"><sup>12</sup></a></p></li>
+<li><p>I got much better at writing! Both in terms of content and in terms of quality.<a href="#fn0912" class="footnote-ref" id="fn09ref12" role="doc-noteref"><sup>12</sup></a></p></li>
 </ul>
 <p>That is all very exciting! What am I looking forward to in 2024?</p>
 <ul>
-<li><p>Publishing a first author paper!<a href="#fn0813" class="footnote-ref" id="fn08ref13" role="doc-noteref"><sup>13</sup></a></p></li>
-<li><p>Growing in my relationships.<a href="#fn0814" class="footnote-ref" id="fn08ref14" role="doc-noteref"><sup>14</sup></a></p></li>
-<li><p>Giving an invited talk at a university<a href="#fn0815" class="footnote-ref" id="fn08ref15" role="doc-noteref"><sup>15</sup></a></p></li>
-<li><p>I’m excited to watch my littlest brother graduate again!<a href="#fn0816" class="footnote-ref" id="fn08ref16" role="doc-noteref"><sup>16</sup></a></p></li>
-<li><p>I’m excited to write and put out an album.<a href="#fn0817" class="footnote-ref" id="fn08ref17" role="doc-noteref"><sup>17</sup></a></p></li>
+<li><p>Publishing a first author paper!<a href="#fn0913" class="footnote-ref" id="fn09ref13" role="doc-noteref"><sup>13</sup></a></p></li>
+<li><p>Growing in my relationships.<a href="#fn0914" class="footnote-ref" id="fn09ref14" role="doc-noteref"><sup>14</sup></a></p></li>
+<li><p>Giving an invited talk at a university<a href="#fn0915" class="footnote-ref" id="fn09ref15" role="doc-noteref"><sup>15</sup></a></p></li>
+<li><p>I’m excited to watch my littlest brother graduate again!<a href="#fn0916" class="footnote-ref" id="fn09ref16" role="doc-noteref"><sup>16</sup></a></p></li>
+<li><p>I’m excited to write and put out an album.<a href="#fn0917" class="footnote-ref" id="fn09ref17" role="doc-noteref"><sup>17</sup></a></p></li>
 </ul>
 <p>Ok cool, that also includes some of my goals for 2024. Turns out I did set goals for 2023, I just put them in a separate document. My goals last year were to:</p>
 <ul>
-<li><p>Blog Daily. I did better at that towards the end of the year, but I think that I averaged somewhere like one day in three overall.<a href="#fn0818" class="footnote-ref" id="fn08ref18" role="doc-noteref"><sup>18</sup></a></p></li>
+<li><p>Blog Daily. I did better at that towards the end of the year, but I think that I averaged somewhere like one day in three overall.<a href="#fn0918" class="footnote-ref" id="fn09ref18" role="doc-noteref"><sup>18</sup></a></p></li>
 <li><p>Do BiaY and CCCiaY. I completely dropped the ball on both of these. I do think that they’re important, and a family member is doing them, so that should help be a motivator.</p></li>
 <li><p>I wanted to be better about exercise. I think that I ebbed and flowed in that goal over the course of the year. I’m generally pretty ok with that fact, though. I have higher priorities, and I’m comfortable with that fact.</p></li>
-<li><p>I wanted to write more and varied forms of poetry and prose. I think that I generally did a pretty good job of writing more, for all that I kind of dropped the ball on the poetry. I think that I did do a pretty good job with varied forms of prose.<a href="#fn0819" class="footnote-ref" id="fn08ref19" role="doc-noteref"><sup>19</sup></a></p></li>
+<li><p>I wanted to write more and varied forms of poetry and prose. I think that I generally did a pretty good job of writing more, for all that I kind of dropped the ball on the poetry. I think that I did do a pretty good job with varied forms of prose.<a href="#fn0919" class="footnote-ref" id="fn09ref19" role="doc-noteref"><sup>19</sup></a></p></li>
 <li><p>I wanted to practice music more. Again, this is a goal that ebbed and flowed, but I would like it to flow more than ebb this coming year.</p></li>
-<li><p>I wanted to try monthly, quarterly, and yearly goals. I generally did alright<a href="#fn0820" class="footnote-ref" id="fn08ref20" role="doc-noteref"><sup>20</sup></a> with the monthly goals, but I gave up on quarterly goals almost instantly and never really referenced the yearly goals.</p></li>
+<li><p>I wanted to try monthly, quarterly, and yearly goals. I generally did alright<a href="#fn0920" class="footnote-ref" id="fn09ref20" role="doc-noteref"><sup>20</sup></a> with the monthly goals, but I gave up on quarterly goals almost instantly and never really referenced the yearly goals.</p></li>
 </ul>
 <p>Last year I wanted to make an effort to learn species counterpoint better. I don’t think that this is a goal that I am going to take with me to 2024. I’ve briefly talked about it before, but to recap: I do want to compose, but mostly for my own solo performance, rather than traditional choral composition. I don’t think that there are enough hours in the day, days in the week, or weeks in the year for me to explore everything that I want, so I need to prioritize.</p>
 <p>What else are things that I want to work on or do this year?</p>
@@ -487,7 +501,7 @@ div.column{display: inline-block; vertical-align: top; width: 50%;}
 <li><p>I would like to finish at least most of my thesis research</p></li>
 <li><p>I would like to make significant progress on writing my thesis</p></li>
 <li><p>I don’t think that I want to do NaNoWriMo again. It was fun the past few years, but I know myself now well enough to know that the way I should grow as a writer is by writing better, not necessarily writing more.</p></li>
-<li><p>On that note, I would like to finish the book on craft and read at least the other books that my friends have given me for Christmas.<a href="#fn0821" class="footnote-ref" id="fn08ref21" role="doc-noteref"><sup>21</sup></a></p></li>
+<li><p>On that note, I would like to finish the book on craft and read at least the other books that my friends have given me for Christmas.<a href="#fn0921" class="footnote-ref" id="fn09ref21" role="doc-noteref"><sup>21</sup></a></p></li>
 <li><p>I would like to read through a lot of the books that I’ve checked out, and I would like to be able to return them with the knowledge in my mind</p></li>
 <li><p>I would like to be better at putting myself out there, at least in terms of presenting a genuine version of myself more readily.</p></li>
 <li><p>I would like to apply for a job in whatever field I end up deciding feels right for my next steps</p></li>
@@ -496,55 +510,27 @@ div.column{display: inline-block; vertical-align: top; width: 50%;}
 <section class="footnotes" role="doc-endnotes">
 <hr />
 <ol>
-<li id="fn081" role="doc-endnote"><p>this was something from last year, but it remains true<a href="#fn08ref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn082" role="doc-endnote"><p>well, at least I think that I improved in terms of quality<a href="#fn08ref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn083" role="doc-endnote"><p>feel free to read the last draft if you’d like more details<a href="#fn08ref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn084" role="doc-endnote"><p>with the disclaimer that I may not post the ones I don’t like<a href="#fn08ref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn085" role="doc-endnote"><p>I would ideally like that to happen, for all that I don’t really expect it to work<a href="#fn08ref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn086" role="doc-endnote"><p>since the last year, I guess. It’s been more than a year since a lot of things have occurred and far less than a year since others have happened<a href="#fn08ref6" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn087" role="doc-endnote"><p>total chapter views divided by chapters<a href="#fn08ref7" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn088" role="doc-endnote"><p>given the opportunity to? Kind of both<a href="#fn08ref8" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn089" role="doc-endnote"><p>arguably good for me, especially if they dislike the parts of me that I personally like<a href="#fn08ref9" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn0810" role="doc-endnote"><p>because it feels kind of wrong to double count<a href="#fn08ref10" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn0811" role="doc-endnote"><p>slightly different, but it felt so different, because it was a completely wild experience where I just got peppered with questions about literally anything (in retrospect, introducing the idea of quantum uncertainty may have been a mistake)<a href="#fn08ref11" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn0812" role="doc-endnote"><p>well, at least I think that I improved in terms of quality<a href="#fn08ref12" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn0813" role="doc-endnote"><p>ideally, at least. I think that I’m close, and it should be very doable<a href="#fn08ref13" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn0814" role="doc-endnote"><p>This is something I said last year, but it remains true this year<a href="#fn08ref14" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn0815" role="doc-endnote"><p>I think that they call themselves a university, at least. Wow I need to start working on that talk<a href="#fn08ref15" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn0816" role="doc-endnote"><p>he really is the brains of the family<a href="#fn08ref16" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn0817" role="doc-endnote"><p>I remembered recently (read: my family reminded me) that many people expect an album to tell a story over the course of its songs. I should probably try to have mine do that, but of course, that is a goal that I am willing to give up on if it becomes untenable<a href="#fn08ref17" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn0818" role="doc-endnote"><p>not going to confirm that right now<a href="#fn08ref18" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn0819" role="doc-endnote"><p>also, 2023 lasted just forever, and I can’t recall what things I did then and what things I didn’t do since 2022<a href="#fn08ref19" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn0820" role="doc-endnote"><p>not to be confused with all right<a href="#fn08ref20" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn0821" role="doc-endnote"><p>or will have given me, as the case may be (don’t ask)<a href="#fn08ref21" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-</ol>
-</section>
-
-<h1 id="reflections-on-todays-gospel"><a href="reflections-on-readings-holy-family-b-23.html">Reflections on Today’s Gospel</a></h1>
-<p>First Published: 2023 December 31</p>
-<h1 id="draft-2">Draft 2</h1>
-<p>Today is the Feast of the Holy Family. There are a number of optional readings today, which means that there is no way that I would be able to discuss every variation on the readings. Instead, I am going to reflect on the readings that were read at the Mass I went to today.</p>
-<p>Year B’s version of the first and second readings focus on Abram turned Abraham. We see his conversation with the Lord, where he bemoans the fact that all of his blessings will fall to his servant, rather than one of his descendants. This conversation is striking to me for a variety of reasons.</p>
-<p>First, the G-d of the Old Testament, for all that we talk about the anger, is also a kind and loving Father. I could never imagine a Greek myth where someone complains to Zeus about the way that they have not been blessed the way that they wanted to be. Of course, the Greek gods are gods in a very different sense than the Almighty. I don’t need to go into that, but it is something that I thought about as I started redrafting this musing.</p>
-<p>Second, the Lord assures Abraham that his children will be as countless as the stars. As a child, that felt interesting to me, because it seemed like we should be able to count the stars. Or, at least, there is a way to count all the stars that the naked eye can see in the night sky.<a href="#fn091" class="footnote-ref" id="fn09ref1" role="doc-noteref"><sup>1</sup></a> Similarly, there is, in theory, a way to measure all of the biological descendants of Abraham. We could genetically sequence the world and find all of his living children, at least.</p>
-<p>However, the stars in the sky are far more than the stars that we can count. One of the biggest discoveries of Hubble was that there is no such thing as empty space. For those who don’t know, one of Hubble’s projects was staring into a dark void, previously thought to be empty space. What it found was more and more dimmer and darker stars. Similarly, as the priest reminded us during his homily today, all Christians are adopted children of Abraham.</p>
-<p>The second reading reminds us of the many ways that the Old Testament prefigures the new. Abraham is willing to trust his son, his only child with Sarah his wife,<a href="#fn092" class="footnote-ref" id="fn09ref2" role="doc-noteref"><sup>2</sup></a> to the Lord. When the Lord says that the is to kill his son, Abraham trusts that he could bring his son back from the dead. Thankfully, however, the Lord does not require Abraham to go through with the sacrifice. In the New Testament, however, the Lord does give up his only son.</p>
-<p>I’ve seen discussions of the Binding of Issac which point out that Abraham was ancient when he was asked to kill his child. There was no way, the commenters claim, for Abraham to overpower his child. That is, his child went to the sacrifice willingly. That doesn’t directly relate to the Gospel today, but it feels at least somewhat relevant.</p>
-<p>Anyways, time to move to the Gospel. This passage, like one of the readings from Luke a few weeks ago, contains one of the Canticles that we use frequently. We have the Canticle of Simeon. The Canticle of Simeon, like the Canticle of Mary, is a song of praise to the Lord. Today’s reading notes that Simeon is full of the Holy Spirit as he says the words.</p>
-<p>It is also important to note that Christ is introduced to the Jewish people according to custom. For all that modern Catholicism tends to overlook a lot of the way that Christ existed as a Jew in the Second Temple Era, it was a vital part of the early Christian theology. Christ was brought into the Temple, the same way that every other Jewish boy child would have been.</p>
-<p>However, this entry to the Temple is not entirely filled with joy. A prophetess of the Lord sees Mary and tells her that a sword shall pierce her heart.</p>
-<p>Sometimes I think about the song “Mary did you Know?” It’s often unpopular among the theologically inclined, because the answers to most of the questions are yes. For all that these complaints are valid, I do think that there’s something really powerful in knowing that Mary spent 33 years with her son, knowing the entire time that he would be murdered before she would die. It is often said that the worst fear a parent has is outliving their child. I cannot even imagine what it would be like to not only outlive your child, but to watch him grow and develop knowing, the same way that you know the Lord is G-d, that he will die before you. Anyways, I think that’s as far as I can get in understanding the readings right now. I’ve still got some hours until the New Year<a href="#fn093" class="footnote-ref" id="fn09ref3" role="doc-noteref"><sup>3</sup></a>, so there’s always a chance that I’ll be inspired to write more in the upcoming time. If not, I’m pretty ok with where I’ve gotten.</p>
-<h1 id="draft-1-realized-theres-some-critical-framing-errors">Draft 1, Realized there’s some critical framing errors</h1>
-<p>I found out today that there are optional first and second readings for Years B and C for today’s readings.<a href="#fn094" class="footnote-ref" id="fn09ref4" role="doc-noteref"><sup>4</sup></a> In the Year B readings, we focus on Abram<a href="#fn095" class="footnote-ref" id="fn09ref5" role="doc-noteref"><sup>5</sup></a> and the promise the Lord gave him, that he would have descendants as countless as the stars. As a person tangential to astronomy, that’s an interesting thought to me. Every time we look in what should be a dark region, we see more stars, fainter and further away.</p>
-<p>The Second Reading comes from St. Paul, who reminds us of the first reading. Abraham is gifted children countless beyond any number because of his trust in the Lord.</p>
-<section class="footnotes" role="doc-endnotes">
-<hr />
-<ol>
-<li id="fn091" role="doc-endnote"><p>zero, if you live in many places<a href="#fn09ref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn092" role="doc-endnote"><p>not his only child, one might note<a href="#fn09ref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn093" role="doc-endnote"><p>well, one of the new years, at least<a href="#fn09ref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn094" role="doc-endnote"><p>revise this sentence please<a href="#fn09ref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn095" role="doc-endnote"><p>Abraham? I never know how we’re supposed to refer to the biblical characters who get renamed when we discuss their actions before being renamed<a href="#fn09ref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn091" role="doc-endnote"><p>this was something from last year, but it remains true<a href="#fn09ref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn092" role="doc-endnote"><p>well, at least I think that I improved in terms of quality<a href="#fn09ref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn093" role="doc-endnote"><p>feel free to read the last draft if you’d like more details<a href="#fn09ref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn094" role="doc-endnote"><p>with the disclaimer that I may not post the ones I don’t like<a href="#fn09ref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn095" role="doc-endnote"><p>I would ideally like that to happen, for all that I don’t really expect it to work<a href="#fn09ref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn096" role="doc-endnote"><p>since the last year, I guess. It’s been more than a year since a lot of things have occurred and far less than a year since others have happened<a href="#fn09ref6" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn097" role="doc-endnote"><p>total chapter views divided by chapters<a href="#fn09ref7" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn098" role="doc-endnote"><p>given the opportunity to? Kind of both<a href="#fn09ref8" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn099" role="doc-endnote"><p>arguably good for me, especially if they dislike the parts of me that I personally like<a href="#fn09ref9" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn0910" role="doc-endnote"><p>because it feels kind of wrong to double count<a href="#fn09ref10" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn0911" role="doc-endnote"><p>slightly different, but it felt so different, because it was a completely wild experience where I just got peppered with questions about literally anything (in retrospect, introducing the idea of quantum uncertainty may have been a mistake)<a href="#fn09ref11" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn0912" role="doc-endnote"><p>well, at least I think that I improved in terms of quality<a href="#fn09ref12" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn0913" role="doc-endnote"><p>ideally, at least. I think that I’m close, and it should be very doable<a href="#fn09ref13" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn0914" role="doc-endnote"><p>This is something I said last year, but it remains true this year<a href="#fn09ref14" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn0915" role="doc-endnote"><p>I think that they call themselves a university, at least. Wow I need to start working on that talk<a href="#fn09ref15" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn0916" role="doc-endnote"><p>he really is the brains of the family<a href="#fn09ref16" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn0917" role="doc-endnote"><p>I remembered recently (read: my family reminded me) that many people expect an album to tell a story over the course of its songs. I should probably try to have mine do that, but of course, that is a goal that I am willing to give up on if it becomes untenable<a href="#fn09ref17" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn0918" role="doc-endnote"><p>not going to confirm that right now<a href="#fn09ref18" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn0919" role="doc-endnote"><p>also, 2023 lasted just forever, and I can’t recall what things I did then and what things I didn’t do since 2022<a href="#fn09ref19" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn0920" role="doc-endnote"><p>not to be confused with all right<a href="#fn09ref20" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn0921" role="doc-endnote"><p>or will have given me, as the case may be (don’t ask)<a href="#fn09ref21" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section>
 
