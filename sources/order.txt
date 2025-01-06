@@ -503,3 +503,4 @@ donut-recipe.tex:Donut Recipe
 brain-training.tex:Brain Training
 learning-drawing.tex:Learning to Draw
 reflections-on-readings-3-advent-c-24.tex:Reflections on Today's Gospel
+christmas-2024.tex:Christmas 2024
