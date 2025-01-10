@@ -506,3 +506,4 @@ reflections-on-readings-3-advent-c-24.tex:Reflections on Today's Gospel
 christmas-2024.tex:Christmas 2024
 planning-2025.tex:Planning 2025
 dietary-needs.tex:Initial Reflections on Dietary Needs
+dietary-needs-2.tex:Dietary Needs
