@@ -510,3 +510,4 @@ dietary-needs-2.tex:Dietary Needs
 dietary-needs-3.tex:Dietary Needs
 dietary-needs-4.tex:Dietary Needs Mostly Concluded
 dietary-needs-5.tex:The End of a Series
+scheduled-life.tex:On a Scheduled Life
