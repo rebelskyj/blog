@@ -511,3 +511,4 @@ dietary-needs-3.tex:Dietary Needs
 dietary-needs-4.tex:Dietary Needs Mostly Concluded
 dietary-needs-5.tex:The End of a Series
 scheduled-life.tex:On a Scheduled Life
+recipe-protein-bread-1.tex:An Initial Attempt to Make Macro Bread
