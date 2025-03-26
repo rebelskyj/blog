@@ -515,3 +515,4 @@ recipe-protein-bread-1.tex:An Initial Attempt to Make Macro Bread
 back-in-shape.tex:Musing on Getting Back in Shape
 reflection-february-2025.tex:Reflection on the Start to the Year
 planning-lent-2025.tex:Planning For Lent
+why-not-write-web-novel.tex:Exploring Hesitation to Restart Web Novel
