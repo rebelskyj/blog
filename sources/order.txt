@@ -519,3 +519,4 @@ why-not-write-web-novel.tex:Exploring Hesitation to Restart Web Novel
 twenty-six.tex:26 for Twenty Six
 reflection-march-25.tex:Monthly Reflection
 science-communication.tex:On Science Communication
+time-discounts.tex:Time Discounts and a Better Me
