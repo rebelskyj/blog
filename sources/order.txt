@@ -520,3 +520,4 @@ twenty-six.tex:26 for Twenty Six
 reflection-march-25.tex:Monthly Reflection
 science-communication.tex:On Science Communication
 time-discounts.tex:Time Discounts and a Better Me
+feeding-myself.tex:On Feeding Myself
