@@ -521,3 +521,4 @@ reflection-march-25.tex:Monthly Reflection
 science-communication.tex:On Science Communication
 time-discounts.tex:Time Discounts and a Better Me
 feeding-myself.tex:On Feeding Myself
+reflections-on-readings-5-lent-c-25.tex:Reflections on the Gospel
