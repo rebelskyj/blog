@@ -524,3 +524,4 @@ feeding-myself.tex:On Feeding Myself
 reflections-on-readings-5-lent-c-25.tex:Reflections on the Gospel
 path-of-life.tex:On the Path of a Life
 out_and_through.tex:The Only Way Out is Through. The Only Way Through is Forward
+optimizing-lifting.tex:On the Optimal Lifting Plan
