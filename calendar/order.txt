@@ -573,3 +573,4 @@ On the Path of a Life:path-of-life.html:07
 The Only Way Out is Through. The Only Way Through is Forward:out_and_through.html:11
 On the Optimal Lifting Plan:optimizing-lifting.html:12
 Some Writing Advice:writing-advice.html:14
+On Mastery:mastery.html:15
