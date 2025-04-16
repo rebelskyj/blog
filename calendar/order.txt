@@ -574,3 +574,4 @@ The Only Way Out is Through. The Only Way Through is Forward:out_and_through.htm
 On the Optimal Lifting Plan:optimizing-lifting.html:12
 Some Writing Advice:writing-advice.html:14
 On Mastery:mastery.html:15
+On What I Call this Writing:verbiage.html:16

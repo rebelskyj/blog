@@ -527,3 +527,4 @@ out_and_through.tex:The Only Way Out is Through. The Only Way Through is Forward
 optimizing-lifting.tex:On the Optimal Lifting Plan
 writing-advice.tex:Some Writing Advice
 mastery.tex:On Mastery
+verbiage.tex:On What I Call this Writing
