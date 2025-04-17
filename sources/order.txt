@@ -528,3 +528,4 @@ optimizing-lifting.tex:On the Optimal Lifting Plan
 writing-advice.tex:Some Writing Advice
 mastery.tex:On Mastery
 verbiage.tex:On What I Call this Writing
+succeeding-at-creation.tex:On Succeeding At Creating
