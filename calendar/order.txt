@@ -576,3 +576,4 @@ Some Writing Advice:writing-advice.html:14
 On Mastery:mastery.html:15
 On What I Call this Writing:verbiage.html:16
 On Succeeding At Creating:succeeding-at-creation.html:17
+Shapenote Sacred Music and the Second Vatican Council:shapenote_sacred_music.html:22
