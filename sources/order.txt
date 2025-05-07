@@ -533,3 +533,4 @@ shapenote_sacred_music.tex:Shapenote Sacred Music and the Second Vatican Council
 fugues-and-flow.tex:On Fugues and Flow States
 revisiting-motivation.tex:Another Look On Motivation
 reflection-april-25.tex:Monthly Reflection
+melody-harmony.tex:On Melody and Harmony
