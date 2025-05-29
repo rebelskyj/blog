@@ -536,3 +536,4 @@ reflection-april-25.tex:Monthly Reflection
 melody-harmony.tex:On Melody and Harmony
 what-we-dont-post.tex:What We Don't Post
 self-help.tex:On Self Help
+dissertation-camp.tex:On Dissertation Writing Camp
