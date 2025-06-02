@@ -587,3 +587,4 @@ On Self Help:self-help.html:28
 On Dissertation Writing Camp:dissertation-camp.html:29
 -June
 Monthly Reflection:reflection-may-25.html:01
+On Trusting Myself:trusting-myself.html:02
