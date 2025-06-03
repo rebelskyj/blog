@@ -539,3 +539,4 @@ self-help.tex:On Self Help
 dissertation-camp.tex:On Dissertation Writing Camp
 reflection-may-25.tex:Monthly Reflection
 trusting-myself.tex:On Trusting Myself
+lemon-wine-4.tex:Lemon Wine 2025
