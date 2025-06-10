@@ -542,3 +542,4 @@ trusting-myself.tex:On Trusting Myself
 lemon-wine-4.tex:Lemon Wine 2025
 networking.tex:On Networking
 faith.tex:On Faith right now
+paper.tex:On Paper
