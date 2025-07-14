@@ -592,3 +592,5 @@ Lemon Wine 2025:lemon-wine-4.html:03
 On Networking:networking.html:04
 On Faith right now:faith.html:07
 On Paper:paper.html:10
+-July
+Monthly Reflection:reflection-june-25.html:8
