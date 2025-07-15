@@ -544,3 +544,4 @@ networking.tex:On Networking
 faith.tex:On Faith right now
 paper.tex:On Paper
 reflection-june-25.tex:Monthly Reflection
+chemistry-education-research-1.tex:Reflection on Chemistry Education Readings Week One
