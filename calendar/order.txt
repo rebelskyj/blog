@@ -596,3 +596,4 @@ On Paper:paper.html:10
 Monthly Reflection:reflection-june-25.html:8
 Reflection on Chemistry Education Readings Week One:chemistry-education-research-1.html:14
 On the Next Thirty Eight Days:thirty-eight-days.html:18
+Trying Bullet Journals:bullet-journal.html:20
