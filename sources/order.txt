@@ -549,3 +549,4 @@ thirty-eight-days.tex:On the Next Thirty Eight Days
 bullet-journal.tex:Trying Bullet Journals
 chemistry-education-research-2.tex:Reflection on Chemistry Education Readings Week Two
 reflection-july-25.tex:Monthly Reflection
+reflection-august-25.tex:Monthly Reflection
