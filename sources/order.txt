@@ -552,3 +552,4 @@ reflection-july-25.tex:Monthly Reflection
 reflection-august-25.tex:Monthly Reflection
 words-rare-knowledge.tex:On Words for Rare Knowledge
 trains.tex:On Trains
+creating-for-myself.tex:On Creating for Myself
