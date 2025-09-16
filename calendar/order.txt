@@ -606,3 +606,4 @@ On Words for Rare Knowledge:words-rare-knowledge.html:06
 On Trains:trains.html:8
 On Creating for Myself:creating-for-myself.html:12
 On Kindness:kindness.html:15
+On Mindfulness:mindfulness.html:16

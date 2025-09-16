@@ -554,3 +554,4 @@ words-rare-knowledge.tex:On Words for Rare Knowledge
 trains.tex:On Trains
 creating-for-myself.tex:On Creating for Myself
 kindness.tex:On Kindness
+mindfulness.tex:On Mindfulness
