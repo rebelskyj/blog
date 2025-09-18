@@ -555,3 +555,4 @@ trains.tex:On Trains
 creating-for-myself.tex:On Creating for Myself
 kindness.tex:On Kindness
 mindfulness.tex:On Mindfulness
+teaching-optimization.tex:On Teaching Optimization
