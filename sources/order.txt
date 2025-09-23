@@ -557,3 +557,4 @@ kindness.tex:On Kindness
 mindfulness.tex:On Mindfulness
 teaching-optimization.tex:On Teaching Optimization
 emptiness.tex:On Emptiness
+speed.tex:On Speed
