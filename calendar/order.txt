@@ -611,3 +611,5 @@ On Teaching Optimization:teaching-optimization.html:18
 On Emptiness:emptiness.html:22
 On Speed:speed.html:23
 On MoMA:moma.html:25
+-October
+Monthly Reflection:reflection-september-25.html:05

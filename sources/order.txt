@@ -559,3 +559,4 @@ teaching-optimization.tex:On Teaching Optimization
 emptiness.tex:On Emptiness
 speed.tex:On Speed
 moma.tex:On MoMA
+reflection-september-25.tex:Monthly Reflection
