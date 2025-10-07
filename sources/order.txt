@@ -560,3 +560,4 @@ emptiness.tex:On Emptiness
 speed.tex:On Speed
 moma.tex:On MoMA
 reflection-september-25.tex:Monthly Reflection
+book-review-musicking.tex:Review of Musicking
