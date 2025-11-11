@@ -562,3 +562,4 @@ moma.tex:On MoMA
 reflection-september-25.tex:Monthly Reflection
 book-review-musicking.tex:Review of Musicking
 one-year.tex:One Year
+flection-november-25.tex:Monthly Flection
