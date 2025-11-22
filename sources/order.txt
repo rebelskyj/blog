@@ -564,3 +564,4 @@ book-review-musicking.tex:Review of Musicking
 one-year.tex:One Year
 flection-november-25.tex:Monthly Flection
 one-full-year.tex:ON One Year
+pilates.tex:On Pilates

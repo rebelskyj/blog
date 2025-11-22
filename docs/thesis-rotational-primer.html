@@ -22,6 +22,7 @@
 <h4>I'm just copying my father</h4>
 <h5><a href="index.html">Home</a></h5>
 </center>
+
 <h1 id="thesis-appendix-rotational-spectroscopy-primer"><a href="thesis-rotational-primer.html">Thesis Appendix: Rotational Spectroscopy Primer</a></h1>
 <p>First Published: 2024 January 15</p>
 <h1 id="draft-2">Draft 2</h1>
@@ -36,25 +37,6 @@
 <p>In general, the rotational energies of a molecule are almost never solved for symbolically. There are a variety of reasons for this, most of which come down to the redundancy of doing so. Solving a numeric matrix is something that computers are famously optimized for, and A B and C can be at least roughly estimated given a molecule.</p>
 <p>Of course, even slight errors in calculating A, B, or C will result in lines being shifted from their predicted locations. The goal of fitting a spectrum, then, takes a guess for A, B, and C and a known spectrum of the molecule, and forces the two together. In general, the constants can be predicted with fairly high accuracy using modern computational methods.</p>
 <p>Of course, the earlier assumption about rigid rotors is not entirely accurate. Those familiar with vibrational spectroscopy may be aware of the harmonic approximation used in that spectroscopy. As most rotational transitions have been historically assigned within the ground vibrational state of molecules, quartic distortions, which account for the quadratic shape of the energy well, are often needed. In fact, as Gordy and Cook note<span id="link[18"><a href="#target[18"><sup>18</sup></a></span> , by solving for quartic distortion terms, the slope of the well can be found. As higher energy transitions and higher sensitivity instruments are used, corrections to the quadratic well can be added, though only on even powered terms.<span id="link[19"><a href="#target[19"><sup>19</sup></a></span> Add in a few selection rules, and tada you have rotational spectroscopy.</p>
-<p><span id="target[1"><a href="#link[1"><sup>1</sup></a></span> Bernath, Gordy and Cook, etc. etc. etc</p>
-<p><span id="target[2"><a href="#link[2"><sup>2</sup></a></span> and therefore inherently linear. There are so many ways to prove that any two points can be connected with a single line, and given the whole “this is not meant to be mathematically rigorous”, it is left as an exercise to the reader to prove that the molecule is linear</p>
-<p><span id="target[3"><a href="#link[3"><sup>3</sup></a></span> meaning you can write one expression once for all values that the energy can take</p>
-<p><span id="target[4"><a href="#link[4"><sup>4</sup></a></span> scare quotes because forbidden transitions still occur. In much of astrochemistry, the forbidden transitions are actually the most easily detected</p>
-<p><span id="target[5"><a href="#link[5"><sup>5</sup></a></span> there are an infinite number of ways you can construct a line from any number of atoms in a molecule</p>
-<p><span id="target[6"><a href="#link[6"><sup>6</sup></a></span> two dimensions! Spicy. Also yes, we will ignore the fact that these molecules are not infinitely thin, and so are never inherently linear or planar</p>
-<p><span id="target[7"><a href="#link[7"><sup>7</sup></a></span> the fungibility of atoms will not be discussed in detail here, but isotopes and other charge differences are actually relevant, which sometimes throws people off</p>
-<p><span id="target[8"><a href="#link[8"><sup>8</sup></a></span> that is, structural isomers<span id="link[9"><a href="#target[9"><sup>9</sup></a></span> or even different shapes of the same molecule will have different rotational spectra</p>
-<p><span id="target[9"><a href="#link[9"><sup>9</sup></a></span> molecules with the same atoms bonded differently together</p>
-<p><span id="target[10"><a href="#link[10"><sup>10</sup></a></span> that is an assumption we do correct for later, but note that it is a correction, rather than an actual solution</p>
-<p><span id="target[11"><a href="#link[11"><sup>11</sup></a></span> there is a question about how well rigid rotor approximation would work on like HeH+ infinitely far apart, but if you assume rigid rotor, it does work, I suppose</p>
-<p><span id="target[12"><a href="#link[12"><sup>12</sup></a></span> again, this is not rigorous, but trust that it works</p>
-<p><span id="target[13"><a href="#link[13"><sup>13</sup></a></span> it feels like a centered molecule should have 0, but it turns out that we do not end up with that, which is pretty dang cool. There might also be a square somewhere, distance rather than just displacement, but I’m not being rigorous at this point</p>
-<p><span id="target[14"><a href="#link[14"><sup>14</sup></a></span> wow look at that handwave. what do we mean by expected position of an electron and everyything else I said? ask ur chem prof bruh</p>
-<p><span id="target[15"><a href="#link[15"><sup>15</sup></a></span> give or take some scaling factors</p>
-<p><span id="target[16"><a href="#link[16"><sup>16</sup></a></span> this is way too handwavey, but it’s getting to be bed time and I want to just post this more than I want to get through this rigorously right now</p>
-<p><span id="target[17"><a href="#link[17"><sup>17</sup></a></span> oof i need to discuss that in way more detail later</p>
-<p><span id="target[18"><a href="#link[18"><sup>18</sup></a></span> double check that it’s actually them ofc</p>
-<p><span id="target[19"><a href="#link[19"><sup>19</sup></a></span> i think that this might be too handwavey. Should read again in the morning, even though I know that I probably wont</p>
 <h1 id="draft-1">Draft 1</h1>
 <p>a] Rotational transitions are the lowest energy of the quantized ways that a molecule can absorb and emit energy. There is probably more to say about that, but I don’t have the energy to do so right now.</p>
 <p>There are any number of texts which derive and define the way that rotational spectroscopy works<span id="link[1"><a href="#target[1"><sup>1</sup></a></span> , and the goal of this work is not to go through a thorough and mathematically rigorous definition of a Hamiltonian, let alone a rotational Hamiltonian. Instead, the goal of this appendix<span id="link[2"><a href="#target[2"><sup>2</sup></a></span> is to provide a high level overview of how to conceptualize the contents necessary to understanding most of this text. So, we can begin by demystifying the opening sentence: “rotational transitions are the lowest energy of quantized ways that a molecule can absorb and emit energy”. What does that mean?</p>
@@ -65,13 +47,6 @@
 <p>Light, as is often said, functions as both a wave and a particle. What does that mean? Wait no I don’t want to get into that duality here. I’ll assume that I’ll cover light somewhere else in the thesis.</p>
 <p>Why does rotating take specific amounts of energy? Only some molecules have rotational transitions. Those molecules have what is known as a dipole, or an uneven distribution of its electrons’ expected positions.<span id="link[6"><a href="#target[6"><sup>6</sup></a></span> Most works on rotational spectroscopy begin with a simple linear molecule, showing that the energy is both quantized and algebraic. That is, from just a few known pieces of information about the atoms in a linear molecule, you can predict<span id="link[7"><a href="#target[7"><sup>7</sup></a></span> exactly how much energy it will take to make the molecule rotate, or how much energy it will release when it stops rotating.</p>
 <p>N.B. Coming back a few hours later, I think that I lost the thread a little bit. I’m going to restart and see if I cannot do better.</p>
-<p><span id="target[1"><a href="#link[1"><sup>1</sup></a></span> Bernath, Gordy and Cook, etc. N.B. When actually including this in your thesis, make sure to actually, you know, follow proper citationing</p>
-<p><span id="target[2"><a href="#link[2"><sup>2</sup></a></span> section? redefine as needed</p>
-<p><span id="target[3"><a href="#link[3"><sup>3</sup></a></span> or indeed, anything</p>
-<p><span id="target[4"><a href="#link[4"><sup>4</sup></a></span> I should find places that claim this, if only because it’s fun to cite many random books who say things the same ways</p>
-<p><span id="target[5"><a href="#link[5"><sup>5</sup></a></span> photons. I should probably start with that definition</p>
-<p><span id="target[6"><a href="#link[6"><sup>6</sup></a></span> oof that’s a bad definition of dipole, make sure to work on it</p>
-<p><span id="target[7"><a href="#link[7"><sup>7</sup></a></span> ignoring distortion effects and everything else, which I am going to do right now. Do I think that I get to use footnotes in my thesis? hard to say for certain. I certainly like them, but I understand that they are somewhat inherently informal. I’ll see. Probably more in the appendices and background information sections, since those are more likely to be skimmed over and what not</p>
 <div class = "nav-links">
 <a class="nav-previous" href="beetlejuice-review.html">Beetlejuice Review</a>
 <a class="nav-next" href="restarting-again-again-again-again.html">Restarting (Again (again again again))</a>
