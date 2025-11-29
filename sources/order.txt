@@ -568,3 +568,4 @@ pilates.tex:On Pilates
 computer-mistakes.tex:On (Computer) Mistakes
 returning-composing.tex:On Returning to Composing
 inks-i-love.tex:The Inks I've Loved
+bagels-25.tex:On Another Year of Thanksgiving Bagels
