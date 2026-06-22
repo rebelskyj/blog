@@ -1,0 +1,203 @@
+
+<h1 id="revisiting-rebelfit-in-2026"><a href="revisiting-rebelfit-2026.html">Revisiting RebelFit in 2026</a></h1>
+<p>First Published: 2026 June 22</p>
+<p>Prereading note: this is very rotational spec heavy and very rambly... readers be advised.</p>
+<h1 id="draft-1-22-june-2026">Draft 1: 22 June 2026</h1>
+<p>So, I really want to get back into the spectral fitting program which made up the bulk of my Ph.D. dissertation. My biggest let downs with the project as it stood then were:</p>
+<ul>
+<li><p>The program required calling another program (SPCAT) hundreds of thousands of times, often in what seems like might have been redundant calls. When I looked at the runtime, I think that, to a rounding error, all of the run time came from calling this program.</p></li>
+<li><p>I couldn’t get the Latin Capped Hypersphere to work</p></li>
+</ul>
+<p>The other major features that I would want to add to the program to call is something to be proud of:</p>
+<ul>
+<li><p>Extension into S reduction</p></li>
+<li><p>Now that I’m further from the actual project, using the 6 “true” distortion constants as the source of truth, and then using A and S reductions as the shadow ones.</p></li>
+<li><p>Making it easier to have the program take in other Hamiltonians.</p></li>
+</ul>
+<p>So, how would I resolve this?<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a></p>
+<p>Let’s start with the first issue: calling the catalog generating program a number of times. This is not a new issue in the field of rotational spectroscopy. Since before even this program was created<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a>, there have been methods to approximate the value of the energy levels in a way that can be pre-computed. If I remember correctly, three-ish gigabytes is the storage needed to solve the primary rotational constants to basically floating point error. It also only took like twenty minutes to generate, and that gives all possible values of the rotational constants. Since RebelFit works within a range of values, that takes far less time. Still, thinking about the optimization part of it should come later. For now, let’s talk through what I would need to solve in order to get this to work.</p>
+<ol>
+<li><p>Showing that SPCAT A, B, C and a hard-coded (read: manually solved (read: I put in the math and make my computer solve it)) A, B, C produce the same transition locations</p></li>
+<li><p>Showing that SPCAT A, B, C and hand-solved X, Y, Z lead to the same transition locations</p></li>
+<li><p>Showing that SPCAT A, B, C and A reduction lead to the same transitions as hand-solved A, B, C (or X, Y, Z) and A reduction</p></li>
+<li><p>Showing that SPCAT A, B, C and A reduction lead to the same transitions as hand-solved X, Y, Z and Watson T reduction<a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a></p></li>
+<li><p>Showing that hand-solved X, Y, Z match up to the approximation version for X, Y, Z</p></li>
+<li><p>Showing that hand-solved X, Y, Z and T match up to the approximation version for X, Y, Z and rho<a href="#fn4" class="footnote-ref" id="fnref4"><sup>4</sup></a></p></li>
+<li><p>Showing that SPACT A reduction matches the approximation version</p></li>
+<li><p>Reading and using the paper that defines transition intensity to match the approximation to the SPCAT intensities<a href="#fn5" class="footnote-ref" id="fnref5"><sup>5</sup></a>.</p></li>
+<li><p>Ensuring that this new version is actually faster than the old version</p></li>
+<li><p>Hopefully don’t need to repeat to get the S-reduction available</p></li>
+<li><p>Something something make it work for other forms of distortion<a href="#fn6" class="footnote-ref" id="fnref6"><sup>6</sup></a></p></li>
+</ol>
+<p>Since I’m often told something that my writing<a href="#fn7" class="footnote-ref" id="fnref7"><sup>7</sup></a> lacks is connection between fact and conclusion, let’s motivate each step.</p>
+<ol>
+<li><p>SPCAT A B C matching computed A B C.</p>
+<p>This is in theory not a step that I actually need to do. These are mathematically identical. However, I’ve tried to read the SPCAT source code before and I have legitimately no idea what it’s doing. Three rotational constants is easy enough that I should be able to do the coding for it in a few seconds, and then the issue is just having SPCAT run a few times. In general, I probably want it to run one very oblate, one very prolate, and one that’s just basically intermediate.</p></li>
+<li><p>SPCAT A B C matching computed X Y Z</p>
+<p>So, in general, rotational spectra are solved using A, B, C rotational constants. However, computational chemists are more likely to use X, Y, Z. There are<a href="#fn8" class="footnote-ref" id="fnref8"><sup>8</sup></a> six ways to pair X, Y, Z to A, B, C. So long as I match them appropriately, this should take moments at best to verify.</p>
+<p>Given that I think it’s trivial to verify, why do it? A few reasons:</p>
+<ul>
+<li><p>I think that the Watson paper which defines A reduction uses X, Y, Z coordinates somewhere</p></li>
+<li><p>In theory, X, Y, Z are better coordinates to use because they can be taken straight out of a Gaussian or other computational software output</p></li>
+<li><p>Something something, this makes the distortion work out.</p></li>
+</ul>
+<p>Once we ensure that we can reliably match the rigid rotor to the SPCAT rigid rotor, it becomes important to match them with reductions. There’s a slight hiccup here, which is that A, B, C in rigid rotor world are not, as it turns out, the same as A, B, C in A reduction world. As I write this, I am a little curious if that’s the issue that I’m running into or was running into, at least, when I last worked on this.</p></li>
+<li><p>Showing that SPCAT A, B, C and A reduction lead to the same transitions as hand-solved A, B, C (or X, Y, Z) and A reduction</p>
+<p>So, this is better named as three different steps:</p>
+<ul>
+<li><p>Showing that SPCAT A B C and A reduction match the computed A B C (A reduced value) and distortion</p>
+<p>This step is the first one. Using the same numbers, do we get the same outputs?</p></li>
+<li><p>Showing that SPCAT A B C and A reduction match the computed A B C (Non-A reduced Values converted into A reduction) and A distortion.</p>
+<p>Once we’ve shown we can use A(A) B(A) and C(A), use Watson’s conversion from A to A(A) and etc.</p></li>
+<li><p>Showing that SPCAT A B C and A reduction match the computed X Y Z (real values, converted to A reduction) and A distortion.</p>
+<p>Once we’ve shown we can convert A to A(A), make sure we can do all six versions of X to A(A)</p></li>
+</ul>
+<p>Since realistically, I don’t really want to manually compute these values, I’m likely going to have to trust that the values are as linearly interconvertible as I remember that they should be. In practice, this calculation is way more computationally expensive, because the Hamiltonian gets much more complex. Then again, since it remains a numeric matrix, computers do, in fact, go brrr.</p>
+<p>Assuming that I get this, I have more or less proved to myself that SPCAT and real Hamiltonians result in the same transitions.<a href="#fn9" class="footnote-ref" id="fnref9"><sup>9</sup></a></p></li>
+<li><p>Showing that SPCAT A B C and A quartic match the computed X Y Z and Watson T<a href="#fn10" class="footnote-ref" id="fnref10"><sup>10</sup></a> transitions.</p>
+<p>The ultimate goal here is to use the approximate form of the rotational Hamiltonian that Watson outlines. Watson gives his T values in terms of A quartics and in terms of the approximate quartics. While I’m sure that there’s a better way to solve for them, I don’t entirely know what they would be.</p>
+<p>Two questions to try here are giving SPCAT values and back solving for T values, and giving T values and feeding SPCAT the T values.<a href="#fn11" class="footnote-ref" id="fnref11"><sup>11</sup></a></p>
+<p>If this works out, then I have confirmed for myself that I can, in fact, solve five equations for five variables. Also, it makes it easier to test the next parts.</p>
+<p>At this point, I luckily no longer need to use SPCAT, which means that I get to save the half a gigabyte of storage that computing transitions takes up on my computer. That’s probably offset by the amount of memory that my computer is using, but that’s not something I have to manually clear, which is great.</p></li>
+<li><p>Showing that hand-solved X Y Z match approximate A B C</p>
+<p>Again, this should be relatively straightforward. At this point I don’t really care too much about the transition energies<a href="#fn12" class="footnote-ref" id="fnref12"><sup>12</sup></a>, and so can just compare matrix outputs.</p>
+<p>I’ll probably want to generate a representative sample of values, just to be certain<a href="#fn13" class="footnote-ref" id="fnref13"><sup>13</sup></a>.</p>
+<p>Above I had this listed as approximate X Y Z, but I’m like 99 percent certain that the approximate value calculation relies on A B C. In theory, though, it’s incredibly straightforward to match X Y Z to A B C, so again, that’s not a huge concern</p></li>
+<li><p>Showing that hand-solved X Y Z and quartic distortion (either A or T, since we’ve demonstrated interchangibility) match approximate distortion form (most likely using the Watson approximate distortion)</p>
+<p>This one is likely to be the painful portion, if only because I’ll need to be really clear whether I’m working with A(A) or A. Then again, assuming that I calculate out the values for the hand-solved exact version, I can also play around with different options and versions within the approximate form. At the very least, it’s something that I can try!</p>
+<p>If this works out, then I’ve (through the transitive property) shown that the approximate version of the rotational constants matches the SPCAT output for quartic centrifugal distortion. Sextic distortion at that point should go really quickly.<a href="#fn14" class="footnote-ref" id="fnref14"><sup>14</sup></a></p></li>
+<li><p>Showing that SPCAT A and approximate match up</p>
+<p>Having tested the intermediary, I’ll throw the program against what most people would use: SPCAT itself. Issue here will be again, ensuring that I’m using the right versions of each constant.</p></li>
+<li><p>Showing that I can also calculate rotational transition intensity</p>
+<p>There’s, as far as I can tell, basically a single paper that people use for determining the transition intensity of a rotational transition. I’ll read the literature a little more to make sure that’s true<a href="#fn15" class="footnote-ref" id="fnref15"><sup>15</sup></a>, and then have the calculations run given the arbitrary constants and some arbitrary values for the dipoles.</p>
+<p>Realistically, as long as they more or less approximate the values that SPCAT uses, I’m totally happy. SPCAT is known to produce approximate transition intensities, and so that’s so totally fine with me if mine is approximate as well. One issue I’m foreseeing is that calculating transition intensities requires population analysis, which is temperature dependent. My assumption is this is where most of SPCAT’s runtime actually occurs, and so that’s not great.<a href="#fn16" class="footnote-ref" id="fnref16"><sup>16</sup></a> Then again, it’s also likely something that I can extrapolate to a general form when solving the Hamiltonian a million times.</p>
+<p>E.g. if I solve the relative population as a function of energy one time at the start of the run (or for all energies before a run), then all I really have to do is use a lookup table! (Assuming that this is the right way of viewing the problem. I forget whether the exponent has other funky things)</p></li>
+<li><p>Ensuring that this new version is actually faster than the old version</p>
+<p>Since we need to solve for energy levels, it’s possible that a single run may be much slower. When doing one hundred runs, however, I cannot believe that it would be anything but far faster. When doing more than ten thousand runs, there’s no chance that it’s not faster.<a href="#fn17" class="footnote-ref" id="fnref17"><sup>17</sup></a></p></li>
+<li><p>Hopefully don’t need to repeat to get the S-reduction available</p>
+<p>The A and S reductions are the most popular ways to solve a centrifugally distorted rotor. Having done all the work to make A work, I’m assuming that the work to make S work will be trivial, especially because A and S reductions are interconvertible.</p></li>
+<li><p>Something something make it work for other forms of distortion<a href="#fn18" class="footnote-ref" id="fnref18"><sup>18</sup></a></p>
+<p>There’re other forms of distortion that people care about. A lot of the research Hamiltonians focuses on these complex issues, especially because most easy molecules have been solved. Then again, there are still a number of molecules with no rotors or unpaired electrons, so there’s every chance people would jump on the promise of more or less instant solving.</p></li>
+</ol>
+<p>How do I make the Latin Capped Hyperspherework? Few steps<a href="#fn19" class="footnote-ref" id="fnref19"><sup>19</sup></a>:</p>
+<ol>
+<li><p>Figure out how to pick the n+1 sample space based on the output of the n sample space.</p></li>
+<li><p>Ensure that the powers of two are all lined up, because in the past I’m fairly sure I wasn’t letting it search as far</p></li>
+<li><p>Ensure that it works to converge on the right answer</p></li>
+</ol>
+<p>Let’s motivate the Latin Capped Hypersphere:</p>
+<p>There’s a relatively recent paper that argues a better way to sample astronomical observations is via Hypersphere, rather than Hypercube. The main argument comes down to the fact that a hypersphere inscribed in a hypercube takes up vanishing amounts of the hypervolume at higher dimensions. If I remember correctly, it’s something like 1 percent the hypervolume by ten dimensions.</p>
+<p>So, if one is relatively confident in their center point, then there’s effectively a hundred-fold increase in sampling density within the reasonable area by using a hypersphere rather than a hypercube.</p>
+<p>My own personal motivation for capped hypersphere is that it feels somewhat rational. That is, I’m fairly sure that, at early levels of solving the rotational Hamiltonian, there is no real assumption that the center point is correct, so a Hypercube is the appropriate choice. When approaching the correct answer, however, the displacement that a transition needs is well-correlated to multiple values, and so searching around the near space makes the most sense.</p>
+<p>As I write this, though, I’m realizing that I’m already intending to include multiple forms of distortion constants so that I can have for the distortion what I have for A, B, C: something which imposes constraints on the pure sample space. That’s pretty exciting to me, and likely will be exciting enough to others.</p>
+<p>There’s a question in my mind about whether to use the limiting values based on A, A(A) and A(S) or not. I think that it could make sense to truncate the distortion constant ranges based on them, but not so much A, B, C. Mostly that’s because it feels rational to me that the “pure” rotational constants would be better able to be found than the distorted ones, but maybe that’s not true!</p>
+<p>Ugh, then we get into the hard issue of “given that A(A) depends on A, Delta J, and Delta JK<a href="#fn20" class="footnote-ref" id="fnref20"><sup>20</sup></a>, what is the actual variable values of A given the bounds of A(A), the bounds of Delta J, and the bounds of Delta JK?” I don’t know that this would actually be too much of an issue, but it kind of feels like it would be.</p>
+<p>Let’s assume not.</p>
+<p>So, the ending sample space would have nine dimensions: X, Y, Z, XX, XY, XZ, YY, YZ, ZZ. That is, the rotational constant in X, Y, Z and the six quartic distortion constants. From there, we would sample I (real), which is defined as the sum of 1/X or Y or Z (real). I think that’s the best one to choose as our defining value, because it’s the one that’s most physically meaningful. Regardless of the representation we use or whether we ensured all inertia is along axes, it feels reasonable to assume we can know the total moment of inertia.</p>
+<p>After I (real), we’d sample C (real). C (real) would be limited by the maximum of:</p>
+<ul>
+<li><p>lower sample bound of C(real)</p></li>
+<li><p>lower sample bound of C(A) given the current sample space of the distortion constants</p></li>
+<li><p>lower sample bound of C(T) given sample space of the distortion</p></li>
+<li><p>lower sample bound of C(S) given the sample space</p></li>
+<li><p>lower sample bound of C(rho) given sample space</p></li>
+<li><p>I can’t imagine that it’s actually going to be the limiter, but also the lower sample of C(X)<a href="#fn21" class="footnote-ref" id="fnref21"><sup>21</sup></a> given A(X), B(X) bounds. Wait, no that’s not going to be an issue at all, so that’s null, because we’re only calculating “real” moment of inertia, not I(X).<a href="#fn22" class="footnote-ref" id="fnref22"><sup>22</sup></a></p></li>
+<li><p>It is theoretically possible, but lower bound of C given I and the bounds for A, B, C. I think that the code generally assumes this won’t happen, but always good to edge and corner check. I guess this means I should have the bounds checked<a href="#fn23" class="footnote-ref" id="fnref23"><sup>23</sup></a></p></li>
+</ul>
+<p>and the minimum of basically the above.</p>
+<p>We now have two of nine dimensions sampled. Since sampling either of A or B gives the other for free<a href="#fn24" class="footnote-ref" id="fnref24"><sup>24</sup></a>, let’s see what we’d do there. Lower bound of A<a href="#fn25" class="footnote-ref" id="fnref25"><sup>25</sup></a> is the largest of:</p>
+<ul>
+<li><p>Lower bound of A</p></li>
+<li><p>Lower bound of A(A) given distortion bounds</p></li>
+<li><p>Lower bound of A(T) given distortion bounds</p></li>
+<li><p>Lower bound of A(S) given distortion bounds</p></li>
+<li><p>Lower bound of A(rho) given distortion bounds</p></li>
+<li><p>Lower bound of A given B bounds, C and I</p></li>
+</ul>
+<p>Oh wait, can I ignore A(X) for sampling C? That’s something I think that I need to think through more... I think so, but I don’t feel confident.</p>
+<p>Let’s see, if we assume C max, then the possible ranges for A are dependent on that, and therefore so are the possible values for A(X). Is it possible that C max defines a value of ranges for A which, given the ranges for distortion, are not possible for A(X)? Mathematically it sure seems like it! Maybe. Given that we know that C max has to have an available value for A, I have to assume that it would never end up breaking. Still, probably good to ensure that it’s true for realsies. Maybe I throw that calculation in the C(X) calculations, though.</p>
+<p>That’s a question for future distortion me.</p>
+<p>So three variables later, we have (effectively) X, Y, Z and A, B, C.</p>
+<p>From there, we know that each of the five distortion constants can be calculated based on some linear combination of the six real distortion constants.<a href="#fn26" class="footnote-ref" id="fnref26"><sup>26</sup></a></p>
+<p>Set each constant based on its limit given itself, the bounds of the other constants in each X, and the bounds for A(X), B(X), and C(X).</p>
+<p>This goes point-wise, and creates a really weird sample space after the first hypercube. At some point want to set it to re-open, though that’s again a question as to when. Also, what are the starting ranges?</p>
+<p>Part of me wants to go fully computing and say “we have no idea what literally any value can be”, part of me thinks that maybe asking the person for reasonable bounds would work, and part of me thinks that like starting at 1 percent of A, B, and C for distortion constants feels reasonable as an absolute limit? Or as a starting limit if not entered.</p>
+<p>Realistically, all that would need to be input is a range for I and a range for C. I’m sure that one can reasonably well approximate the moment of inertia of a molecule based on just its molecular mass. And then let’s see, we know that C is greater than B is greater than A.  If all of the mass is in the C direction, then it’s value will be 1/I, and B will equal A will equal infinity. That’s not super helpful.</p>
+<p>We could try asking for an approximate level of non-prolateness<a href="#fn27" class="footnote-ref" id="fnref27"><sup>27</sup></a>, or we could just set arbitrary bounds and let people manually set bounds if they’d rather. As a scientist, it’s always frustrating to me when a modeling software<a href="#fn28" class="footnote-ref" id="fnref28"><sup>28</sup></a> doesn’t let me set arbitrary bounds. Exactly what the default set of inputs I’ll require and outputs I’ll give will be, that’s a question for the implementation team.</p>
+<p>I do kind of feel inspired by the idea of using something with expected values. E.g. instead of a Latin hypercube, do an orthogonal search<a href="#fn29" class="footnote-ref" id="fnref29"><sup>29</sup></a> based on the empirical CDF from the previous search. Maybe somehow have like increase the orthogonalization as the dimension searched increases?</p>
+<p>Or something like “the more that the optimal value for a constant moved, the more/less to use orthogonal search?”</p>
+<p>I just generally don’t like the current method of take the top 5<a href="#fn30" class="footnote-ref" id="fnref30"><sup>30</sup></a> points and use them to define the new sample space. It feels ugly, and even if it worked in the sample molecule, it still failed a fair number of times overall. So, let’s come back to the question of rebounding later, once we’ve got the question of sampling down.</p>
+<p>Oh wait, those two are kind of linked questions.</p>
+<p>Eh, maybe a distribution with a floor function?  That is, less than some percentage of our maximum strength just doesn’t count?</p>
+<p>I know that in the past, using previous values resulted in bad outcomes because one lucky guess would just forever fix the current values. I do still believe in the fundamental stability of the correct answer and the cheapness of computation. Throwing out a previous run’s values upon generating the next run does still feel pretty ok to me, especially if I store them for later use.</p>
+<p>Part of me does still think about the question of the total hyper-radius, as much as that makes sense as a concept. Eh, that’s a problem for V2.</p>
+<h1 id="upcoming-posts">Upcoming Posts</h1>
+<ul>
+<li><p>Wonder</p></li>
+<li><p>Curse of knowledge, esp re. Music Theory<a href="#fn31" class="footnote-ref" id="fnref31"><sup>31</sup></a></p></li>
+<li><p>Overview of a course on astrochem</p></li>
+<li><p>RebelFit</p></li>
+</ul>
+<h1 id="daily-reflection-22-june-2026">Daily Reflection: 22 June 2026</h1>
+<ul>
+<li><p>How’s things?</p>
+<p>Pretty good. I’ve def been very high energy today, and that comes with all sorts of things. I set up two meetings (or at least one meeting and was told a second meeting is being set up later in the week). I got my hand writing done, and I called and caught up with a beloved friend!</p></li>
+<li><p>What’s a recent win?</p>
+<p>Recent win that’s safe to post on the blog: I connected one of my close friends with someone who works in a field they find interesting. Other than that, I’m feeling good today which is really nice.</p></li>
+<li><p>You have the big tapestry embroidery project! How’s that going?</p>
+<p>No real progress yesterday. Today’s big thing will be working on the design for the top layer. What does that look like?</p>
+<p>Who can say.</p></li>
+<li><p>Do you feel like you’re taking good care of yourself?</p>
+<p>Eh, overall I think that I’m doing ok. The wrappings on my arm continue to disappear and bother me, but that’s kinda not me taking care of myself so much as taking care of things which take care of me. Eating is going decently, consuming some liquids which is good, and I’ve done the hand writing.</p>
+<p>I was going to work on RF<a href="#fn32" class="footnote-ref" id="fnref32"><sup>32</sup></a> but (see above post).</p></li>
+<li><p>What could you be doing better?</p>
+<p>I could have been more prepared and realized I had deleted some of the relevant files for RF. That’s so so long ago, and so at this point the main thing is just that I could have been better about writing the things that I said I wanted to write. Because I noticed that my computer is running out of storage again, though, I did delete a bunch of games from it, which is good both for my productivity and for the general having storage on my computer.</p>
+<p>In general I could do better about showing my appreciation to those around me and revising my materials.</p></li>
+<li><p>Are you appropriately keeping in touch with those you love?</p>
+<p>Yeah! I called a friend and am currently coordinating to meet up with a different friend later this week. Also made<a href="#fn33" class="footnote-ref" id="fnref33"><sup>33</sup></a> plans to see another set of friends.</p></li>
+<li><p>Big upcoming events? Preparation for them?</p>
+<ul>
+<li><p>I have a two week camp equivalent coming up in mid July. Found out where I need to send paperwork, so now I just need to send it.</p></li>
+<li><p>I’m visiting my partner in mid July. Still need to get tix.</p></li>
+</ul></li>
+<li><p>Once again, then, how’s it going?</p>
+<p>I think generally decent. If I stop to think about the question, though, it feels like it’s going less decently.</p></li>
+</ul>
+<section class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p>for those asking why I write this here, rather than just doing the work, mostly it’s that I had a script that had most of the tests and hard-written math pre-coded in it that somehow (read: when I purged my computer, being done with graduate school), didn’t make it to my current computer setup. When I return to the campus wifi, I do plan to try to find it again.<a href="#fnref1" class="footnote-back">↩</a></p></li>
+<li id="fn2"><p>I think, don’t fact check this claim right now<a href="#fnref2" class="footnote-back">↩</a></p></li>
+<li id="fn3"><p>which he calls the more interesting reduction iirc. There’s equations he gives which have T1 in delta X etc. format, but not vice versa. I’m like 40 percent sure that I did that in my thesis though<a href="#fnref3" class="footnote-back">↩</a></p></li>
+<li id="fn4"><p>I think? Watson introduces distortion constants that use the approximation, though I forget where<a href="#fnref4" class="footnote-back">↩</a></p></li>
+<li id="fn5"><p>within a few orders of magnitude and in relative accuracy. E.g. if it’s all off by a flat factor, that’s fine, because it’s all relative strength anyways<a href="#fnref5" class="footnote-back">↩</a></p></li>
+<li id="fn6"><p>admittedly, this is a dream step<a href="#fnref6" class="footnote-back">↩</a></p></li>
+<li id="fn7"><p>at least, my academic writing<a href="#fnref7" class="footnote-back">↩</a></p></li>
+<li id="fn8"><p>shockingly<a href="#fnref8" class="footnote-back">↩</a></p></li>
+<li id="fn9"><p>and if they don’t, I am very concerned, because they REALLY should, or someone else in the field should’ve caught it in the last three decades<a href="#fnref9" class="footnote-back">↩</a></p></li>
+<li id="fn10"><p>my naming<a href="#fnref10" class="footnote-back">↩</a></p></li>
+<li id="fn11"><p>which is also true above, now that I think about it<a href="#fnref11" class="footnote-back">↩</a></p></li>
+<li id="fn12"><p>which I only cared about because that’s the output format that SPCAT uses. I’m almost positive that nearly all of the computational time comes from computing these values also<a href="#fnref12" class="footnote-back">↩</a></p></li>
+<li id="fn13"><p>and also to make sure that I can plug in arbitrary values for A, B, C and know it will work<a href="#fnref13" class="footnote-back">↩</a></p></li>
+<li id="fn14"><p>I am manifesting this for myself<a href="#fnref14" class="footnote-back">↩</a></p></li>
+<li id="fn15"><p>read: look at the WesterFit paper and see if they use anything else<a href="#fnref15" class="footnote-back">↩</a></p></li>
+<li id="fn16"><p>then again, there’s also likely a fair amount of time spent manually writing the file with all of the data it uses<a href="#fnref16" class="footnote-back">↩</a></p></li>
+<li id="fn17"><p>ok at one second per SPCAT call, if it takes 30 minutes to generate the full array, that’s 1800 seconds, so yeah that’s absolutely going to save time<a href="#fnref17" class="footnote-back">↩</a></p></li>
+<li id="fn18"><p>admittedly, this is a dream step<a href="#fnref18" class="footnote-back">↩</a></p></li>
+<li id="fn19"><p>is this post just going to be five thousand or so words of me rambling about the research I could be doing? ...yeah, if it’s taken this long for you to notice, I’m very sorry<a href="#fnref19" class="footnote-back">↩</a></p></li>
+<li id="fn20"><p>or something<a href="#fnref20" class="footnote-back">↩</a></p></li>
+<li id="fn21"><p>X here meaning “arbitrary version of C”<a href="#fnref21" class="footnote-back">↩</a></p></li>
+<li id="fn22"><p>because I(X) feels icky for some reason I can’t fully articulate<a href="#fnref22" class="footnote-back">↩</a></p></li>
+<li id="fn23"><p>or, I think that I might forcibly move I such that its bounds are possible... that’s something to consider, if there’s a way to balance I being able to converge with the fact that like, I do want to explore A, B, C. Eh.<a href="#fnref23" class="footnote-back">↩</a></p></li>
+<li id="fn24"><p>in theory<a href="#fnref24" class="footnote-back">↩</a></p></li>
+<li id="fn25"><p>biggest number<a href="#fnref25" class="footnote-back">↩</a></p></li>
+<li id="fn26"><p>n.b. in real life, we are unable to mathematically uniquely identify values for the six distortion constants based on transitions, we can only get five values out. That’s why we use five distortion constants in the reductions. They’re mathematically equivalent, just one is unique and one is not guaranteed to be. I’m pretty sure that by using the deltas and d’s (the S reduction uses d), we’ll be able to make unique sets, but maybe not! It’ll be fun to find out! That’s for sure.<a href="#fnref26" class="footnote-back">↩</a></p></li>
+<li id="fn27"><p>I forget the term for that value<a href="#fnref27" class="footnote-back">↩</a></p></li>
+<li id="fn28"><p>which RebelFit arguably is<a href="#fnref28" class="footnote-back">↩</a></p></li>
+<li id="fn29"><p>difference is that the Latin hypercube only uses end points, while an orthogonal search uses a weighted distribution<a href="#fnref29" class="footnote-back">↩</a></p></li>
+<li id="fn30"><p>iirc<a href="#fnref30" class="footnote-back">↩</a></p></li>
+<li id="fn31"><p>stolen from a prior list<a href="#fnref31" class="footnote-back">↩</a></p></li>
+<li id="fn32"><p>see the above post, I guess<a href="#fnref32" class="footnote-back">↩</a></p></li>
+<li id="fn33"><p>admittedly, very tentative<a href="#fnref33" class="footnote-back">↩</a></p></li>
+</ol>
+</section>

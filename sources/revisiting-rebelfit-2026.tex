@@ -1,0 +1,362 @@
+\documentclass[12pt]{article}  
+\newcommand{\say}[1]{``#1''}  
+\newcommand{\nsay}[1]{`#1'}  
+\usepackage{endnotes}  
+\newcommand{\B}{\backslash{}}  
+\renewcommand{\,}{\textsuperscript{,}}  
+\usepackage{setspace}   
+\usepackage{tipa}  
+\usepackage{hyperref}  
+\begin{document}  
+\doublespacing  
+\section{\href{revisiting-rebelfit-2026.html}{Revisiting RebelFit in 2026}}  
+First Published: 2026 June 22
+
+Prereading note: this is very rotational spec heavy and very rambly... readers be advised.
+
+\section{Draft 1: 22 June 2026}
+
+So, I really want to get back into the spectral fitting program which made up the bulk of my Ph.D. dissertation.  
+My biggest let downs with the project as it stood then were:  
+\begin{itemize}  
+\item The program required calling another program (SPCAT) hundreds of thousands of times, often in what seems like might have been redundant calls. When I looked at the runtime, I think that, to a rounding error, all of the run time came from calling this program.  
+\item I couldn't get the Latin Capped Hypersphere to work  
+\end{itemize}
+
+The other major features that I would want to add to the program to call is something to be proud of:  
+\begin{itemize}  
+\item Extension into S reduction  
+\item Now that I'm further from the actual project, using the 6 \say{true} distortion constants as the source of truth, and then using A and S reductions as the shadow ones.  
+\item Making it easier to have the program take in other Hamiltonians.  
+\end{itemize}
+
+So, how would I resolve this?\footnote{for those asking why I write this here, rather than just doing the work, mostly it's that I had a script that had most of the tests and hard-written math pre-coded in it that somehow (read: when I purged my computer, being done with graduate school), didn't make it to my current computer setup.  
+When I return to the campus wifi, I do plan to try to find it again.}
+
+Let's start with the first issue: calling the catalog generating program a number of times.  
+This is not a new issue in the field of rotational spectroscopy.  
+Since before even this program was created\footnote{I think, don't fact check this claim right now}, there have been methods to approximate the value of the energy levels in a way that can be pre-computed.  
+If I remember correctly, three-ish gigabytes is the storage needed to solve the primary rotational constants to basically floating point error.  
+It also only took like twenty minutes to generate, and that gives all possible values of the rotational constants.  
+Since RebelFit works within a range of values, that takes far less time.  
+Still, thinking about the optimization part of it should come later.  
+For now, let's talk through what I would need to solve in order to get this to work.
+
+\begin{enumerate}  
+\item Showing that SPCAT A, B, C and a hard-coded (read: manually solved (read: I put in the math and make my computer solve it)) A, B, C produce the same transition locations  
+\item Showing that SPCAT A, B, C and hand-solved X, Y, Z lead to the same transition locations  
+\item Showing that SPCAT A, B, C and A reduction lead to the same transitions as hand-solved A, B, C (or X, Y, Z) and A reduction  
+\item Showing that SPCAT A, B, C and A reduction lead to the same transitions as hand-solved X, Y, Z and Watson T reduction\footnote{which he calls the more interesting reduction iirc. There's equations he gives which have T1 in delta X etc. format, but not vice versa. I'm like 40 percent sure that I did that in my thesis though}  
+\item Showing that hand-solved X, Y, Z match up to the approximation version for X, Y, Z  
+\item Showing that hand-solved X, Y, Z and T match up to the approximation version for X, Y, Z and rho\footnote{I think? Watson introduces distortion constants that use the approximation, though I forget where}  
+\item Showing that SPACT A reduction matches the approximation version  
+\item Reading and using the paper that defines transition intensity to match the approximation to the SPCAT intensities\footnote{within a few orders of magnitude and in relative accuracy. E.g. if it's all off by a flat factor, that's fine, because it's all relative strength anyways}.  
+\item Ensuring that this new version is actually faster than the old version  
+\item Hopefully don't need to repeat to get the S-reduction available  
+\item Something something make it work for other forms of distortion\footnote{admittedly, this is a dream step}  
+\end{enumerate}
+
+Since I'm often told something that my writing\footnote{at least, my academic writing} lacks is connection between fact and conclusion, let's motivate each step.
+
+\begin{enumerate}  
+\item SPCAT A B C matching computed A B C.
+
+This is in theory not a step that I actually need to do.  
+These are mathematically identical.  
+However, I've tried to read the SPCAT source code before and I have legitimately no idea what it's doing.  
+Three rotational constants is easy enough that I should be able to do the coding for it in a few seconds, and then the issue is just having SPCAT run a few times.  
+In general, I probably want it to run one very oblate, one very prolate, and one that's just basically intermediate.
+
+\item SPCAT A B C matching computed X Y Z
+
+So, in general, rotational spectra are solved using A, B, C rotational constants.  
+However, computational chemists are more likely to use X, Y, Z.  
+There are\footnote{shockingly} six ways to pair X, Y, Z to A, B, C.  
+So long as I match them appropriately, this should take moments at best to verify.
+
+Given that I think it's trivial to verify, why do it?  
+A few reasons:  
+\begin{itemize}  
+\item I think that the Watson paper which defines A reduction uses X, Y, Z coordinates somewhere  
+\item In theory, X, Y, Z are better coordinates to use because they can be taken straight out of a Gaussian or other computational software output  
+\item Something something, this makes the distortion work out.  
+\end{itemize}
+
+Once we ensure that we can reliably match the rigid rotor to the SPCAT rigid rotor, it becomes important to match them with reductions.  
+There's a slight hiccup here, which is that A, B, C in rigid rotor world are not, as it turns out, the same as A, B, C in A reduction world.  
+As I write this, I am a little curious if that's the issue that I'm running into or was running into, at least, when I last worked on this.
+
+\item Showing that SPCAT A, B, C and A reduction lead to the same transitions as hand-solved A, B, C (or X, Y, Z) and A reduction
+
+So, this is better named as three different steps:  
+\begin{itemize}  
+\item Showing that SPCAT A B C and A reduction match the computed A B C (A reduced value) and distortion
+
+This step is the first one. Using the same numbers, do we get the same outputs?
+
+\item Showing that SPCAT A B C and A reduction match the computed A B C (Non-A reduced Values converted into A reduction) and A distortion.
+
+Once we've shown we can use A(A) B(A) and C(A), use Watson's conversion from A to A(A) and etc.
+
+\item Showing that SPCAT A B C and A reduction match the computed X Y Z (real values, converted to A reduction) and A distortion.
+
+Once we've shown we can convert A to A(A), make sure we can do all six versions of X to A(A)  
+\end{itemize}
+
+Since realistically, I don't really want to manually compute these values, I'm likely going to have to trust that the values are as linearly interconvertible as I remember that they should be.  
+In practice, this calculation is way more computationally expensive, because the Hamiltonian gets much more complex.  
+Then again, since it remains a numeric matrix, computers do, in fact, go brrr.
+
+Assuming that I get this, I have more or less proved to myself that SPCAT and real Hamiltonians result in the same transitions.\footnote{and if they don't, I am very concerned, because they REALLY should, or someone else in the field should've caught it in the last three decades}
+
+\item Showing that SPCAT A B C and A quartic match the computed X Y Z and Watson T\footnote{my naming} transitions.
+
+The ultimate goal here is to use the approximate form of the rotational Hamiltonian that Watson outlines.  
+Watson gives his T values in terms of A quartics and in terms of the approximate quartics.  
+While I'm sure that there's a better way to solve for them, I don't entirely know what they would be.
+
+Two questions to try here are giving SPCAT values and back solving for T values, and giving T values and feeding SPCAT the T values.\footnote{which is also true above, now that I think about it}
+
+If this works out, then I have confirmed for myself that I can, in fact, solve five equations for five variables.  
+Also, it makes it easier to test the next parts.
+
+At this point, I luckily no longer need to use SPCAT, which means that I get to save the half a gigabyte of storage that computing transitions takes up on my computer.  
+That's probably offset by the amount of memory that my computer is using, but that's not something I have to manually clear, which is great.
+
+\item Showing that hand-solved X Y Z match approximate A B C
+
+Again, this should be relatively straightforward. At this point I don't really care too much about the transition energies\footnote{which I only cared about because that's the output format that SPCAT uses. I'm almost positive that nearly all of the computational time comes from computing these values also}, and so can just compare matrix outputs.
+
+I'll probably want to generate a representative sample of values, just to be certain\footnote{and also to make sure that I can plug in arbitrary values for A, B, C and know it will work}.
+
+Above I had this listed as approximate X Y Z, but I'm like 99 percent certain that the approximate value calculation relies on A B C.  
+In theory, though, it's incredibly straightforward to match X Y Z to A B C, so again, that's not a huge concern
+
+\item Showing that hand-solved X Y Z and quartic distortion (either A or T, since we've demonstrated interchangibility) match approximate distortion form (most likely using the Watson approximate distortion)
+
+This one is likely to be the painful portion, if only because I'll need to be really clear whether I'm working with A(A) or A.  
+Then again, assuming that I calculate out the values for the hand-solved exact version, I can also play around with different options and versions within the approximate form.  
+At the very least, it's something that I can try!
+
+If this works out, then I've (through the transitive property) shown that the approximate version of the rotational constants matches the SPCAT output for quartic centrifugal distortion.  
+Sextic distortion at that point should go really quickly.\footnote{I am manifesting this for myself}  
+\item Showing that SPCAT A and approximate match up
+
+Having tested the intermediary, I'll throw the program against what most people would use: SPCAT itself.  
+Issue here will be again, ensuring that I'm using the right versions of each constant.  
+\item Showing that I can also calculate rotational transition intensity
+
+There's, as far as I can tell, basically a single paper that people use for determining the transition intensity of a rotational transition.  
+I'll read the literature a little more to make sure that's true\footnote{read: look at the WesterFit paper and see if they use anything else}, and then have the calculations run given the arbitrary constants and some arbitrary values for the dipoles.
+
+Realistically, as long as they more or less approximate the values that SPCAT uses, I'm totally happy.  
+SPCAT is known to produce approximate transition intensities, and so that's so totally fine with me if mine is approximate as well.  
+One issue I'm foreseeing is that calculating transition intensities requires population analysis, which is temperature dependent.  
+My assumption is this is where most of SPCAT's runtime actually occurs, and so that's not great.\footnote{then again, there's also likely a fair amount of time spent manually writing the file with all of the data it uses}  
+Then again, it's also likely something that I can extrapolate to a general form when solving the Hamiltonian a million times.
+
+E.g. if I solve the relative population as a function of energy one time at the start of the run (or for all energies before a run), then all I really have to do is use a lookup table! (Assuming that this is the right way of viewing the problem. I forget whether the exponent has other funky things)  
+\item Ensuring that this new version is actually faster than the old version
+
+Since we need to solve for energy levels, it's possible that a single run may be much slower.  
+When doing one hundred runs, however, I cannot believe that it would be anything but far faster.  
+When doing more than ten thousand runs, there's no chance that it's not faster.\footnote{ok at one second per SPCAT call, if it takes 30 minutes to generate the full array, that's 1800 seconds, so yeah that's absolutely going to save time}  
+\item Hopefully don't need to repeat to get the S-reduction available
+
+The A and S reductions are the most popular ways to solve a centrifugally distorted rotor.  
+Having done all the work to make A work, I'm assuming that the work to make S work will be trivial, especially because A and S reductions are interconvertible.  
+\item Something something make it work for other forms of distortion\footnote{admittedly, this is a dream step}
+
+There're other forms of distortion that people care about. A lot of the research Hamiltonians focuses on these complex issues, especially because most easy molecules have been solved.  
+Then again, there are still a number of molecules with no rotors or unpaired electrons, so there's every chance people would jump on the promise of more or less instant solving.  
+\end{enumerate}
+
+How do I make the Latin Capped Hyperspherework?  
+Few steps\footnote{is this post just going to be five thousand or so words of me rambling about the research I could be doing? ...yeah, if it's taken this long for you to notice, I'm very sorry}:
+
+\begin{enumerate}  
+\item Figure out how to pick the n+1 sample space based on the output of the n sample space.  
+\item Ensure that the powers of two are all lined up, because in the past I'm fairly sure I wasn't letting it search as far  
+\item Ensure that it works to converge on the right answer  
+\end{enumerate}
+
+Let's motivate the Latin Capped Hypersphere:
+
+There's a relatively recent paper that argues a better way to sample astronomical observations is via Hypersphere, rather than Hypercube.  
+The main argument comes down to the fact that a hypersphere inscribed in a hypercube takes up vanishing amounts of the hypervolume at higher dimensions.  
+If I remember correctly, it's something like 1 percent the hypervolume by ten dimensions.
+
+So, if one is relatively confident in their center point, then there's effectively a hundred-fold increase in sampling density within the reasonable area by using a hypersphere rather than a hypercube.
+
+My own personal motivation for capped hypersphere is that it feels somewhat rational.  
+That is, I'm fairly sure that, at early levels of solving the rotational Hamiltonian, there is no real assumption that the center point is correct, so a Hypercube is the appropriate choice.  
+When approaching the correct answer, however, the displacement that a transition needs is well-correlated to multiple values, and so searching around the near space makes the most sense.
+
+As I write this, though, I'm realizing that I'm already intending to include multiple forms of distortion constants so that I can have for the distortion what I have for A, B, C: something which imposes constraints on the pure sample space.  
+That's pretty exciting to me, and likely will be exciting enough to others.
+
+There's a question in my mind about whether to use the limiting values based on A, A(A) and A(S) or not.  
+I think that it could make sense to truncate the distortion constant ranges based on them, but not so much A, B, C.  
+Mostly that's because it feels rational to me that the \say{pure} rotational constants would be better able to be found than the distorted ones, but maybe that's not true!
+
+Ugh, then we get into the hard issue of \say{given that A(A) depends on A, Delta J, and Delta JK\footnote{or something}, what is the actual variable values of A given the bounds of A(A), the bounds of Delta J, and the bounds of Delta JK?}  
+I don't know that this would actually be too much of an issue, but it kind of feels like it would be.
+
+Let's assume not.
+
+So, the ending sample space would have nine dimensions: X, Y, Z, XX, XY, XZ, YY, YZ, ZZ.  
+That is, the rotational constant in X, Y, Z and the six quartic distortion constants.  
+From there, we would sample I (real), which is defined as the sum of 1/X or Y or Z (real).  
+I think that's the best one to choose as our defining value, because it's the one that's most physically meaningful.  
+Regardless of the representation we use or whether we ensured all inertia is along axes, it feels reasonable to assume we can know the total moment of inertia.
+
+After I (real), we'd sample C (real).  
+C (real) would be limited by the maximum of:  
+\begin{itemize}  
+\item lower sample bound of C(real)  
+\item lower sample bound of C(A) given the current sample space of the distortion constants  
+\item lower sample bound of C(T) given sample space of the distortion  
+\item lower sample bound of C(S) given the sample space  
+\item lower sample bound of C(rho) given sample space  
+\item I can't imagine that it's actually going to be the limiter, but also the lower sample of C(X)\footnote{X here meaning \say{arbitrary version of C}} given A(X), B(X) bounds. Wait, no that's not going to be an issue at all, so that's null, because we're only calculating \say{real} moment of inertia, not I(X).\footnote{because I(X) feels icky for some reason I can't fully articulate}  
+\item It is theoretically possible, but lower bound of C given I and the bounds for A, B, C. I think that the code generally assumes this won't happen, but always good to edge and corner check. I guess this means I should have the bounds checked\footnote{or, I think that I might forcibly move I such that its bounds are possible... that's something to consider, if there's a way to balance I being able to converge with the fact that like, I do want to explore A, B, C. Eh.}  
+\end{itemize}
+
+and the minimum of basically the above.
+
+We now have two of nine dimensions sampled.  
+Since sampling either of A or B gives the other for free\footnote{in theory}, let's see what we'd do there.  
+Lower bound of A\footnote{biggest number} is the largest of:  
+\begin{itemize}  
+\item Lower bound of A  
+\item Lower bound of A(A) given distortion bounds  
+\item Lower bound of A(T) given distortion bounds  
+\item Lower bound of A(S) given distortion bounds  
+\item Lower bound of A(rho) given distortion bounds  
+\item Lower bound of A given B bounds, C and I
+
+\end{itemize}
+
+Oh wait, can I ignore A(X) for sampling C?  
+That's something I think that I need to think through more... I think so, but I don't feel confident.
+
+Let's see, if we assume C max, then the possible ranges for A are dependent on that, and therefore so are the possible values for A(X).  
+Is it possible that C max defines a value of ranges for A which, given the ranges for distortion, are not possible for A(X)?  
+Mathematically it sure seems like it!  
+Maybe.  
+Given that we know that C max has to have an available value for A, I have to assume that it would never end up breaking.  
+Still, probably good to ensure that it's true for realsies.  
+Maybe I throw that calculation in the C(X) calculations, though.
+
+That's a question for future distortion me.
+
+So three variables later, we have (effectively) X, Y, Z and A, B, C.
+
+From there, we know that each of the five distortion constants can be calculated based on some linear combination of the six real distortion constants.\footnote{n.b. in real life, we are unable to mathematically uniquely identify values for the six distortion constants based on transitions, we can only get five values out. That's why we use five distortion constants in the reductions. They're mathematically equivalent, just one is unique and one is not guaranteed to be. I'm pretty sure that by using the deltas and d's (the S reduction uses d), we'll be able to make unique sets, but maybe not! It'll be fun to find out! That's for sure.}
+
+Set each constant based on its limit given itself, the bounds of the other constants in each X, and the bounds for A(X), B(X), and C(X).
+
+This goes point-wise, and creates a really weird sample space after the first hypercube.  
+At some point want to set it to re-open, though that's again a question as to when.  
+Also, what are the starting ranges?
+
+Part of me wants to go fully computing and say \say{we have no idea what literally any value can be}, part of me thinks that maybe asking the person for reasonable bounds would work, and part of me thinks that like starting at 1 percent of A, B, and C for distortion constants feels reasonable as an absolute limit?  
+Or as a starting limit if not entered.
+
+Realistically, all that would need to be input is a range for I and a range for C.  
+I'm sure that one can reasonably well approximate the moment of inertia of a molecule based on just its molecular mass.  
+And then let's see, we know that C is greater than B is greater than A.   
+If all of the mass is in the C direction, then it's value will be 1/I, and B will equal A will equal infinity.  
+That's not super helpful.
+
+We could try asking for an approximate level of non-prolateness\footnote{I forget the term for that value}, or we could just set arbitrary bounds and let people manually set bounds if they'd rather.  
+As a scientist, it's always frustrating to me when a modeling software\footnote{which RebelFit arguably is} doesn't let me set arbitrary bounds.  
+Exactly what the default set of inputs I'll require and outputs I'll give will be, that's a question for the implementation team.
+
+I do kind of feel inspired by the idea of using something with expected values.  
+E.g. instead of a Latin hypercube, do an orthogonal search\footnote{difference is that the Latin hypercube only uses end points, while an orthogonal search uses a weighted distribution} based on the empirical CDF from the previous search.  
+Maybe somehow have like increase the orthogonalization as the dimension searched increases?
+
+Or something like \say{the more that the optimal value for a constant moved, the more/less to use orthogonal search?}
+
+I just generally don't like the current method of take the top 5\footnote{iirc} points and use them to define the new sample space.  
+It feels ugly, and even if it worked in the sample molecule, it still failed a fair number of times overall.  
+So, let's come back to the question of rebounding later, once we've got the question of sampling down.
+
+Oh wait, those two are kind of linked questions.
+
+Eh, maybe a distribution with a floor function?   
+That is, less than some percentage of our maximum strength just doesn't count?
+
+I know that in the past, using previous values resulted in bad outcomes because one lucky guess would just forever fix the current values.  
+I do still believe in the fundamental stability of the correct answer and the cheapness of computation.  
+Throwing out a previous run's values upon generating the next run does still feel pretty ok to me, especially if I store them for later use.
+
+Part of me does still think about the question of the total hyper-radius, as much as that makes sense as a concept.  
+Eh, that's a problem for V2.
+
+\section{Upcoming Posts}  
+\begin{itemize}
+
+\item Wonder  
+\item Curse of knowledge, esp re. Music Theory\footnote{stolen from a prior list}  
+\item Overview of a course on astrochem  
+\item RebelFit
+
+\end{itemize}
+
+\section{Daily Reflection: 22 June 2026}  
+\begin{itemize}  
+\item How's things?
+
+Pretty good. I've def been very high energy today, and that comes with all sorts of things. I set up two meetings (or at least one meeting and was told a second meeting is being set up later in the week). I got my hand writing done, and I called and caught up with a beloved friend!
+
+\item What's a recent win?
+
+Recent win that's safe to post on the blog: I connected one of my close friends with someone who works in a field they find interesting.  
+Other than that, I'm feeling good today which is really nice.
+
+\item You have the big tapestry embroidery project! How's that going?
+
+No real progress yesterday. Today's big thing will be working on the design for the top layer.  
+What does that look like?
+
+Who can say.
+
+\item Do you feel like you're taking good care of yourself?
+
+Eh, overall I think that I'm doing ok. The wrappings on my arm continue to disappear and bother me, but that's kinda not me taking care of myself so much as taking care of things which take care of me.  
+Eating is going decently, consuming some liquids which is good, and I've done the hand writing.
+
+I was going to work on RF\footnote{see the above post, I guess} but (see above post).
+
+\item What could you be doing better?
+
+I could have been more prepared and realized I had deleted some of the relevant files for RF.  
+That's so so long ago, and so at this point the main thing is just that I could have been better about writing the things that I said I wanted to write.  
+Because I noticed that my computer is running out of storage again, though, I did delete a bunch of games from it, which is good both for my productivity and for the general having storage on my computer.
+
+In general I could do better about showing my appreciation to those around me and revising my materials.
+
+\item Are you appropriately keeping in touch with those you love?
+
+Yeah! I called a friend and am currently coordinating to meet up with a different friend later this week.  
+Also made\footnote{admittedly, very tentative} plans to see another set of friends.
+
+\item Big upcoming events? Preparation for them?
+
+\begin{itemize}
+
+\item I have a two week camp equivalent coming up in mid July. Found out where I need to send paperwork, so now I just need to send it.  
+\item I'm visiting my partner in mid July. Still need to get tix.
+
+\end{itemize}
+
+\item Once again, then, how's it going?
+
+I think generally decent.  
+If I stop to think about the question, though, it feels like it's going less decently.
+
+\end{itemize}
+
+\end{document}
