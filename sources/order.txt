@@ -572,3 +572,4 @@ bagels-25.tex:On Another Year of Thanksgiving Bagels
 feeling-heavy.tex:On Feeling Heavy
 tapestry-embroidery.tex:On Tapestry Embroidery
 remembering-reconnect.tex:On Remembering to Reconnect
+revisiting-rebelfit-2026.tex:Revisiting RebelFit in 2026
