@@ -1,3 +1,5 @@
+### revisiting-rebelfit-2026
+
 \documentclass[12pt]{article}  
 \newcommand{\say}[1]{``#1''}  
 \newcommand{\nsay}[1]{`#1'}  
@@ -13,6 +15,73 @@
 First Published: 2026 June 22
 
 Prereading note: this is very rotational spec heavy and very rambly... readers be advised.
+
+\section{Addendum to Draft 1: 22 June 2026}
+
+Ok so below I said that there's no way to guarantee bounds of the values for A, B, and C given nothing but I, but I think that there is.
+
+We know that I is defined as the inverse sum of A, B, and C. We know that A is greater than or equal to B is greater than or equal to C.  
+So if we assume A and B are both infinite, then that means that C would have to equal 1/I.  
+If B is anything less than infinite, than C is not going to be 1/I. It instead equals 1/(I - 1/B).
+
+If, by contrast, 1/C is less than I, then C is greater than 1/I, because A, B, and C all must be greater than 0, and so subtracting 1/B will make I smaller, which makes 1 divided by larger.  
+Great.
+
+So A greater than or equal to B greater than or equal to C.  
+If A and B are not infinite, then the smallest possible value they can have is C.  
+From that, we get that the value of C becomes I/3 = 1/C.
+
+So, we can find lower bounds on A, B.  
+A cannot be lower than that, and B cannot be lower than I/2=1/B.
+
+There's not really a way to calculate upper bounds except that if we take a random value of C, it's almost certainly going to be less than I\footnote{read: I can at the very least demand that}.  
+Oh, I guess one option could be that in the initial sample given only mass, we assume there's a way to get I from that, give it arbitrary error bars, and then sample the asymmetry number from 0 to 1, using that to calculate the max and min values for C, then B, which gets us A.
+
+That seems fun enough!
+
+This does, of course, assume that we can estimate the molar mass of a molecule.  
+Let's see, if we assume a molecule is a sphere, then I=2/5MR squared.  
+Ope, what's R?  
+Eh, we can start with a basic assumption that R would be 1 per carbon in the largest chain?
+
+Let's see, for the molecule I researched, this assumes some values that I'm not feeling like calculating.
+
+Eh, I think it's reasonable enough to demand at least A, B, C (or X, Y, Z) at the very start of the program for now.  
+Most people are running fairly high-level calculations, and so they should be able to calculate them relatively easily.  
+From there, there's probably a better way to estimate the difference, but I'm generally going to go with if the absolute asymmetry is greater than .25, assume that it's from half to 1.5 the asymmetry.  
+Otherwise, assume that it's within .25 of 0.
+
+Oh, wait, what about the whole \say{I have ray's asymmetry to play with}?
+
+I think that it could be fun to set Ray's, I, and then C.  
+What would that do?
+
+It should uniquely define A and B, since Ray's asymmetry parameter uses A, B, C and so does I.  
+Three equations, three unknowns and all.  
+Hmm.
+
+Maybe that's something to hand-write out, because I know that the equation is something like 2B-A-C/(A-C).  
+So then if we assume that it, I, C all independent (for now), can get I = 1/A - 1/C - 1/B, A = 1/(I-1/C-1/B).  
+Define I-1/C = X and we get A = 1/(X-1/B), and for shorthand, 1/n = N and vice versa.  
+A = 1/(X-b).
+
+Then we plug that in to the above, and we get 2B-1/(X-b)-C/((1/X-b)-C), has a single value since we know the other side of the equation.
+
+Define ray's as r: 2B-A-C/(A-C) = r, r(A-C) = 2B-A-C, 2B = rA-rC+A+C= (r+1)A- (r-1)C. Since we can express A in terms of B and C and I, we can get out B, and then we can plug in anywhere to get A again. Or, what if we try solving for B instead of A, then 2/(X-a)=r+1 A - r-1 C, 2 = (X-a)(r+1...)... yeah that's still a pain and a half, but it is theoretically doable, which is really what matters.  
+Especially if I put vague limits on ray's and I, I don't really know how much I need to limit A, B, and C.  
+That's kinda fun!  
+Is there some equivalent truth for distortion constants?  
+Probably not, but that's ok.
+
+I guess, there's something to be said for the idea that like the higher X, Y, or Z is, the more likely it is to distort? So then is there a way to limit deltaX, deltaY, or deltaZ, or more difficultly, deltaXY etc.?
+
+I don't think so, but again, that's a question for another time.  
+Maybe I just say 1 percent but it's a soft bound\footnote{read: the values can keep growing forever if they really want, rather than adding a check that it doesn't escape the limits}.
+
+Is this really an addendum?
+
+Not really so much any more, alas.  
+I feel very very sorry for everyone reading this.
 
 \section{Draft 1: 22 June 2026}
 
