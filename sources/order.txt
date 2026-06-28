@@ -573,3 +573,4 @@ feeling-heavy.tex:On Feeling Heavy
 tapestry-embroidery.tex:On Tapestry Embroidery
 remembering-reconnect.tex:On Remembering to Reconnect
 revisiting-rebelfit-2026.tex:Revisiting RebelFit in 2026
+recovery.tex:On Recovery
