@@ -575,3 +575,4 @@ remembering-reconnect.tex:On Remembering to Reconnect
 revisiting-rebelfit-2026.tex:Revisiting RebelFit in 2026
 recovery.tex:On Recovery
 reflection-june-2026.tex:Monthly Reflection June 2026
+reflection-2.tex:On Reflection
