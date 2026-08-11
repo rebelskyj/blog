@@ -1,0 +1,939 @@
+\documentclass[12pt]{article}  
+\newcommand{\say}[1]{``#1''}  
+\newcommand{\nsay}[1]{`#1'}  
+\usepackage{endnotes}  
+\newcommand{\B}{\backslash{}}  
+\renewcommand{\,}{\textsuperscript{,}}  
+\usepackage{setspace}   
+\usepackage{tipa}  
+\usepackage{hyperref}  
+\renewcommand{\title}[2]{\section{\href{#1.html}{#2}}}
+\newcommand{\published}[1]{First Published: #1}
+\newcommand{\draft}[1]{\section{Draft #1}}
+\newcommand{\dailyreflect}[1]{\section{Daily Reflection: #1}}
+\newcommand{\song}[9]{\item \say{#1} #2 \textbf{#3} (Added to this list: #4) \begin{itemize} \item #5 \item #6 \item #7 \item #8 \item #9 \end{itemize}}
+
+\begin{document}  
+\title{songs-i-like}{On Songs I Like}  
+\published{2026 August 9}
+
+\draft{2: 11 August 2026}
+
+This is coming post daily reflection, I think that I want a different list of items in the song:\\  
+\say{Song Title} Artist \textbf{Album} (Date added to this list)
+\begin{itemize}  
+\item Where I got the song  
+\item What about the song I liked (if remember) or else what I like now  
+\item Most memorable part of the song  
+\item Vibe of song  
+\item What I can take for composing  and/ or performing
+\end{itemize}
+
+That means:
+
+\begin{verbatim}
+
+\newcommand{\song}[9]{\item \say{#1} #2 \textbf{#3} (Added to this list: #4) \begin{itemize} \item #5 \item #6 \item #7 \item #8 \item #9 \end{itemize}}
+
+\end{verbatim}
+
+Debating if I want to have them as a list or not. I'm leaning towards not.
+
+Hmmm subsections? That could work!
+
+OR
+
+Subsection by artist? Nah let's go by song, enumerated list, and then make the xml file myself in the future.
+
+Gonna have it as an \backslash{}include kinda dealio as well so that it's easier for me to update in the future? Yeah sounds good.
+
+Update: changed to a list, and then adding another entry for date added
+
+\draft{1: 9 August 2026}
+
+Before I do my daily reflection, I'm going to write a little about what I intend this post to be.
+
+I want to have a list of the songs that I like, and particularly, it would be nice to have the song list work in such a way that I'm able to have it easily available and searchable.  
+Of course, the correct answer to this would then be some sort of .xml or .csv file probably, but I'm instead going to do an alphabetical list by title of piece.  
+Plan is to have the next section just be a list of songs that I like, in the format:
+
+\say{Song Title} Artist \textbf{Album}  
+\begin{itemize}
+
+\item What I like about the song/ why I liked it, if I remember.
+
+\item What I hope to take from it into my own performance practice.
+
+\item What I hope to take from it into my own composition practice.  
+\end{itemize}
+
+That's not going to be too too hard if I remember how to define a new command. Let's see if I can't do that now:
+
+\begin{verbatim}
+
+\newcommand{\song}[6]{\say{#1} #2 \textbf{#3} \begin{itemize} \item #4 \item #5 \item #6 \end{itemize}}
+
+\end{verbatim}
+
+That should work! Great, now to hope that's true when I compile.  
+Anyways, time to do my daily reflection.
+
+\section{Songs I Like and Why}
+
+\input{lists/songs-i-like-list}
+
+
+%begin upcoming-posts.tex  
+\section{Upcoming Posts}   
+\begin{itemize}  
+ \item Wonder   
+ \item Curse of knowledge, esp re. Music Theory\footnote{stolen from a prior list}.
+
+Most of a draft done, though rambly.   
+ \item Overview of a course on astrochem
+
+I think that I have writing somewhere about it.   
+ \item RebelFit
+
+A rambly draft done, and some more work which tells me that I was not doing anything wrong in the past, approximation just takes time.   
+ \item Why aspiring writers should practice typing\footnote{and this should also like tie in the thing that a lot of writers are told to do which is directly write good poetry or prose down to get it in the hand. This also has the effect of practicing hand writing. I think that there's also the whole like \say{when we want to be better at running, we also stretch }}
+
+\item At some point I'd like to reflect on my hesitance to delete email, which I think comes from a place of digital hoarding. That's going to be a fun one for sure.  
+ \item Moving (homes)
+
+I wrote two drafts of it, one focused on the feeling of losing my mom and one on the idea of letting go of the attachments I have that don't serve me.   
+Both are from July 2026.  
+ \item Algorithmic constraints in art I create\footnote{see footnote in \href{reflection-june-2026}{this post's second daily reflection about written word, poetry}}  
+ \item Singing in a low-voice choir, especially in context of my other music  
+ \item Listening to content at speeds (J speed versus single speed)\footnote{see footnote in \href{reflection-2}{this post's daily reflection about written word, audio book} for context}  
+ \item Book Review(s):  
+ \begin{itemize}  
+ \item First 20 Hours  
+ \item Dungeon Crawler Carl  
+ \item Fred the Vampire Accountant  
+ \end{itemize}  
+ \item Ideas of Salvation\footnote{from the First Draft of \href{reflection-2}{this post}, footnote where I discuss changes to my theology.}, in particular, how mine have changed over time.  
+ \item Difference between lyrics and poetry in my writing.\footnote{from gut check on writing from \href{daily-reflection-2026-08-03}{this post}}  
+ \item How I make my full to-do list when feeling like there's too much to do.\footnote{from secondary gut check from \href{daily-reflection-2026-08-03}{this post}}  
+\item Why I favorited the songs I did.
+
+Hey look, that's this post! I get to remove it from the template.  
+Also I remade my template to be more easily edited\footnote{read: I removed it from the site I write on and made a local copy.}
+
+\item 28 for 28
+
+\item Taste of different food acids\footnote{from other creative in \href{songs-i-like}{this post}}
+
+\end{itemize}  
+%end upcoming-posts.tex
+
+%begin daily-reflection.tex  
+\dailyreflect{9 August 2026}  
+\begin{itemize}  
+\item All in all, how goes it?
+
+Honestly pretty good! Remembered that there were more books that I read, took some time this morning to make my life easier when it comes to writing this blog, and that's all pretty great.  
+A little nervous about these upcoming days, but this is the nature of life.  
+Have turned another year since last posting on this site which is weird.
+
+%begin reflection/creative.tex  
+ \item Creative Considerations:  
+ \begin{itemize}  
+ \item Gut and / or vibes check, how is creative life going?
+
+Generally well! Realized I've been reading more than I had initially thought (as mentioned above), and I've been working on the design again and made a cute ball yesterday. Also got into cooking again, which was really nice!
+
+%begin reflection/creative/written.tex  
+ \item Written Word:  
+ \begin{itemize}  
+ \item How's your relationship with the written word in general?
+
+I feel like it's generally good! I've been doing more reading and writing which is always nice.
+
+\item How goes blogging? What's feeling like the barrier?
+
+Not as good. The past few days, preparations for the party I had yesterday were the main things.  
+Yesterday, exhaustion hit me, sadly.
+
+Today, though, look! I'm bloggion
+
+\item How goes reading?
+
+Real good! I remembered that I was in the middle of a series (Fred the Vampire), and so restarted rereading it again last night on the bus.
+
+\item How goes writing poetry again?
+
+Ope! I keep forgetting you.
+
+\item We're counting audio book here, anything good?
+
+Nothing for a while.
+
+\item How go(es) the web serial(s)? What's the biggest barrier to you publishing the next chapter? If it's writing, what's the barrier to writing it?
+
+OPe. Need to remember you as well.
+
+\item How goes the hand-written stuff?
+
+Generally good! I got some thoughts on the page which is nice, I took some time to write my thoughts which is healthy, and that's great.
+
+\item How's the push pin board treating you?
+
+It fell down :(. After that, I used it yesterday for something that people could leave notes on. That was nice.
+
+I do want it to be hanging again, though.  
+Also, I'd like to have the things that I want to be doing more (e.g. poetry, web serial(s)) up there as reminders. Hard to say which of the uses (friends or me) is a better use.
+
+\item Upon reflection, how's the written word? Anything missing in the seven questions?
+
+Generally decent! I don't think that there's too too much missing.  
+I guess that in the context of the blog, I did spend about an hour or an hour and a half this morning on remaking the template so that it would be easier for me to continue working through.
+
+\end{itemize}  
+ %end reflection/creative/written.tex  
+ %begin reflection/creative/music.tex  
+ \item Music  
+ \begin{itemize}  
+ \item In general, how goes music?
+
+Generally good! That's always nice, of course. I played a little yesterday while waiting for the crowd to come, and I started writing with a friend.
+
+\item How goes recording?
+
+Nope.
+
+\item How goes writing?
+
+Started writing a song with a friend this Wednesday, that was really nice!  
+It's so weird the difference between how I write music and how others conceive of it.  
+It's also strange the difference between how I write music when I'm alone and when I'm with others.
+
+\item How goes playing?
+
+Eh, did some guitar yesterday. Otherwise, some guitar, some singing on Wednesday.
+
+\item How goes listening?
+
+Good! Listened through this past week's album club a few times.  
+I pick this week's album, so picked an album from a folk group I recently discovered.  
+It's really interesting; they have what is effectively an inverse karaoke version of their album, where they remove all the instruments and it's just their vocals.  
+I'm enjoying it so far.
+
+\item How goes digital music creation?
+
+...
+
+\item Upon reflection, how goes music? Anything missed in those five questions?
+
+Generally ok! I think that hits most all of what I want to talk about right now.
+
+\end{itemize}  
+ %end reflection/creative/music.tex
+
+%begin reflection/creative/embroidery.tex  
+ \item Embroidery Project?  
+ \begin{itemize}
+
+%begin reflection/creative/embroidery-base.tex  
+ \item In general, what's the vibe of the project right now?
+
+Generally pretty decent! I made progress these past few days.
+
+\item How goes progress on the design? What's in the way?
+
+Design going well! I just need to put in all the stitches (though I suppose that's also something that I can do when I've finished other things.)
+
+\item How goes progress on the stitching? What's in the way?
+
+Need to set up the frame and start stitching.  
+   
+ \item Upon reflection, how goes embroidery? Anything missed in those two questions?
+
+Generally ok!  
+ %end reflection/creative/embroidery-base.tex  
+   
+ %begin reflection/creative/embroidery-project.tex  
+\item Project Progress and To Do % add footnotes to new items and mark them as completed when they are}
+
+\begin{itemize}  
+ \item Base layer design:  
+   
+ Still in ideation mode.  
+ \item Weave layer design:  
+   
+Have demonstrated crossing with three stitches wide and four stitch gap at widest point. Looks nice, shows enough of the background that I'm happy with it, probably.  
+Will need to consider in context of the top layer,  
+   
+Also will need to consider in the context of potentially not having all of the stitches going the same direction.
+
+%begin reflection/creative/embroidery-project-top.tex  
+ \item Top layer design:  
+   
+Have the knot made\footnote{thanks isometric drawing guide!}, have the spacing for the braid made\footnote{thanks ability to add spacing between points in a pen}.   
+Have approximation of what the project will look like.\footnote{new today}  
+Still need:  
+ \begin{itemize}  
+ \item Figure out if i want to have multiple directions in the stitches.
+
+Done! I do want the two kinds of tent stitches. (so delete)  
+ \item Figure out the number of stitches wide to generally aim for for the strands of the braid.
+
+Done(ish)! I want two stitches per color per strand. (so delete)  
+ \item Figure out how to have the fact that the braids are two-colors thick work with the braid turning.
+
+More or less done! I think it looks ok, but I can always spend more time on the ribbon turns. (so delete)  
+ \item Fill in the braid for the first third of the project
+
+Ehhhhh I'll come back to this! (so delete)  
+ \end{itemize}  
+%end reflection/creative/embroidery-project-top.tex
+
+%begin reflection/creative/embroidery-project-design.tex  
+ \item Full design  
+ \begin{itemize}  
+ \item Figure out how many colors of thread I'm going to buy and how much of each. Current thoughts:  
+ \begin{itemize}   
+ \item Need six colors for the knot   
+ \item I think that I want to have one color for the weave, though that may end up being one mixed-color color.\footnote{e.g. Gold and green}   
+ \item Figure out how many colors for the background.\footnote{Still leaning towards some sort of gradient but need to make it work with the rainbow.}   
+ \end{itemize}  
+ \item Figure out how all three layers all looks together.
+
+That is, take the full stitch design for the knot and add the stitches for the weave and background underneath.  
+ \item Figure out action plan for stitching. \\ See \href{daily-reflection-2026-08-03}{this post} for most recent ideas.  
+ \end{itemize}  
+ %end reflection/creative/embroidery-project-design.tex  
+   
+ \item Stitching: do. \\ See \href{daily-reflection-2026-08-03}{this post} for most recent ideas.
+
+\end{itemize}  
+ %end reflection/creative/embroidery-project.tex  
+ \end{itemize}  
+ %begin reflection/creative/embroidery-future.tex  
+ \item Future Embroidery Projects?  
+ \begin{itemize}   
+ \item Using variety of stitches for shaping   
+ \item Using colors for transparency or to give the idea of light better   
+ \item Representational (or non-non-representational to be honest to myself for thoughts) work   
+ \item Smaller projects   
+ \item Using whitespace better. Right now I have all designs as much thicker than one stitch.   
+   
+Lots of the major styles (blackwork and Assisi, for example) base a lot on single stitch design. Why don't we try some of that?   
+ %end reflection/creative/embroidery-future.tex  
+ \end{itemize}  
+ %end reflection/creative/embroidery.tex  
+ %begin reflection/creative/other.tex  
+ \item Other:  
+ \begin{itemize}  
+ \item Vibe Check: how goes other creation?
+
+Generally well! I have been crocheting more, and I did some cooking/drink making yesterday!
+
+\item Crochet?
+
+Made a ball yesterday!
+
+\item Anything else?
+
+Made a punch recipe and some freestyle drinks yesterday!  
+Life hack, a drop or five of liquid smoke makes a non-alcoholic drink taste like a real mocktail.  
+Also, different acids \textit{DO} have different flavors.  
+That was fun to realize, but now I need to write down what the acid flavors are.\footnote{added to the list}
+
+\end{itemize}  
+ %end reflection/creative/other.tex  
+ \item Upon reflection, how is creation going?
+
+Good!  
+ \end{itemize}  
+ %end reflection/creative.tex  
+   
+ %begin reflection/health.tex  
+ \item Health Considerations:  
+ \begin{itemize}  
+ \item Gut and / or vibes check, how is health going?
+
+Generally well! I've been working out, food remains a struggle, as does sleep, but such is life sometimes.  
+I guess that's not really well, is it.
+
+\item Working out?
+
+Been doing great! Averaging at least one Pilates class a day, which is really making a difference I can feel.
+
+\item Food?
+
+Not great! Haven't been eating much, because I haven't been hungry, but that's not really a good excuse sometimes and now is the time where it ceases.
+
+\item Water?
+
+Not as well as it could be! Sad, but I'll grab my bottle now and have some water.
+
+\item Sleep?
+
+Decent! I think that for at least a little longer I can go back to biphasic sleep, which does a lot for me in general.
+
+\item Social? Wins / areas of struggle?
+
+Social! Made new friends. An old college acquaintance and I reconnected, they bought me birthday dinner!
+
+I hosted a housewarming party, and friends came!
+
+I finally gave someone their wedding present.
+
+Area of struggle definitely the whole \say{I sometimes interrupt people way too much}, and I don't like that, esp. bc I noticed that it's happening more with some people.
+
+\item Upon reflection, how is health going?
+
+Generally ok!
+
+\end{itemize}  
+ %end reflection/health.tex  
+   
+ %begin reflection/practical.tex  
+ \item Practical Considerations:  
+ \begin{itemize}  
+ \item Gut and / or vibes check, how are the practical things going?
+
+Could be better, not doing great.
+
+\item How could you be working on your LDR better?
+
+I could be better supporting, though I'm not 1000\% sure how to do that right now.
+
+\item How goes setup of new home?
+
+Eh! The home looked good for visitors yesterday, but that meant that the two bedrooms and two closets are borderline inhabitable.  
+That's the nature of things sometimes.  
+Also, apparently I need more furniture, at least if the commentary I got is any indication.
+
+\item Upon reflection, how go practical matters?
+
+Generally ok!
+
+\end{itemize}  
+ %end reflection/practical.tex  
+ \item Upon total reflection, how goes it?
+
+Generally better than I expected! Big thing I'm hitting right now is that I'm aware of the tightness in my lower-mid back and my hip flexors. Gonna spend some time on them today! That'll be good.
+
+Time to go take a break to eat a bit of food, do that stretching, and then I'll be back to write about a few songs I like!
+
+Hmmm I may also want to, at some point, figure out how to set up my projector again.  
+\end{itemize}  
+%end daily-reflection.tex
+
+%begin daily-reflection.tex  
+\dailyreflect{11 August 2026}  
+\begin{itemize}  
+ \item All in all, how goes it?
+
+I think generally well. I'm doing my best to adapt to my new realities, but that's the way that life always go.  
+There's no static me or static life, and that's something I adapt to daily.
+
+%begin reflection/creative.tex  
+ \item Creative Considerations:  
+ \begin{itemize}  
+ \item Gut and / or vibes check, how is creative life going?
+
+I think that creative life is generally going well. I have music in my ears, I read, and I have been doing other stuff(?).\footnote{I think that I've been doing other stuff?}
+
+%begin reflection/creative/written.tex  
+ \item Written Word:  
+ \begin{itemize}  
+ \item How's your relationship with the written word in general?
+
+Generally ok! I have about two or so hours of bussing going on tonight, and that will definitely help!
+
+\item How goes blogging? What's feeling like the barrier?
+
+Ope! I never actually wrote the songs I like, and that's something that prevented me from posting.  
+Also, I don't know if I wrote at all yesterday.
+
+That's a shame.  
+I think that it's partially that I don't have a schedule going on right now, and that's getting in the way of things.
+
+\item How goes reading?
+
+I finished the Fred series, which is almost certainly over at this point, given the way that the last book ended.
+
+That's kind of sad because I enjoyed the world and the writing, but I also prefer a series to end than to not be finished.\footnote{eh, not sure if that's true. Discworld or the Hitchhiker's method might be my favorite (just write until ur dead, in case of Hitch, then have someone else keep going)}  
+Anyways, I read that, and then after I post today's, I'm going to go ahead and catch up on the serials I follow, and maybe I'll also work on the writing I want to be doing for myself.
+
+\item How goes writing poetry again?
+
+Speaking of the writing I want to do for myself!
+
+Let's just do that right here right now. I'm going to freehand a sonnet as quickly as I can.  
+Since all I've really done this morning is wake up, go to Pilates, and be miserable about the humidity, let's try writing it about Pilates.\footnote{note: I will be just restarting below if I realize that there's text I don't love, rather than deleting. THis is because we're going for stream of consciousness}
+
+I lie down on my back and breathe in deep.\\  
+Breathe out and feel my feet connect to bar\\  
+My legs extend to push me out so far\\  
+that I am standing, or at least in line\\
+
+\hline
+
+Ope, no deep and line no rhyme, let's try again
+
+\hline
+
+I lie upon my back and breathe in time\footnote{I'll take a slant rhyme}
+
+\hline
+
+No that's also no good.
+
+What rhymes with line or plane or try?
+
+line: tine, mine, mind (almost), brine, shine, opine, wine, whine, dine
+
+Plane: main, pain, plain, lain, brain, rain, wane, grain
+
+Plane is the winner for sure
+
+\hline
+
+Upon reformer I am gently lain\\  
+My breath connects me to my breath and bar\\  
+And legs extend to push me out so far\\  
+that I am standing, or at least in plane
+
+\noindent As class goes on, I tax my sleepy brain\\  
+To keep the focus on the breath\\  
+\hline
+
+Ugh maybe not bar, because I can't think of any good bar rhymes.
+
+Breath maybe?
+
+Nope, also no rhyme.
+
+My legs extend as gently I breathe in (or out).
+
+In, sin,\footnote{looking at rhymezone right now and for bar and breath}, been, bin, chin, din, pin, thin, akin
+
+Yeah that should be good.
+
+\hline
+
+Upon reformer I am softly lain\\  
+My legs extend as slowly I breathe in\\  
+Then breathing out, I feel a sense akin\\  
+To squatting down, if now in a new plane
+
+\noindent As class goes on, I tax my sleepy brain\\  
+To focus on the placement of my chin\\  
+The way that sweat and breeze play on my skin\\  
+As slowly burning core
+
+\hline
+
+The burn within my core begins to wane.
+
+Woot.
+
+I do find that rewriting the full sonnet does me good and keeps me honest because I find better phrasing\footnote{or phrasing I prefer, if nothing else}
+
+On the reformer
+
+\hline
+
+Upon my back I find that I am lain\\  
+Begin with legs extending, I breathe in\\  
+Breathe out and notice feeling that's akin\\  
+to squatting down, although in diff'rent plane
+
+\noindent As class goes on, the burn will wax and wane\\  
+I focus on the lack of mental din\\  
+Relaxed and in my home within my skin\\  
+The benefit to me, at least, is plain
+
+\noindent Then class is over, I again return\\  
+To life as it exists in daily life\\  
+The way that thoughts and feelings tend to churn,\\  
+The way that my desires want to burn\\  
+The constant-seeming mind-displacing strain\\  
+Until again to class I will adjourn
+
+\hline
+
+I mean I'm not \textit{unhappy} with that sonnet, so that's really all I can hope for!
+
+\item We're counting audio book here, anything good?
+
+Might be part of what I do during the bus rides today!
+
+\item How go(es) the web serial(s)? What's the biggest barrier to you publishing the next chapter? If it's writing, what's the barrier to writing it?
+
+Ope! I just need to write, and that's something that's going to take me some time and thought.
+
+\item How goes the hand-written stuff?
+
+Did some journaling yesterday, may want to do more today. I find that I think differently, and I find that I get through my inks much faster.  
+That is particularly true when I use my stub nose, which seems to pour ink onto pages.
+
+\item How's the push pin board treating you?
+
+Not in extra use, may need more or newer command strips to get it to work how I want (read: on the wall).  
+  
+Otherwise, I'd like to generally have part of it reserved for reminders and whatnot, such as that I should write a poem and the web serial(s) again.
+
+\item Upon reflection, how's the written word? Anything missing in the seven questions?
+
+Generally decent! Nothing missing that I can think of?
+
+Oh, I guess I did typeset\footnote{or at least layout? I think layout probably more accurate turn of phrase} my friend's thesis chapter.  
+That was fun!
+
+Also, I've been texting people.  
+That's healthy and good for me.
+
+\end{itemize}  
+ %end reflection/creative/written.tex
+
+%begin reflection/creative/music.tex  
+ \item Music  
+ \begin{itemize}  
+ \item In general, how goes music?
+
+I think music is generally going well. I need to replace my guitar strings, and there're a few new dents on my guitar I don't love, but that's sometimes the nature of life, isn't it?
+
+I haven't played it in a few days, but I'm jamming with a friend tonight.
+
+It was my week to pick the album, and I've now listened to all the songs at least a few times.  
+The songs I liked\footnote{or the songs that I didn't dislike and were playing while I was distractable} I listened to far more times.
+
+\item How goes recording?
+
+Nope!
+
+\item How goes writing?
+
+Eh, gonna do some more tonight which'll be fun.
+
+\item How goes playing?
+
+Jamming tonight! That's going to be nice.
+
+\item How goes listening?
+
+Lots! Using this post to reflect.
+
+\item How goes digital music creation?
+
+Nope!
+
+\item Upon reflection, how goes music? Anything missed in those five questions?
+
+Goes! Still more consumption than creation, but the only question missed might be \say{instrument maintenance?}?  
+Something to consider, at least.
+
+\end{itemize}  
+ %end reflection/creative/music.tex
+
+%begin reflection/creative/embroidery.tex  
+ \item Embroidery  
+ \begin{itemize}
+
+%begin reflection/creative/embroidery-base.tex  
+ \item In general, what's the vibe of the project right now?
+
+Haven't made progress in a day or two, but long bus ride may give me the chance I need.  
+   
+ \item How goes progress on the design? What's in the way?
+
+Right now the biggest thing I need to figure out is the base layer gradient.  
+I do really want some sort of gradient, and I think that black through cool tones to white through warm tones to black is what I want, but that's not entirely decided for me just yet.  
+I'll ideate on that a little, maybe look at some sort of starburst pattern? That could be cute?  
+   
+ \item How goes progress on the stitching? What's in the way?
+
+No new progress, nothing really to do there!  
+   
+ \item Upon reflection, how goes embroidery? Anything missed in those two questions?
+
+Project generally going ok! Nothing else in the works.  
+ %end reflection/creative/embroidery-base.tex  
+   
+ %begin reflection/creative/embroidery-project.tex  
+ \item Project Progress and To Do % add footnotes to new items and mark them as completed when they are
+ \begin{itemize}  
+ \item Base layer design:  
+   
+ Still in ideation mode.  
+Plan is to work on that today.  
+ \item Weave layer design:  
+   
+Have demonstrated crossing with three stitches wide and four stitch gap at widest point. Looks nice, shows enough of the background that I'm happy with it, probably.  
+Will need to consider in context of the top layer,  
+   
+Also will need to consider in the context of potentially not having all of the stitches going the same direction. Edit: Will not be having stitches all go in same direction, will now need to consider in context of maybe having it loop over itself like another knot.
+
+%begin reflection/creative/embroidery-project-top.tex  
+ \item Top layer: Basically ready to go!  
+ %end reflection/creative/embroidery-project-top.tex
+
+%begin reflection/creative/embroidery-project-design.tex  
+ \item Full design  
+ \begin{itemize}  
+ \item Figure out how many colors of thread I'm going to buy and how much of each. Current thoughts:  
+ \begin{itemize}   
+ \item Need six colors for the knot   
+ \item I think that I want to have one color for the weave, though that may end up being one mixed-color color.\footnote{e.g. Gold and green}   
+ \item Figure out how many colors for the background.\footnote{Still leaning towards some sort of gradient but need to make it work with the rainbow.}   
+ \end{itemize}  
+ \item Figure out how all three layers all looks together.
+
+That is, take the full stitch design for the knot and add the stitches for the weave and background underneath.  
+ \item Figure out action plan for stitching. \\ See \href{daily-reflection-2026-08-03}{this post} for most recent ideas.  
+ \end{itemize}  
+ %end reflection/creative/embroidery-project-design.tex  
+   
+ \item Stitching: do. \\ See \href{daily-reflection-2026-08-03}{this post} for most recent ideas.
+
+\end{itemize}  
+ %end reflection/creative/embroidery-project.tex  
+ \end{itemize}  
+ %begin reflection/creative/embroidery-future.tex  
+ \item Future Embroidery Projects?  
+ \begin{itemize}   
+ \item Using variety of stitches for shaping   
+ \item Using colors for transparency or to give the idea of light better   
+ \item Representational (or non-non-representational to be honest to myself for thoughts) work   
+ \item Smaller projects   
+ \item Using whitespace better. Right now I have all designs as much thicker than one stitch.   
+   
+Lots of the major styles (blackwork and Assisi, for example) base a lot on single stitch design. Why don't we try some of that?   
+ \end{itemize}  
+ %end reflection/creative/embroidery-future.tex  
+ %end reflection/creative/embroidery.tex
+
+%begin reflection/creative/other.tex  
+ \item Other:  
+ \begin{itemize}  
+ \item Vibe Check: how goes other creation?
+
+Generally fine! Didn't do anything yesterday, but that was mostly because I wasn't feeling super in the mood to do things?
+
+\item Crochet?
+
+Nope! May do some tonight, because I'll be at the bar I like again, but I might also make a point to use the time for embroidery work.  
+Hard to say for sure.
+
+\item Anything else?
+
+Don't think so!  
+I guess that cleaning and cooking could count, but I've just been enjoying the leftovers of my punch from housewarming\footnote{note to self, I can absolutely just freeze the remainder, and I'll do that after this reflection}
+
+\end{itemize}  
+ %end reflection/creative/other.tex  
+ \item Upon reflection, how is creation going?
+
+Upon reflection, creating is going well! I'm doing some making, some consuming, and I might want to rename that question to \say{how is creat\textbf{ive work} going}, but that's something for the future.  
+ \end{itemize}  
+ %end reflection/creative.tex  
+   
+ %begin reflection/health.tex  
+ \item Health Considerations:  
+ \begin{itemize}  
+ \item Gut and / or vibes check, how is health going?
+
+Generally well, I wish that I was eating better and stretching more and drinking more water.
+
+\item Working out?
+
+Yeah! Another double header Pilates this morning, which again felt great.  
+Honestly, I'm debating signing up for an evening class, because I do really enjoy the way that I feel when I'm moving more.
+
+Eh, we'll see how the day goes.
+
+\item Stretches?
+
+Been noticing that I've got tight and/or weak hip flexors, and my mid back remains very tight. I'll try to stretch better and more.
+
+One thing I have a vague recollection of is that if my default with legs extended is to cross them, that means hip flexors need stretching out somehow, though I don't recall how.  
+Eh, that's probably something pseudo-true anyway.
+
+\item Food?
+
+Generally not as well as it could. I was reminded the other night that I enjoy cooking\footnote{read: I was hungry and made Kraft mac, which sated some of it}.  
+I'm going shopping again today, so that's going to be a good chance to stock up on the things I like to cook and whatnot.  
+Maybe make a shopping list here?  
+Sure!
+
+Ok so I know I like having frozen mirepoix equivalents, so need onion, carrot, celery to chop.
+
+I like having frozen peas, so a bag of those.\footnote{bag pronounced close to the first syllable of bagel if you say bagel in the normative way}
+
+I love to gnaw on a chicken, so may get a rotisserie chicken\footnote{thanks loss leaders!}
+
+Some other source of protein would likely serve me well.  
+I'm generally against buying sandwich meat because they're so expensive compared to buying whole meat, but convenience is worth something, I suppose.  
+Also probably cheese and lettuce if I'm doing that.\\  
+And tomato, I guess.
+
+In my mind, I have a vague enough memory of that grocery shopping should be both getting staples and the things for specific meals until the next shopping trip.  
+So, let's think about both of those!
+
+Staples\footnote{gonna google normal staples}
+
+Sources:  
+\begin{enumerate}  
+\item \href{https://www.thekitchn.com/pantry-staples-2-23747192}{Kitchn}  
+\item \href{https://www.seriouseats.com/pantry-guides-5181287}{Serious Eats}  
+\item \href{https://www.youtube.com/watch?v=ylh9GnBYhfc}{Ethan Chlebowski (video)}  
+\item \href{https://www.thespruceeats.com/standard-kitchen-supplies-for-your-pantry-1808020}{Spruce Eats}  
+\item \href{https://www.marthastewart.com/1112123/your-grocery-list-perfect-pantry-and-how-keep-it-perpetually-stocked}{Martha Stewart}  
+\end{enumerate}
+
+In this age of internet slop, I do primarily seek out those sources I know to be good.  
+Chleb and Serious Eats have shown good things over time.  
+Martha Stewart is older than internet, as far as I know.  
+Kitchn and spruce eats have generally not served me too badly for following.
+
+Anyways, I want to be better at citing sources going forward, for future me if nothing else.  
+Oh, also let's look at \href{dietary-needs}{my} \href{dietary-needs-2}{old} \href{dietary-needs-3}{posts} \href{dietary-needs-4}{about} \href{dietary-needs-5}{feeding} myself.
+
+Staples:  
+\begin{itemize}
+
+\item Martha:
+
+\begin{itemize} cans and tubes as a category, including tomato, tomato paste, fruit.  
+\item Pasta  
+\item Grains and rice and beans (oats, beans, rice, polenta or cornmeal)  
+\item Oil and vinegar (wild to me that these are considered the same category)  
+\item Spices  
+\item Potatoes, onions, garlic (I've not had great luck with these in the past)  
+\item Dry mushroom (have!, have never used)  
+\item Baking staples (Vanilla, baking soda and powder, chocolate, gelatin, yeast, cornstarch)  
+\item Flour(s)  
+\item Sugar(s)  
+\item Nuts, nut butters, dry fruits (peanut butter, nuts, dry apricots, etc.  
+\end{itemize}  
+\item Spruce:  
+\begin{itemize}  
+\item Oil and Vinegar  
+\item Spices (Pepper!!, salt, Paprika, etc)  
+\item Baking essentials (more or less as above)  
+\item Condiments (Fruit preserve, salsa, peanut butter)  
+\item Canned goods (bean, soup, tomato)  
+\item Dry good (coffee, crackers, dry fruit, milk, nut, pasta, rice)  
+\end{itemize}  
+\item Ethan: (not watching the vid, just gonna read the description)  
+\begin{itemize}  
+\item Salt, fat, acid as bare essential  
+\item Spice  
+\item Vinegars  
+\item Flours and powders  
+\item Canned item  
+\item Prepared Sauce  
+\item Grain and rice  
+\item Root veggie  
+\end{itemize}  
+\item Turns out serious eats isn't a guide. Sad  
+\item Kitchn  
+\begin{itemize}  
+\item Oil, vinegar, other fat  
+\item Salt pepper season  
+\item Bake, sweeten  
+\item Grain, pasta, legume  
+\item Box, can, jar  
+\item Breakfast and snack (popcorn, peanut butter, bread, oat, fruit, coffee, tea)  
+\item Sauce, condiment  
+\end{itemize}  
+\end{itemize}
+
+Compiling for myself, then:
+
+\begin{itemize}
+
+\item Canned beans (nice to make easy meal by dump in pot with stuff)  
+\item Dry beans (optional, depending if I think I'll really use them)  
+\item Pasta (have spag and kraft mac, probs good here for now)  
+\item Rice  
+\item Oat (should relocate from previous location, because not using them there)  
+\item Flour(s?) (for now just one flour probably good, probably get a whole wheat flour, put in container, and freeze when not in use so doesn't go bad)  
+\item Have sugar, so don't need  
+\item Snacky things like nuts, nut butters, dried fruit,  
+\item Spices (particularly black pepper, paprika, and something green)  
+\item Baking stuff (soda and powder, yeast)  
+\item Jam?  
+\item Canned tomato or sauce? I don't tend to eat a ton but it's nice to have when I do. Also may eat more again since we are approaching winter and cooking time again.
+
+\end{itemize}
+
+And then non-staples that I want to keep in home:
+
+\begin{itemize}  
+\item Carrot, celery, onion: chop and freeze for tossing in soup and the like  
+\item Frozen pea: great way to quickly cool down soup or pasta  
+\item Bacon ends: add nice flavor, cheapish and makes a meal with can of bean  
+\item Potato? I'm not as sure about this one, haven't had great luck in the past, but in the past I've also ignored them for ages. Hard to say either way.  
+\item Garlic  
+\item Cooked protein: probably rotisserie chicken as a baseline, though if cheap cut of meat, can always do a gnaw of that as well or instead  
+\item Cheese? Probably good  
+\item Milk? Yogurt? Depends how smoothies go. I will make a smoothie once finished with this list  
+\item Apple, non-frozen carrot: nummy nummy snack  
+\item Other snacking foods  
+\end{itemize}
+
+Great, so don't want or need to get all of these things at once, but I can use this list to help me compile a list in the future.  
+Also need to remember to look at dietary musings in the future for those things.
+
+\item Water?
+
+Not as much as I'd like, but that's often true. It would probs serve me well to start using the one gallon bois again.
+
+\item Sleep?
+
+I've been feeling like I'm needing more sleep, which could just as easily be:  
+\begin{itemize}  
+\item a real thing that I'm catching up on sleep,  
+\item a real thing that I'm not sleeping well  
+\item Me not feeding myself and so body shutting down  
+\item Me not wanting to do life and so sleeping instead  
+\end{itemize}  
+Gonna try feeding myself better to hope to eliminate 3, and I don't think it's 4.
+
+\item Social? Wins / areas of struggle?
+
+Been messaging people! Otherwise haven't seen a ton of people since last reflection. Was social at Pilates, as per my usual.
+
+\item Upon reflection, how is health going?
+
+It's going! Interesting that I didn't put mental health here, but that's probably for the best, because I don't always want to air my dirty laundry to the world.
+
+\end{itemize}  
+ %end reflection/health.tex  
+   
+ %begin reflection/practical.tex  
+ \item Practical Considerations:  
+ \begin{itemize}  
+ \item Gut and / or vibes check, how are the practical things going?
+
+Generally ok!
+
+\item How could you be working on your LDR better?
+
+I could research more about residency so as to support the transitions that it has.
+
+\item How goes setup of new home?
+
+Ugh. Haven't been doing well, chaos and disorder is the natural order of creation, and I continue to fight against it.  
+At least I did a load of laundry yesterday!! That's progress of a sort.
+
+\item Upon reflection, how go practical matters?
+
+Could be better! That's something to work on for sure.
+
+\end{itemize}  
+ %end reflection/practical.tex  
+ \item Upon total reflection, how goes it?
+
+Could be better but generally ok!  
+Time to finish this blog post (5600 words of daily reflections later)  
+\end{itemize}  
+%end daily-reflection.tex
+	
+\end{document}

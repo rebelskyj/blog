@@ -1,0 +1,21 @@
+\documentclass[12pt]{article}
+\newcommand{\say}[1]{``#1''}  
+\newcommand{\nsay}[1]{`#1'}  
+\usepackage{endnotes}  
+\newcommand{\B}{\backslash{}}  
+\renewcommand{\,}{\textsuperscript{,}}  
+\usepackage{setspace}   
+\usepackage{tipa}  
+\usepackage{hyperref}  
+\renewcommand{\title}[2]{\section{\href{#1.html}{#2}}}
+\newcommand{\published}[1]{First Published: #1}
+\newcommand{\draft}[1]{\section{Draft #1}}
+\newcommand{\dailyreflect}[1]{\section{Daily Reflection: #1}}
+\begin{document}
+\title{NAME}{On NAME}
+\published{DATE}
+\draft{1}
+\input{upcoming-posts}
+\input{daily-reflection}
+
+\end{document}

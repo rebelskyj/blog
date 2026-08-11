@@ -1,0 +1,2 @@
+perl latexpand --keep-comments tocompile.tex > ../template.tex
+open ../template.tex
