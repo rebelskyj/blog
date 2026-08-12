@@ -578,3 +578,4 @@ reflection-june-2026.tex:Monthly Reflection June 2026
 reflection-2.tex:On Reflection
 daily-reflection-2026-08-03.tex:Just a Daily Reflection
 songs-i-like.tex:On Songs I Like
+making-short-videos.tex:On Making Short Videos
